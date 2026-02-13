@@ -1,0 +1,100 @@
+Time Memoria Versioning Specification (v2)
+Format: AA.B.C.D
+
+Time Memoria keeps the Memoria Alpha style versioning format because it matches how we think about Dalamud API level, expansion bands, and bucket/drawer completion, which we still need for lazy‑loaded quest data. Version numbers describe what content is covered, not which optional modules are enabled.
+AA – Dalamud API version
+B – Expansion band (ARR, HW, etc.)
+C – Expansion patch band (x.0–x.5)
+D – Drawer/Bucket completion for that band/patch
+
+IMPORTANT: Version progression
+    14.0.0.0 — Fresh QuestTracker fork renamed to Time Memoria, infrastructure phase, may still use the original QT data layout.
+    14.2.0.1 — First Time Memoria v2 milestone: Quest UI working on ARR 2.0 data, News / Events restored, PlaytimeStats & global pacing implemented, and ARR 2.0 MSQ bucket extracted (legacy monolithic data deprecated).
+The transition from B = 0 to B = 2 happens when the first expansion‑organized bucket (e.g., ARR 2.0 MSQ) is created and hooked into the UI.
+
+Time Memoria’s modules (Quest UI, News/Events, PlaytimeStats & Pacing, future Ocean Fishing helper) are tracked in the README and release notes, not encoded into the version digits.
+AA – Dalamud API Version
+    AA tracks which Dalamud/FFXIV major version the build targets.
+14 = FFXIV Patch 7.4–7.49 / early 7.5 cycle (current)
+15 = FFXIV Patch 7.5+ (future)
+
+Increment AA only when Dalamud releases a new major API version; this is independent of content coverage.
+
+B – Expansion Index
+    B matches the expansion band of the quest content this build primarily targets.
+        2 = A Realm Reborn (ARR 2.x)
+        3 = Heavensward (HW 3.x)
+        4 = Stormblood (StB 4.x)
+        5 = Shadowbringers (ShB 5.x)
+        6 = Endwalker (EW 6.x)
+        7 = Dawntrail (DT 7.x)
+​
+For the first Time Memoria v2 milestone (ARR MSQ‑focused), B = 2.
+
+C – Expansion Patch Number
+    C tracks which patch slice of that expansion band the quest buckets cover.
+        0 = x.0 (launch patch)
+        1 = x.1
+        2 = x.2
+        3 = x.3
+        4 = x.4
+        5 = x.5 (including any .55 follow‑ups as part of .5)
+For base game prior to any major patch, C will always be 0 (x.0)
+
+D – Drawer/Bucket Completion Milestone
+D tracks how many quest buckets are complete for the given expansion/patch. This stays tied to the bucketed/lazy‑load approach used by the Quest UI.
+    0 = Folder exists, no buckets complete
+    1 = MSQ bucket complete (1‑msq.json)
+    2 = New Era bucket complete (2‑NewEra.json)
+    3 = Feature bucket complete (3‑Feature.json)
+    4 = Beasts bucket complete (4‑Beasts.json)
+    5 = Class/Job bucket complete (5‑Class.json)
+    6 = Seasonal bucket complete (6‑Seasonal.json)
+    7 = Levequests and Guildhests (7-Leve.json)
+    8 = Other bucket complete (8‑Other.json)
+    9 = All buckets for that band/patch complete
+​
+How Time Memoria Modules Fit In (v2)
+    Time Memoria adds new modules on top of the QuestTracker base:
+        Quest UI (QuestTracker evolution, bucketed & lazy‑loaded).
+        News/Events (XIV ToDo world‑state info plus local pacing lines).
+        PlaytimeStats & Pacing (session/lifetime playtime tracking and quest‑pacing statistics, UI‑only).
+        Ocean Fishing helper (future, clearly out of scope for 7.5).
+
+These modules are not encoded directly into AA.B.C.D. Instead, the numeric version tells you:
+    Which API you target (AA).
+    Which expansion band/patch your quest data/buckets cover (B.C).
+    How many quest buckets are complete for that band/patch (D).
+
+The README / changelog includes a “Module State” table for each release, e.g.:
+    Quest UI (QT evolution): ✅ / ❌
+    News/Events (XIV ToDo + pacing): ✅ / ❌
+    PlaytimeStats & Pacing: ✅ / ❌
+    Ocean Fishing helper: ✅ / ❌
+
+This keeps version numbers stable and familiar while still documenting Time Memoria’s evolution clearly for users and reviewers.
+​
+Current Target (v2)
+First public/test milestone of Time Memoria v2: 14.2.0.1
+
+Meaning:
+14 – Dalamud API 14 (FFXIV 7.4–7.49 / early 7.5).
+2 – ARR band (A Realm Reborn).
+0 – ARR 2.0 (launch patch).
+1 – MSQ bucket complete (1‑msq.json extracted and lazy‑loaded).
+
+Module state for 14.2.0.1 (documented in README, not in digits):
+Quest UI (QT evolution): ✅ Full QT‑style browser with at least ARR 2.0 MSQ bucket wired.
+News/Events: ✅ XIV ToDo rows plus global session & lifetime pacing lines in the News / Events tab.
+PlaytimeStats & Pacing: ✅ Session and lifetime playtime tracking and per‑quest pacing, UI‑only, no chat.
+Ocean Fishing: ❌ (future).
+You can treat 14.2.0.1 as the ‘7.5‑ready’ build: a clean QuestTracker evolution with News/Events and pacing, with all ARR 2.0 MSQ in buckets and other quests still served from QuestTracker’s legacy data.json (shipped temporarily until bucket migration is complete).
+
+Example Progression (v2)
+Some realistic future steps:
+    14.2.0.0 – Fork QuestTracker, rename to Time Memoria, quest data structure in place, no buckets complete yet; basic UI loads.
+    14.2.0.1 – ARR 2.0 MSQ bucket complete (D = 1), News/Events restored, PlaytimeStats & global pacing implemented.
+    14.2.0.2 – ARR 2.0 MSQ + New Era buckets complete (D = 2), optional MSQ/non‑MSQ pacing toggle added.
+    14.2.5.9 – All ARR buckets complete for 2.0–2.5 (D = 9), ahead of the 8.0 window target.
+    14.3.0.1 – Shift primary focus to HW 3.0 MSQ (B = 3, C = 0, D = 1) while keeping News/Events and pacing stable.
+    15.3.0.1 – Update to API 15 when FFXIV 7.5+ Dalamud lands, with HW 3.0 MSQ bucket complete.

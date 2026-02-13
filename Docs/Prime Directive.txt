@@ -1,0 +1,105 @@
+Time Memoria v2 – Prime Directive
+What Time Memoria v2 Is
+Time Memoria v2 is a quest‑centric Dalamud plugin, built as a fresh fork of IsaiahCat’s QuestTracker and immediately renamed and branded as Time Memoria.
+It exists to help players understand their quest progression and pacing over time, not to measure combat, performance, or clears.
+​
+The plugin’s core surfaces are:
+- A Quest UI that evolves QuestTracker’s read‑only browser and filtering.
+- A News / Events tab that restores a Memoria Alpha–style panel for world‑state information and global pacing lines.
+​
+Time Memoria v2 is UI‑first. Any future /echo command is low priority and may only repeat information that already appears in these UI windows, never adding alerts, timers, or special behavior.
+
+Philosophy and Scope
+Quest progression, not performance
+Time Memoria is about how a character moves through quests over time, not how well the player performs in combat, duties, or rotations. 
+It should feel like a reflective notebook for story and checklist progress, not a scoreboard.
+​
+Passive, read‑only posture
+The plugin reads existing quest metadata and playtime statistics but does not react to real‑time events. It shows where you are and how long you have spent, without trying to steer you toward “optimal” behavior.
+
+Calm pacing insight
+Pacing statistics are descriptive only: they express average minutes per quest over a session and lifetime. There is no grading, ranking, “fast/slow” language, or comparison against other players or content.
+
+Respect for Dalamud boundaries
+All features are designed so a reviewer can clearly see that Time Memoria cannot be repurposed as ACT/FFLogs‑style performance analysis or automation.
+​
+Approved v2 Feature Set (7.5 Timeline)
+For the FFXIV 7.5 era, Time Memoria v2 focuses on three concrete pillars.
+1. Quest UI (QuestTracker evolution)
+   Fork QuestTracker, rename to Time Memoria, and keep its read‑only quest browser and filtering (expansion, patch, category/bucket).
+   Use the new bucketed quest data architecture instead of the monolithic 42k‑line file: per expansion, per patch, and per bucket (1-msq.json, 2-newera.json, etc.), loaded lazily when needed.
+   Do not add any automation, quest auto‑tracking, or UI input injection; the Quest UI remains strictly informational.
+​2. News / Events Tab
+   Restore a Memoria Alpha–style News/Events panel within Time Memoria’s UI.
+​   Surface XIV ToDo world‑state items (maintenance windows, patch status, seasonal events), but no player‑specific or character‑specific world events.
+​   Integrate global pacing lines (see below) so a player can see their current quest pacing at a glance alongside game‑wide events.
+
+3. PlaytimeStatsService & Pacing
+    Implement a PlaytimeStatsService that tracks:
+    SessionSeconds: current character’s session time since login (BetterPlaytime “On Character”).
+    LifetimeSeconds: current character’s total /playtime lifetime.
+    Use UTC timestamps and Framework.Update‑style ticking, pausing on logout and persisting to configuration, without sending any chat commands or using packet hooks.
+    Combine these playtime values with QuestTracker’s passive completion counts to compute:
+        Session pacing: SessionSeconds ÷ quests completed this session.
+        Overall pacing: LifetimeSeconds ÷ lifetime completed quests.
+        Display both as global lines in the News / Events tab, for example:
+            “Session pacing: 12m 30s per quest.”
+            “Overall pacing: 9m 18s per quest.”
+    These statistics are purely descriptive pacing metrics; they must not be turned into scores, thresholds, warnings, or recommendations.
+
+Optional Advanced Feature: MSQ vs Non‑MSQ Pacing
+    This feature is strictly optional and off by default.
+    Add a user setting: “Show MSQ vs non‑MSQ pacing” (disabled by default).
+        When enabled:
+            Classify quests as MSQ only if they live in 1-msq.json (Main Scenario bucket) for the relevant expansion/patch.
+            All other quests (e.g., 2-newera.json such as Crystal Tower, feature unlocks, side content) are treated as non‑MSQ.
+            Add two additional global pacing lines in the News / Events tab:
+                “MSQ pacing: Xm Ys per quest.”
+                “Non‑MSQ pacing: Xm Ys per quest.”
+        Even with this setting on, the UI must not state or imply that one pacing is better or worse; it only reports averages.
+
+Future / Low‑Priority Surfaces
+    A potential /timememoria (or similar) command may be added later as a read‑only echo that mirrors exactly what the News / Events UI already shows (e.g., current global pacing lines, current News items).
+        This command:
+            Must not introduce new reminders, timers, alerts, or per‑quest prompts.
+            Must not differ in content from the UI; it is just a text reflection of the same data.
+        Is not required for the 7.5 milestone and should not delay UI work.
+
+7.5 and 8.0‑Related Goals
+    7.5 Milestone (hard deadline: day before 7.5 launch):
+        Quest UI forked from QuestTracker, renamed, and stable in Time Memoria.
+        News / Events tab implemented, showing XIV ToDo world‑state items and the two global pacing lines (session and overall).
+        PlaytimeStatsService in place with correct session and lifetime tracking for each character.
+
+8.0 Preparation and Buckets:
+    Quest data is progressively migrated into bucketed JSON files by expansion and patch (1-msq.json through 7-other.json, with 8 reserved for future types such as leves/guildhests).
+    All quest buckets for the Dawntrail (7.x) band should be completed well before 8.0, with a hard deadline of late November 2026—approximately 60 days before the expected mid–late January 2027 release.
+
+Compliance and Hard Boundaries
+    Time Memoria v2 must never cross these lines:
+        No combat or performance data
+        No reading, displaying, or inferring DPS, HPS, mitigation, deaths, wipes, or duty results.
+        No boss names, duty identifiers, raid tier callouts, or clear/kill counts.
+        No integration with ACT, FFLogs, or any tool or format that resembles a combat log.
+        No logs usable as combat logs
+        Do not write or export data in a form that could realistically be parsed as a sequence of combat events or duty outcomes.
+        Any saved data is limited to quest IDs/categories, timestamps, simple completion counts, and pacing aggregates.
+        No automation or input injection
+        Never send UI input on behalf of the player (no auto‑accept, auto‑complete, auto‑navigate, or focus changes).
+        No auto‑opening or closing of in‑game windows beyond standard Dalamud window management.
+
+Restricted data sources
+Only use:
+    Playtime (session and lifetime).
+    Quest metadata and completion flags from the QuestTracker data and bucketed JSONs.
+    XIV ToDo world‑state data for News / Events.
+    Do not read combat logs, duty status, crafting/gathering state, movement, or any memory associated with gameplay performance.
+
+Output confined to Time Memoria
+    All primary output lives in the Time Memoria Quest UI and News / Events windows.
+    Any future /echo is a strict mirror of existing UI information and must not function as an alert or reminder system.
+    
+Explicit anti‑performance stance
+    All public documentation (README, in‑plugin About text) must clearly state that Time Memoria cannot be used for ACT/FFLogs‑style performance analysis, and that it does not track or evaluate combat performance in any way.
+​
+This Prime Directive v2 is the authoritative description of Time Memoria’s identity and limits; all future design decisions, refactors, and feature ideas must be checked against it before implementation.

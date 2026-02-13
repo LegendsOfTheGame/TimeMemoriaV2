@@ -1,0 +1,126 @@
+Time Memoria v2 – Foundation Sources
+Overview
+   Time Memoria v2 stands on three pillars: QuestTracker’s proven quest browser, BetterPlaytime‑style session tracking, and a bucketed quest data architecture designed for long‑term maintainability. 
+   This document explains what we inherit, what we add, and the development threads that carry the project from 7.5 into the 8.0 era.
+
+QuestTracker as the Structural Base
+   Time Memoria begins as a fresh fork of IsaiahCat’s QuestTracker, immediately renamed and rebranded at the solution, project, and namespace levels.
+   QuestTracker’s architecture provides a stable, battle‑tested foundation for displaying quest information without automation.
+
+From QuestTracker we inherit:
+   Plugin skeleton: entry point, service registration, configuration persistence patterns.
+   Quest UI: the core read‑only quest browser, including expansion/patch/category filtering and basic search.
+   Quest metadata and completion flags: the logic that determines whether a quest is available or completed for the current character.
+​
+Time Memoria v2 evolves this base by:
+   Replacing the single 42k‑line quest JSON with bucketed, lazy‑loaded quest data per expansion, patch, and bucket type (1-msq.json, 2-newera.json, etc.).
+   Tightening the plugin’s domain around progress and pacing, deliberately excluding any combat or performance‑oriented features.
+   QuestTracker remains the reference for how we think about quest lists, but Time Memoria reshapes how that data is stored, loaded, and contextualized.
+
+BetterPlaytime‑Style Inspiration for PlaytimeStats
+   Time Memoria does not include BetterPlaytime, but it borrows the idea of separating “time on this character this session” from “overall lifetime playtime.”
+​
+The PlaytimeStatsService in Time Memoria v2:
+   Tracks SessionSeconds per character, analogous to BetterPlaytime’s “On Character” timer (time since this login).
+   Uses the character’s /playtime total as LifetimeSeconds, giving a lifetime play horizon for pacing calculations.
+   Updates via a Framework.Update‑style loop, using UTC timestamps, pausing on logout, and persisting to configuration between sessions.
+​
+Unlike BetterPlaytime, Time Memoria:
+   Ignores “time since client launch” and any system‑wide metrics.
+   Never sends chat commands or hooks packets for its tracking; it relies solely on in‑game playtime data and internal timing.
+   This service exists only to support pacing insights; it does not feed any timer, reminder, alert, or optimization logic.
+
+Core Modules in v2
+Time Memoria v2 centers around three modules that share data but keep clear boundaries.
+
+1. Quest UI Module
+   Responsibility: Present a read‑only, filterable view of available and completed quests, based on QuestTracker’s UI patterns.
+   Data source: Bucketed quest JSON files organized by expansion band and patch (2.x/2.0/1-msq.json, 2-newera.json, etc.).
+   Behavior:
+      Lazily load bucket files only when the player navigates to that expansion/patch.
+      Allow filtering by categories (Main Scenario, New Era, Feature, Beasts, Class/Job, Seasonal, Other).
+      Never manipulate quest state or the in‑game journal; it is display‑only.
+
+2. News / Events Module
+   Responsibility: Provide a Memoria‑style panel for global FFXIV world‑state plus the player’s global pacing lines.
+   Data source: 
+      XIV ToDo world‑state feeds for maintenance, patch status, and seasonal events (no player‑specific events).
+      Pacing metrics from PlaytimeStatsService and quest completion counts.
+   Behavior:
+      Render a list or grid of upcoming/current events with simple descriptions and times.
+         Display global pacing lines:
+            “Session pacing: Xm Ys per quest.”
+            “Overall pacing: Xm Ys per quest.”
+   This module is the storyboard of “where the game is” and “how you’re moving through quests,” nothing more.
+
+3. PlaytimeStats & Pacing Module
+   Responsibility: Maintain per‑character time aggregates and derive simple pacing metrics.
+   Inputs:
+      SessionSeconds and LifetimeSeconds as described above.
+      Passive quest completion counts from QuestTracker’s logic, broken down by session and lifetime.
+​   Outputs:
+      Global pacing: session and overall minutes per quest.
+   Optional MSQ vs non‑MSQ pacing when the user enables the advanced setting:
+      MSQ quests = those present in 1-msq.json.
+      Non‑MSQ quests = any other bucket files (2-newera.json, 3-feature.json, etc.).
+   The module exposes formatted strings for the News / Events tab and, eventually, for any read‑only /echo mirror command.
+
+High‑Level Development Principles
+Time Memoria v2 follows several long‑running principles that guide every feature and refactor.
+​
+UI‑first, read‑only design
+All primary value lives in the Quest UI and News / Events windows; they are the canonical view of plugin data. Any future /echo command is secondary and must mirror existing UI content exactly.
+​
+Separation of concerns
+Quest UI knows how to load and display quests.
+News / Events knows how to present world‑state and pacing.
+PlaytimeStatsService knows how to measure time and compute averages.
+Cross‑module dependencies flow through simple, typed interfaces, never through hidden state.
+
+Compliance‑first thinking
+Every new feature is checked against the Prime Directive: no combat logs, no DPS/HPS, no duties or wipes, no automation, no performance analysis, no export of data that resembles a combat log. 
+If a feature could reasonably be misused for performance tracking, it is either redesigned or rejected.
+​
+Bucketed data and version‑aware evolution
+The quest data architecture and versioning scheme (AA.B.E.D) move together:
+      B and E describe which expansion and patch band the data covers.
+   ​   D encodes which buckets are complete (1 = MSQ, 2 = New Era, …, 9 = all buckets).
+​This alignment lets Time Memoria communicate coverage clearly while keeping the repository maintainable. More information will be available in [Versioning Specific.txt]
+
+Performance and stability
+   Lazy loading, minimal allocations, and avoiding unnecessary polling are default expectations, so the plugin is comfortable on low‑end systems. 
+   The bucketed architecture specifically aims to avoid ever loading thousands of quests at once unless the UI actually needs them.
+​
+Long‑Running Development Threads
+Rather than one monolithic roadmap, Time Memoria v2 progresses through recurring threads of work.
+​
+Thread A – Bucket Extraction and Cleanup
+   Extract and normalize quests into Data/Quests/<expansion>/<patch>/<bucket>.json.
+   Gradually eliminate references to the old monolithic data file from all code paths.
+   Maintain a simple internal checklist of which buckets are complete per patch, feeding the D digit in versioning.
+
+Thread B – Quest UI Enhancements (Non‑Automating)
+   Refine filtering, search, and categorization based on the new bucket structure.
+   Add quality‑of‑life improvements that remain strictly read‑only (e.g., clearer labels, better patch headers, simple statistics counts per bucket).
+   
+Thread C – Playtime and Pacing Refinements
+   Harden PlaytimeStatsService against edge cases (long uptime, frequent relogs, system clock changes via UTC).
+   Tune how session vs lifetime quest counts are derived and cached, ensuring alignment with QuestTracker’s completion logic.
+   Add the optional MSQ vs non‑MSQ pacing toggle once the MSQ buckets are stable.
+
+Thread D – News / Events Quality
+   Keep XIV ToDo integration minimal and robust: clear error states, simple caching, no over‑fetching.
+   Improve the layout of the News / Events tab so pacing lines and upcoming events are easy to digest at a glance.
+​
+Thread E – Documentation and Guardrails
+   Keep Prime Directive v2, Foundation Sources v2, and Versioning & Structure v2 updated as the single source of truth.
+   Maintain an “About / Compliance” section in‑plugin that clearly states the plugin cannot be used for ACT/FFLogs‑style performance analysis.
+​
+How This Foundation Guides Future Work
+   Everything added to Time Memoria v2 should answer “Which module does this belong to, and which thread does it advance?” before any code is written. 
+   When a new idea appears—be it a refined quest filter, a pacing visualization, or a small /echo helper—it is only accepted if:
+​      It stays within quest progression and pacing,
+      Fits clearly into Quest UI, News / Events, or PlaytimeStats & Pacing, and
+      Respects the compliance and performance principles outlined here.
+​
+With this foundation, Time Memoria v2 can grow steadily from a 7.5‑ready fork into a fully bucketed Dawntrail‑era quest companion without drifting back into reminders, timers, or performance tooling.

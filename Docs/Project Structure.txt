@@ -1,0 +1,136 @@
+Time Memoria Project Structure (v2)
+Repository Layout
+TimeMemoriaV2/
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── global.json
+├── LICENSE
+├── QuestTracker.sln
+├── README.md
+├── Docs/
+│ ├── Foundation Sources.txt
+│ ├── Prime Directive.txt
+│ ├── Project Structure.txt
+│ └── Versioning Specific.txt
+├── Quests/
+│ ├── 2.x/2.0/1-msq.json … 8-Other.json
+│ ├── 2.x/2.1/…
+│ ├── 3.x/3.0/…
+│ ├── 4.x/4.0/…
+│ ├── 5.x/5.0/…
+│ ├── 6.x/6.0/…
+│ └── 7.x/7.5/… # Fully bucketed quest data by expansion/patch/bucket
+​
+└── QuestTracker/ # Current plugin project, to be renamed TimeMemoria
+├── QuestTracker.csproj
+├── QuestTracker.json
+├── QuestTracker.cs # Plugin entry point
+├── Configuration.cs
+├── QuestData.cs / QuestDataManager.cs
+├── MainWindow.cs
+├── data.json # Original monolithic quest dataset (dev + transitional use)
+​
+├── images/…
+└── utils/ (DataConverter, rawdata.txt, results.json)
+​
+The first implementation thread for v2 is to rename the QuestTracker project, manifest, and plugin class to TimeMemoria, and to update the solution and manifest names accordingly. 
+After that step, QuestTracker/ effectively becomes the TimeMemoria/ plugin project while Quests/ remains the shared bucketed data source.
+
+Target Plugin Project Layout (post‑rename)
+TimeMemoria/
+├── Plugin.cs # Entry point, service registration (renamed from QuestTracker.cs)
+├── Configuration.cs # User settings (includes pacing/MSQ split options)
+├── TimeMemoria.csproj # Project file (AA.B.C.D versioning; see Versioning Specific.txt)
+├── TimeMemoria.json # Dalamud manifest (plugin name “Time Memoria”)
+├── Data/
+│ └── Quests/ # Runtime view onto ../Quests bucketed data (2.x–7.x)
+├── Models/
+│ ├── Quest.cs # Quest model (from QuestTracker)
+│ ├── PlaytimeRecord.cs # Per‑character playtime snapshot (session/lifetime + last update)
+│ └── NewsEvent.cs # XIV ToDo event data
+├── Services/
+│ ├── QuestService.cs # Quest loading, filtering, category lookup
+│ ├── PlaytimeStatsService.cs # Session/lifetime playtime + quest counts
+│ └── NewsService.cs # XIV ToDo integration + local pacing inputs
+└── UI/
+├── QuestWindow.cs # Quest browser window
+├── ConfigWindow.cs # Settings (pacing display, MSQ split toggle)
+└── NewsPanel.cs # News/Events + pacing lines
+
+This layout is the design target for v2; individual filenames may vary slightly when you perform the rename, but each logical responsibility should map cleanly onto one of these components.
+
+Development Workflow
+Thread 1 – Rename & bootstrap
+  Rename QuestTracker plugin project to TimeMemoria (csproj, manifest, namespaces, class names).
+  Point the plugin’s quest data access at the external Quests/ folder while still supporting data.json as a transitional source.
+​
+Thread 2 – Wire Quest UI to bucketed data
+  Update QuestData/QuestDataManager (or equivalent) to load quests from Quests/{expansion}/{patch}/{bucket}.json using the AA.B.C.D mapping.
+  Ensure the existing quest browser UI continues to function with the new data layout.
+
+Thread 3 – Introduce PlaytimeStatsService
+  Add PlaytimeRecord and PlaytimeStatsService to track per‑character session and lifetime playtime using UTC timestamps and IFramework.Update, only while logged in.
+  Persist stats in Configuration and expose read‑only properties for UI consumption.
+
+Thread 4 – Restore News / Events
+  Implement NewsService and NewsPanel that render XIV ToDo world‑state rows (maintenance, events, patch status) plus two global pacing lines based on PlaytimeStatsService.
+  Add an off‑by‑default setting for optional MSQ vs non‑MSQ pacing, using Quest categories to classify MSQ quests.
+
+Thread 5 – Polish, docs, and review prep
+  Align Versioning (e.g., 14.2.0.1) with coverage and module state.
+  Verify no chat commands, /echo, or notifications exist.
+  Update README and Docs to match the implemented structure and behavior.
+
+All threads must leave the plugin in a buildable, testable state and update documentation when behavior changes.
+
+Module Architecture
+Quest UI (QuestTracker evolution)
+  QuestService loads quest data from bucketed JSON files under Quests/, falling back to QuestTracker/data.json only where migration is incomplete.
+  It handles filters by expansion (2.x–7.x), patch (x.0–x.5), and category/bucket (MSQ, New Era, Feature, Beasts, Class, Seasonal, Leve, Other), aligned with the D digit in AA.B.C.D.
+  ​QuestWindow remains a read‑only quest journal browser with no automation or game interaction; it displays progress and metadata only.
+
+News / Events (world‑state + pacing)
+  NewsService calls the XIV ToDo API (or its successor) to fetch global events and patch/maintenance information; it holds these results in NewsEvent objects.
+​
+NewsPanel renders:
+  News/Events rows from XIV ToDo (maintenance, patch info, seasonal events).
+
+Global pacing lines based on PlaytimeStatsService:
+  “Session pacing: Xm Ys per quest.”
+  “Overall pacing: Xm Ys per quest.”
+  Optional MSQ vs non‑MSQ pacing when enabled in the ConfigWindow, using category paths that include “Main Scenario” to classify MSQ quests.
+    All output is confined to this window; Time Memoria defines no chat commands and sends nothing to /echo.
+
+PlaytimeStats & Pacing
+PlaytimeStatsService is responsible for:
+  Tracking session playtime by accumulating elapsed seconds between Framework updates while the player is logged in.
+  Tracking lifetime playtime since Time Memoria first registered the character, persisted in Configuration.
+  Maintaining session and lifetime quest counts (and, optionally, MSQ vs non‑MSQ counts) based on QuestService’s completion metadata.
+  Exposing derived pacing metrics (seconds per quest) without any scoring, ranking, or grading.
+
+PlaytimeRecord is a simple model containing:
+  Character identifier (name + world).
+  Lifetime playtime, session playtime.
+  LastUpdateUtc timestamp used for delta calculation.
+
+Key Design Decisions
+  UI‑Only Output
+  Time Memoria v2 does not register chat commands or write to chat, system messages, overlays, or toasts. All information is presented in the Quest and News windows.
+  No Combat or Performance Data
+  The plugin never reads combat logs, damage/healing values, duty results, wipes, or boss names, and it does not export data suitable for ACT/FFLogs‑style performance analysis.
+  
+Pacing, Not Evaluation
+  Pacing lines are descriptive only; they are not used to rank players, content, or builds. 
+  There are no goals, thresholds, or color‑coded “good/bad” states. 
+  Optional MSQ pacing exists solely to account for cutscene‑heavy story quests.
+  If an enduser chooses to evaulate themselves as "good/bad" states that is up to the end user and not the objective of Time Memoria.
+  
+Separation of Concerns
+  Quest UI, News/Events, and PlaytimeStatsService are loosely coupled via simple data contracts. Quest UI does not depend on timing, and PlaytimeStatsService does not manipulate quests or UI. This keeps reasoning, testing, and review straightforward.
+
+Bucketed Data as a First‑Class Asset
+  The Quests/ folder is the authoritative quest dataset for Time Memoria v2. 
+  The original QuestTracker/data.json remains only as a transitional or development helper and will be phased out as buckets are confirmed complete ahead of the 8.0 window.
+
+This structure gives Time Memoria v2 a clear, review‑friendly shape: a QuestTracker evolution with a bucketed quest dataset, a world‑state News panel, and a small pacing layer, all contained entirely within the UI.
