@@ -1,27 +1,32 @@
 ﻿using Dalamud.Game.Command;
+using Dalamud.IoC;
 using Dalamud.Plugin;
 using Dalamud.Plugin.Services;
+using Dalamud.Interface.Windowing;
 
 namespace TimeMemoria
 {
-    public sealed class Plugin : IDalamudPlugin
+    public class Plugin : IDalamudPlugin
     {
-        public string Name => "TimeMemoria";
+        public string Name => "Time Memoria";
 
-        private const string CommandName = "/timememoria";
-        
-        private const string CommandNameAlt = "/tm";
+        public QuestData QuestData { get; set; } = new();
 
-        public static IDalamudPluginInterface PluginInterface { get; private set; }
-        public static ICommandManager CommandManager { get; private set; }
-        public static IDataManager DataManager { get; private set; }
-        public static IGameGui GameGui { get; private set; }
-        public static IPluginLog PluginLog { get; private set; }
-        private Configuration Configuration { get; init; }
-        private QuestDataManager QuestDataManager { get; init; }
-        private MainWindow MainWindow { get; init; }
+        [PluginService]
+        public IDalamudPluginInterface PluginInterface { get; init; } = null!;
+        [PluginService]
+        public ICommandManager CommandManager { get; init; } = null!;
+        [PluginService]
+        public IDataManager DataManager { get; init; } = null!;
+        [PluginService]
+        public IGameGui GameGui { get; init; } = null!;
+        [PluginService]
+        public IPluginLog PluginLog { get; init; } = null!;
 
-        public QuestData QuestData = null!;
+        private readonly Configuration configuration;
+        private readonly MainWindow mainWindow;
+        private readonly QuestDataManager questDataManager;
+        private readonly WindowSystem windowSystem;  // ADD THIS LINE
 
         public Plugin(
             IDalamudPluginInterface pluginInterface,
@@ -36,54 +41,50 @@ namespace TimeMemoria
             GameGui = gameGui;
             PluginLog = pluginLog;
 
-            //DataConverter dc = new DataConverter(pluginInterface, dataManager, pluginLog);
+            configuration = PluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
+            configuration.Initialize(PluginInterface);
 
-            Configuration = PluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
-            Configuration.Initialize(PluginInterface);
-
-            QuestDataManager = new QuestDataManager(pluginInterface, pluginLog, this, Configuration);
-            MainWindow = new MainWindow(this, QuestDataManager,Configuration);
-
-            CommandManager.AddHandler(CommandName, new CommandInfo(OnCommand)
-            {
-                HelpMessage = "Opens Time Memoria"
-            });
+            questDataManager = new QuestDataManager(PluginInterface, PluginLog, this, configuration);
             
-            CommandManager.AddHandler(CommandNameAlt, new CommandInfo(OnCommand)
+            // ADD THESE THREE LINES:
+            windowSystem = new WindowSystem("TimeMemoriaWindows");
+            mainWindow = new MainWindow(this, questDataManager, configuration);
+            windowSystem.AddWindow(mainWindow);
+
+            CommandManager.AddHandler("/timememoria", new CommandInfo(OnCommand)
             {
-                HelpMessage = "Opens Time Memoria"
+                HelpMessage = "Toggle Time Memoria UI"
+            });
+            CommandManager.AddHandler("/tm", new CommandInfo(OnCommand)
+            {
+                HelpMessage = "Toggle Time Memoria UI"
             });
 
-            PluginInterface.UiBuilder.Draw += DrawUI;
-            PluginInterface.UiBuilder.OpenConfigUi += DrawConfigUI;
-            PluginInterface.UiBuilder.OpenMainUi += DrawMainUI;
+            PluginInterface.UiBuilder.Draw += DrawUi;
+            PluginInterface.UiBuilder.OpenConfigUi += DrawConfigUi;
+            PluginInterface.UiBuilder.OpenMainUi += () => mainWindow.IsOpen = true;
         }
 
         public void Dispose()
         {
-            MainWindow.Dispose();
-            Configuration.Reset();
-            CommandManager.RemoveHandler(CommandName);
-            CommandManager.RemoveHandler(CommandNameAlt);
+            mainWindow.Dispose();
+            CommandManager.RemoveHandler("/timememoria");
+            CommandManager.RemoveHandler("/tm");
         }
 
-        private void OnCommand(string command, string args) => DrawMainUI();
-
-        private void DrawUI()
+        private void OnCommand(string command, string args)
         {
-            MainWindow.Draw();
+            mainWindow.IsOpen = !mainWindow.IsOpen;
         }
 
-        private void DrawConfigUI()
+        private void DrawUi()
         {
-            MainWindow.Visible = true;
-            MainWindow.SettingsVisible = true;
+            windowSystem.Draw();  // CHANGE THIS LINE
         }
 
-        private void DrawMainUI()
+        private void DrawConfigUi()
         {
-            MainWindow.Visible = true;
-            MainWindow.SettingsVisible = false;
+            mainWindow.IsOpen = true;
         }
     }
 }

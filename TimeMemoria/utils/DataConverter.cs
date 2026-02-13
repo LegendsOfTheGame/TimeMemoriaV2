@@ -6,15 +6,19 @@ using Dalamud.Plugin;
 using Dalamud.Plugin.Services;
 using Newtonsoft.Json;
 
+
 namespace TimeMemoria;
+
 
 public class DataConverter
 {
-    public static IDalamudPluginInterface PluginInterface { get; private set; }
-    public static IDataManager DataManager { get; private set; }
-    public static IPluginLog PluginLog { get; private set; }
+    public static IDalamudPluginInterface PluginInterface { get; private set; } = null!;
+    public static IDataManager DataManager { get; private set; } = null!;
+    public static IPluginLog PluginLog { get; private set; } = null!;
+
 
     private string DirPath;
+
 
     public DataConverter(IDalamudPluginInterface pluginInterface, IDataManager dataManager, IPluginLog pluginLog)
     {
@@ -22,10 +26,12 @@ public class DataConverter
         DataManager = dataManager;
         PluginLog = pluginLog;
 
-        DirPath = PluginInterface.AssemblyLocation.Directory.Parent.Parent.FullName + "/utils";
+
+        DirPath = PluginInterface.AssemblyLocation.Directory?.Parent?.Parent?.FullName + "/utils" ?? string.Empty;
         
         ConvertRawDataTxt();
     }
+
 
     private void ConvertRawDataTxt()
     {
@@ -36,17 +42,20 @@ public class DataConverter
             List<string> lines = File.ReadLines(rawPath).ToList();
             PluginLog.Debug("Finished reading");
 
+
             List<Quest> RawQuests = new List<Quest>();
+
 
             foreach (var line in lines)
             {
                 string[] tokens = line.Split("\t");
 
+
                 Quest q = new Quest();
                 q.Title = tokens[0];
                 q.Area = tokens[1];
-                var questLookup = DataManager.GetExcelSheet<Lumina.Excel.Sheets.Quest>().Where(quest => quest.Name.ToString().Contains(q.Title));
-                if (questLookup.Any())
+                var questLookup = DataManager.GetExcelSheet<Lumina.Excel.Sheets.Quest>()?.Where(quest => quest.Name.ToString().Contains(q.Title));
+                if (questLookup != null && questLookup.Any())
                 {
                     q.Id = new List<uint>();
                     foreach (var quest in questLookup)
@@ -59,10 +68,13 @@ public class DataConverter
                     PluginLog.Error($"Match not found for {q.Title}");
                 }
 
+
                 q.Level = short.Parse(tokens[2]);
+
 
                 RawQuests.Add(q);
             }
+
 
             WriteResults(RawQuests);
         }
@@ -73,9 +85,11 @@ public class DataConverter
         }
     }
 
+
     private void WriteResults(Object obj)
     {
-        PluginLog.Debug("Wrting to results.json");
+        PluginLog.Debug("Writing to results.json");
+
 
         var resultPath = Path.Combine(DirPath, "results.json");
         JsonSerializerSettings config = new JsonSerializerSettings
@@ -83,6 +97,7 @@ public class DataConverter
         var json = JsonConvert.SerializeObject(obj, Formatting.Indented, config);
         File.WriteAllText(resultPath, json);
 
-        PluginLog.Debug("Finishing writing to results.json");
+
+        PluginLog.Debug("Finished writing to results.json");
     }
 }
