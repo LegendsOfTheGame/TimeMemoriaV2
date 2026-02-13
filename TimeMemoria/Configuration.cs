@@ -2,6 +2,7 @@
 using Dalamud.Plugin;
 using System;
 using System.Collections.Generic;
+using TimeMemoria.Models;
 
 namespace TimeMemoria
 {
@@ -21,6 +22,16 @@ namespace TimeMemoria
         
         // Lazy-loading: cache of fully completed buckets
         public Dictionary<string, bool> CompletedBuckets { get; set; } = new();
+
+        // ← ADD THE NEW PROPERTY RIGHT HERE ↓
+    
+    /// <summary>
+    /// Per-character playtime records, keyed by "CharacterName@WorldName".
+    /// Persists session and lifetime playtime, quest completion counts.
+    /// </summary>
+    public Dictionary<string, PlaytimeRecord> PlaytimeRecords { get; set; } = new();
+
+    // ← END OF NEW PROPERTY ↑
 
         [NonSerialized]
         private IDalamudPluginInterface? pluginInterface;

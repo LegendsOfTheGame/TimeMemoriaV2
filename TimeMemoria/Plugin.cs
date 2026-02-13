@@ -3,6 +3,8 @@ using Dalamud.IoC;
 using Dalamud.Plugin;
 using Dalamud.Plugin.Services;
 using Dalamud.Interface.Windowing;
+using TimeMemoria.Services;  // ← ADDED
+
 
 namespace TimeMemoria
 {
@@ -26,14 +28,20 @@ namespace TimeMemoria
         private readonly Configuration configuration;
         private readonly MainWindow mainWindow;
         private readonly QuestDataManager questDataManager;
-        private readonly WindowSystem windowSystem;  // ADD THIS LINE
+        private readonly WindowSystem windowSystem;
+        private readonly IFramework framework;                          // ← ADDED
+        private readonly PlaytimeStatsService playtimeStatsService;     // ← ADDED
 
         public Plugin(
             IDalamudPluginInterface pluginInterface,
             ICommandManager commandManager,
             IDataManager dataManager,
             IGameGui gameGui,
-            IPluginLog pluginLog)
+            IPluginLog pluginLog,
+            IFramework framework,        // ← ADDED
+            IClientState clientState,
+            IPlayerState playerState,
+            IChatGui chatGui)    // ← ADDED
         {
             PluginInterface = pluginInterface;
             CommandManager = commandManager;
@@ -46,7 +54,10 @@ namespace TimeMemoria
 
             questDataManager = new QuestDataManager(PluginInterface, PluginLog, this, configuration);
             
-            // ADD THESE THREE LINES:
+            // ← ADDED THESE LINES ↓
+            this.framework = framework;
+            playtimeStatsService = new PlaytimeStatsService(framework, clientState, playerState, chatGui, configuration);
+            
             windowSystem = new WindowSystem("TimeMemoriaWindows");
             mainWindow = new MainWindow(this, questDataManager, configuration);
             windowSystem.AddWindow(mainWindow);
@@ -67,6 +78,7 @@ namespace TimeMemoria
 
         public void Dispose()
         {
+            playtimeStatsService?.Dispose();  // ← ADDED THIS LINE
             mainWindow.Dispose();
             CommandManager.RemoveHandler("/timememoria");
             CommandManager.RemoveHandler("/tm");
@@ -79,7 +91,7 @@ namespace TimeMemoria
 
         private void DrawUi()
         {
-            windowSystem.Draw();  // CHANGE THIS LINE
+            windowSystem.Draw();
         }
 
         private void DrawConfigUi()
