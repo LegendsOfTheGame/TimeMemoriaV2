@@ -99,21 +99,26 @@ namespace TimeMemoria.Services
             this.chatGui = chatGui ?? throw new ArgumentNullException(nameof(chatGui));
             this.configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
 
-            // Subscribe to Framework.Update event for time tracking
             this.framework.Update += OnFrameworkUpdate;
-
-            // Subscribe to login/logout events for session management
             this.clientState.Login += OnLogin;
             this.clientState.Logout += OnLogout;
-
-            // Subscribe to chat messages to capture /playtime output
             this.chatGui.ChatMessage += OnChatMessage;
 
-            // Initialize current character if already logged in
             if (this.clientState.IsLoggedIn)
             {
                 InitializeCurrentCharacter();
             }
+        }
+
+        /// <summary>
+        /// Seeds TotalQuestsCompleted from the current quest data on every login.
+        /// Called by QuestDataManager after quest data is ready.
+        /// </summary>
+        public void SeedLifetimeQuestCount(int totalCompleted)
+        {
+            if (CurrentRecord == null) return;
+            CurrentRecord.TotalQuestsCompleted = totalCompleted;
+            SaveCurrentRecord();
         }
 
         /// <summary>
@@ -128,7 +133,6 @@ namespace TimeMemoria.Services
             CurrentRecord.SessionQuestsCompleted++;
             CurrentRecord.TotalQuestsCompleted++;
 
-            // Persist immediately to avoid data loss
             SaveCurrentRecord();
         }
 
@@ -143,49 +147,43 @@ namespace TimeMemoria.Services
 
             return $"{minutes}m {seconds}s per quest";
         }
+
         private void OnFrameworkUpdate(IFramework framework)
-{
-    // Only track time when logged in
-    if (!this.clientState.IsLoggedIn || CurrentRecord == null)
-        return;
+        {
+            if (!this.clientState.IsLoggedIn || CurrentRecord == null)
+                return;
 
-    var now = DateTime.UtcNow;
-    var delta = now - CurrentRecord.LastUpdateUtc;
+            var now = DateTime.UtcNow;
+            var delta = now - CurrentRecord.LastUpdateUtc;
 
-    // Skip if delta is negative (system clock adjustment) or excessive (likely a bug)
-    if (delta < TimeSpan.Zero || delta > TimeSpan.FromMinutes(5))
-    {
-        CurrentRecord.LastUpdateUtc = now;
-        return;
-    }
+            if (delta < TimeSpan.Zero || delta > TimeSpan.FromMinutes(5))
+            {
+                CurrentRecord.LastUpdateUtc = now;
+                return;
+            }
 
-    // Accumulate session time only
-    CurrentRecord.SessionPlaytime += delta;
-    CurrentRecord.LastUpdateUtc = now;
+            CurrentRecord.SessionPlaytime += delta;
+            CurrentRecord.LastUpdateUtc = now;
 
-    // ✅ REPLACE lines 169-172 with this:
-    // Persist periodically (every 5 minutes of wall-clock time)
-    if ((now - lastSaveTime).TotalMinutes >= 5)
-    {
-        SaveCurrentRecord();
-        lastSaveTime = now;
-    }
-}
+            if ((now - lastSaveTime).TotalMinutes >= 5)
+            {
+                SaveCurrentRecord();
+                lastSaveTime = now;
+            }
+        }
 
-                private void OnLogin()
+        private void OnLogin()
         {
             InitializeCurrentCharacter();
         }
 
         private void OnLogout(int type, int code)
         {
-            // Save final state before clearing
             if (CurrentRecord != null)
             {
                 SaveCurrentRecord();
             }
 
-            // Reset session state
             CurrentRecord = null;
             currentCharacterId = null;
         }
@@ -197,14 +195,11 @@ namespace TimeMemoria.Services
             ref SeString message,
             ref bool isHandled)
         {
-            // Only process system messages (where /playtime output appears)
             if (type != XivChatType.SystemMessage || CurrentRecord == null)
                 return;
 
             var messageText = message.TextValue;
 
-            // Match "/playtime" output format: "Total Play Time: X days, Y hours, Z minutes"
-            // Example: "Total Play Time: 16 hours, 22 minutes"
             var match = System.Text.RegularExpressions.Regex.Match(
                 messageText,
                 @"Total Play Time:\s*(?:(\d+)\s*days?,\s*)?(?:(\d+)\s*hours?,\s*)?(?:(\d+)\s*minutes?)?",
@@ -216,7 +211,6 @@ namespace TimeMemoria.Services
                 var hours = match.Groups[2].Success ? int.Parse(match.Groups[2].Value) : 0;
                 var minutes = match.Groups[3].Success ? int.Parse(match.Groups[3].Value) : 0;
 
-                // Update lifetime playtime from game data
                 CurrentRecord.LifetimePlaytime = TimeSpan.FromDays(days) + TimeSpan.FromHours(hours) + TimeSpan.FromMinutes(minutes);
                 SaveCurrentRecord();
             }
@@ -224,26 +218,21 @@ namespace TimeMemoria.Services
 
         private void InitializeCurrentCharacter()
         {
-            // Check if player data is loaded
             if (!this.playerState.IsLoaded)
                 return;
 
-            // Generate character ID: "Name@World"
             var worldName = this.playerState.HomeWorld.ValueNullable?.Name.ToString() ?? "Unknown";
             currentCharacterId = $"{this.playerState.CharacterName}@{worldName}";
 
-            // Load or create record
             if (this.configuration.PlaytimeRecords.TryGetValue(currentCharacterId, out var existingRecord))
             {
                 CurrentRecord = existingRecord;
-                // Reset session state for new session
                 CurrentRecord.SessionPlaytime = TimeSpan.Zero;
                 CurrentRecord.SessionQuestsCompleted = 0;
                 CurrentRecord.LastUpdateUtc = DateTime.UtcNow;
             }
             else
             {
-                // Create new record for this character
                 CurrentRecord = new PlaytimeRecord
                 {
                     CharacterId = currentCharacterId,
@@ -252,6 +241,9 @@ namespace TimeMemoria.Services
                 this.configuration.PlaytimeRecords[currentCharacterId] = CurrentRecord;
                 SaveCurrentRecord();
             }
+
+            // TotalQuestsCompleted will be seeded by QuestDataManager
+            // after quest data is ready via SeedLifetimeQuestCount()
         }
 
         private void SaveCurrentRecord()
@@ -259,10 +251,7 @@ namespace TimeMemoria.Services
             if (currentCharacterId == null || CurrentRecord == null)
                 return;
 
-            // Ensure record is in configuration dictionary
             this.configuration.PlaytimeRecords[currentCharacterId] = CurrentRecord;
-
-            // Persist configuration to disk
             this.configuration.Save();
         }
 
@@ -271,13 +260,11 @@ namespace TimeMemoria.Services
             if (disposed)
                 return;
 
-            // Save final state
             if (CurrentRecord != null)
             {
                 SaveCurrentRecord();
             }
 
-            // Unsubscribe from events
             this.framework.Update -= OnFrameworkUpdate;
             this.clientState.Login -= OnLogin;
             this.clientState.Logout -= OnLogout;

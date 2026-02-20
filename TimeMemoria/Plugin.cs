@@ -3,8 +3,7 @@ using Dalamud.IoC;
 using Dalamud.Plugin;
 using Dalamud.Plugin.Services;
 using Dalamud.Interface.Windowing;
-using TimeMemoria.Services;  // ← ADDED
-
+using TimeMemoria.Services;
 
 namespace TimeMemoria
 {
@@ -29,8 +28,9 @@ namespace TimeMemoria
         private readonly MainWindow mainWindow;
         private readonly QuestDataManager questDataManager;
         private readonly WindowSystem windowSystem;
-        private readonly IFramework framework;                          // ← ADDED
-        private readonly PlaytimeStatsService playtimeStatsService;     // ← ADDED
+        private readonly IFramework framework;
+        private readonly PlaytimeStatsService playtimeStatsService;
+        private readonly NewsService newsService;
 
         public Plugin(
             IDalamudPluginInterface pluginInterface,
@@ -38,10 +38,10 @@ namespace TimeMemoria
             IDataManager dataManager,
             IGameGui gameGui,
             IPluginLog pluginLog,
-            IFramework framework,        // ← ADDED
+            IFramework framework,
             IClientState clientState,
             IPlayerState playerState,
-            IChatGui chatGui)    // ← ADDED
+            IChatGui chatGui)
         {
             PluginInterface = pluginInterface;
             CommandManager = commandManager;
@@ -52,14 +52,15 @@ namespace TimeMemoria
             configuration = PluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
             configuration.Initialize(PluginInterface);
 
-            questDataManager = new QuestDataManager(PluginInterface, PluginLog, this, configuration);
-            
-            // ← ADDED THESE LINES ↓
+            // playtimeStatsService MUST come before questDataManager
             this.framework = framework;
             playtimeStatsService = new PlaytimeStatsService(framework, clientState, playerState, chatGui, configuration);
-            
+            newsService = new NewsService(PluginLog);
+            questDataManager = new QuestDataManager(PluginInterface, PluginLog, this, configuration, playtimeStatsService);
+
             windowSystem = new WindowSystem("TimeMemoriaWindows");
-            mainWindow = new MainWindow(this, questDataManager, configuration);
+            mainWindow = new MainWindow(this, questDataManager, configuration,
+                                        playtimeStatsService, newsService);
             windowSystem.AddWindow(mainWindow);
 
             CommandManager.AddHandler("/timememoria", new CommandInfo(OnCommand)
@@ -78,10 +79,9 @@ namespace TimeMemoria
 
         public void Dispose()
         {
-            playtimeStatsService?.Dispose();  // ← ADDED THIS LINE
             mainWindow.Dispose();
-            CommandManager.RemoveHandler("/timememoria");
-            CommandManager.RemoveHandler("/tm");
+            playtimeStatsService?.Dispose();
+            newsService?.Dispose();
         }
 
         private void OnCommand(string command, string args)
