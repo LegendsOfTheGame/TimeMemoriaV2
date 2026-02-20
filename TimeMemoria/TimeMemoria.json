@@ -1,9 +1,9 @@
 {
-    "Author": "Legends of the Game", 
+    "Author": "Legends of the Game",
     "Name": "Time Memoria",
-    "Punchline": "Quest progression and pacing tracker",
-    "Description": "Short description emphasizing quest pacing, no performance tracking",
-    "RepoUrl": "https://github.com/Legends-of-the-Game/Time-Memoria",
+    "Punchline": "Remember every step, Warriors of Light.",
+    "Description": "Track every quest in FFXIV. See completion, sort by patch or category, and keep every step of your adventure in sight.",
+    "RepoUrl": "https://github.com/LegendsOfTheGame/TimeMemoriaV2",
     "Tags": [
         "quest",
         "quests",
