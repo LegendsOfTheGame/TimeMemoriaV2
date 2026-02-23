@@ -33,4 +33,5 @@ public class Quest
     public string Gc { get; set; } = string.Empty;
     public int Level { get; set; }
     public bool Hide { get; set; }
+    public string? Chain { get; set; }
 }

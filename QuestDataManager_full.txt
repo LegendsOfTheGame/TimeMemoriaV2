@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -28,7 +28,7 @@ namespace TimeMemoria
 
         // Cache for path-based bucket loads used by the new Quests tab UI.
         // Keyed by bucketPath (e.g. "2.x/2.0/msq"), value is filtered quest list.
-        // These are never unloaded — they are lightweight and UI-driven only.
+        // These are never unloaded â€” they are lightweight and UI-driven only.
         private readonly Dictionary<string, List<Quest>> _directBucketCache = new();
 
         public QuestDataManager(
@@ -190,13 +190,13 @@ namespace TimeMemoria
             var filtered = new List<Quest>();
             foreach (var quest in raw)
             {
-                // Starting city filter — Area field on MSQ, Start field on others
+                // Starting city filter â€” Area field on MSQ, Start field on others
                 if (!configuration.StartArea.IsNullOrEmpty())
                 {
                     if (!quest.Area.IsNullOrEmpty() && quest.Area != configuration.StartArea)
                     {
                         // Only filter by Area if other city variants of this
-                        // quest title exist — i.e. Area is one of the three cities
+                        // quest title exist â€” i.e. Area is one of the three cities
                         bool isStartingCityVariant =
                             quest.Area == "Gridania"      ||
                             quest.Area == "Limsa Lominsa" ||

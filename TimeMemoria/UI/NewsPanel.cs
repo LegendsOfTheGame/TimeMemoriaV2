@@ -9,11 +9,18 @@ namespace TimeMemoria.UI
 {
     public static class NewsPanel
     {
-        public static void Draw(NewsService newsService, PlaytimeStatsService playtimeStats)
+        public static void Draw(NewsService newsService, PlaytimeStatsService playtimeStats,
+            Configuration configuration)
         {
             newsService.Poll();
 
             ImGui.BeginChild("##news_tab", ImGuiHelpers.ScaledVector2(0), true);
+
+            DrawCharacterInformationSection(configuration);
+
+            ImGui.Spacing();
+            ImGui.Separator();
+            ImGui.Spacing();
 
             DrawPacingSection(playtimeStats);
 
@@ -44,6 +51,45 @@ namespace TimeMemoria.UI
             ImGui.EndChild();
         }
 
+        private static void DrawCharacterInformationSection(Configuration configuration)
+        {
+            ImGui.TextColored(new Vector4(0.5f, 0.8f, 1.0f, 1.0f), "Character Information");
+            ImGui.Separator();
+            ImGui.Spacing();
+
+            ImGui.Text("Starting City:");
+            ImGui.SameLine();
+            ImGui.TextDisabled(string.IsNullOrEmpty(configuration.StartArea)
+                ? "Not Determined"
+                : configuration.StartArea);
+
+            ImGui.Text("Starting Class:");
+            ImGui.SameLine();
+            ImGui.TextDisabled(configuration.StartClass == 0
+                ? "Not Determined"
+                : GetStartClassName(configuration.StartClass));
+
+            ImGui.Text("Grand Company:");
+            ImGui.SameLine();
+            ImGui.TextDisabled(string.IsNullOrEmpty(configuration.GrandCompany)
+                ? "Not Selected"
+                : configuration.GrandCompany);
+        }
+
+        private static string GetStartClassName(uint startClass) => startClass switch
+        {
+            65822 => "Gladiator",
+            66089 => "Pugilist",
+            65848 => "Marauder",
+            65754 => "Lancer",
+            65755 => "Archer",
+            65638 => "Rogue",
+            65747 => "Conjurer",
+            65882 => "Thaumaturge",
+            65990 => "Arcanist",
+            _     => "Unknown"
+        };
+
         private static void DrawPacingSection(PlaytimeStatsService stats)
         {
             ImGui.TextColored(new Vector4(0.5f, 0.8f, 1.0f, 1.0f), "Quest Pacing");
@@ -62,7 +108,7 @@ namespace TimeMemoria.UI
 
             if (data.Maintenance != null)
             {
-                var m = data.Maintenance;
+                var m   = data.Maintenance;
                 var now = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
 
                 bool isOngoing = m.Start.HasValue && m.Start.Value <= now
@@ -73,6 +119,7 @@ namespace TimeMemoria.UI
 
                 if (m.Start.HasValue)
                     ImGui.TextDisabled($"  Starts: {FormatUtcUnix(m.Start.Value)}");
+
                 if (m.End.HasValue)
                 {
                     ImGui.TextDisabled($"  Ends:   {FormatUtcUnix(m.End.Value)}");
@@ -105,15 +152,15 @@ namespace TimeMemoria.UI
             ImGui.Separator();
             ImGui.Spacing();
 
-            var now = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+            var  now       = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
             bool anyActive = false;
 
             foreach (var ev in data.Events)
             {
                 if (ev.Title == null) continue;
 
-                bool active = ev.Start.HasValue && ev.Start.Value <= now
-                              && ev.End.HasValue && ev.End.Value > now;
+                bool active   = ev.Start.HasValue && ev.Start.Value <= now
+                                && ev.End.HasValue && ev.End.Value > now;
                 bool upcoming = ev.Start.HasValue && ev.Start.Value > now;
 
                 if (!active && !upcoming) continue;
@@ -124,7 +171,8 @@ namespace TimeMemoria.UI
                 if (active && ev.End.HasValue)
                 {
                     var remaining = TimeSpan.FromSeconds(ev.End.Value - now);
-                    ImGui.TextDisabled($"    Ends in: {FormatSpan(remaining)}  ({FormatUtcUnix(ev.End.Value)})");
+                    ImGui.TextDisabled(
+                        $"    Ends in: {FormatSpan(remaining)}  ({FormatUtcUnix(ev.End.Value)})");
                 }
                 else if (upcoming && ev.Start.HasValue)
                 {

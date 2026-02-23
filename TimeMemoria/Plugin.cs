@@ -31,6 +31,7 @@ namespace TimeMemoria
         private readonly IFramework framework;
         private readonly PlaytimeStatsService playtimeStatsService;
         private readonly NewsService newsService;
+        private readonly TocService tocService;
 
         public Plugin(
             IDalamudPluginInterface pluginInterface,
@@ -44,23 +45,36 @@ namespace TimeMemoria
             IChatGui chatGui)
         {
             PluginInterface = pluginInterface;
-            CommandManager = commandManager;
-            DataManager = dataManager;
-            GameGui = gameGui;
-            PluginLog = pluginLog;
+            CommandManager  = commandManager;
+            DataManager     = dataManager;
+            GameGui         = gameGui;
+            PluginLog       = pluginLog;
 
-            configuration = PluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
+            configuration = PluginInterface.GetPluginConfig() as Configuration
+                            ?? new Configuration();
             configuration.Initialize(PluginInterface);
 
-            // playtimeStatsService MUST come before questDataManager
-            this.framework = framework;
-            playtimeStatsService = new PlaytimeStatsService(framework, clientState, playerState, chatGui, configuration);
-            newsService = new NewsService(PluginLog);
-            questDataManager = new QuestDataManager(PluginInterface, PluginLog, this, configuration, playtimeStatsService);
+            this.framework       = framework;
+            playtimeStatsService = new PlaytimeStatsService(
+                                       framework, clientState, playerState,
+                                       chatGui, configuration);
+            newsService          = new NewsService(PluginLog);
+            questDataManager     = new QuestDataManager(
+                                       PluginInterface, PluginLog, this,
+                                       configuration, playtimeStatsService);
+
+            // Resolve toc.json path — sits in Quests/ alongside the bucket files
+            var pluginDir  = PluginInterface.AssemblyLocation.DirectoryName!;
+            var repoRoot   = System.IO.Path.GetDirectoryName(
+                                 System.IO.Path.GetDirectoryName(
+                                     System.IO.Path.GetDirectoryName(pluginDir)!)!)!;
+            var tocPath    = System.IO.Path.Combine(repoRoot, "Quests", "toc.json");
+            tocService     = new TocService(PluginLog, tocPath);
 
             windowSystem = new WindowSystem("TimeMemoriaWindows");
-            mainWindow = new MainWindow(this, questDataManager, configuration,
-                                        playtimeStatsService, newsService);
+            mainWindow   = new MainWindow(
+                               this, questDataManager, configuration,
+                               playtimeStatsService, newsService, tocService);
             windowSystem.AddWindow(mainWindow);
 
             CommandManager.AddHandler("/timememoria", new CommandInfo(OnCommand)
@@ -72,9 +86,9 @@ namespace TimeMemoria
                 HelpMessage = "Toggle Time Memoria UI"
             });
 
-            PluginInterface.UiBuilder.Draw += DrawUi;
+            PluginInterface.UiBuilder.Draw        += DrawUi;
             PluginInterface.UiBuilder.OpenConfigUi += DrawConfigUi;
-            PluginInterface.UiBuilder.OpenMainUi += () => mainWindow.IsOpen = true;
+            PluginInterface.UiBuilder.OpenMainUi  += () => mainWindow.IsOpen = true;
         }
 
         public void Dispose()
