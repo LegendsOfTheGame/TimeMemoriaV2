@@ -10,6 +10,7 @@ using FFXIVClientStructs.FFXIV.Client.Game;
 using Newtonsoft.Json;
 using TimeMemoria.Services;
 
+
 namespace TimeMemoria
 {
     class QuestDataManager
@@ -31,6 +32,7 @@ namespace TimeMemoria
         // These are never unloaded — they are lightweight and UI-driven only.
         private readonly Dictionary<string, List<Quest>> _directBucketCache = new();
 
+
         public QuestDataManager(
             IDalamudPluginInterface pluginInterface,
             IPluginLog pluginLog,
@@ -48,6 +50,7 @@ namespace TimeMemoria
             PreloadSeasonalContent();
         }
 
+
         private void PreloadSeasonalContent()
         {
             var seasonalStubs = FindAllStubsWithStrategy(plugin.QuestData, "AlwaysLoad");
@@ -61,6 +64,7 @@ namespace TimeMemoria
             pluginLog.Info($"Pre-loaded {seasonalStubs.Count} seasonal content buckets");
         }
 
+
         private List<QuestData> FindAllStubsWithStrategy(QuestData root, string strategy)
         {
             var result = new List<QuestData>();
@@ -73,6 +77,7 @@ namespace TimeMemoria
 
             return result;
         }
+
 
         private void LoadLegacyQuestData()
         {
@@ -102,6 +107,7 @@ namespace TimeMemoria
                 pluginLog.Error(e.Message);
             }
         }
+
 
         public bool LoadBucketIfNeeded(QuestData stub, bool forceLoad = false)
         {
@@ -168,6 +174,7 @@ namespace TimeMemoria
             return true;
         }
 
+
         /// <summary>
         /// Loads a bucket directly by path, applies starting city / grand company /
         /// start class filters, and returns the filtered quest list.
@@ -190,13 +197,10 @@ namespace TimeMemoria
             var filtered = new List<Quest>();
             foreach (var quest in raw)
             {
-                // Starting city filter — Area field on MSQ, Start field on others
                 if (!configuration.StartArea.IsNullOrEmpty())
                 {
                     if (!quest.Area.IsNullOrEmpty() && quest.Area != configuration.StartArea)
                     {
-                        // Only filter by Area if other city variants of this
-                        // quest title exist — i.e. Area is one of the three cities
                         bool isStartingCityVariant =
                             quest.Area == "Gridania"      ||
                             quest.Area == "Limsa Lominsa" ||
@@ -209,18 +213,15 @@ namespace TimeMemoria
                         continue;
                 }
 
-                // Grand company filter
                 if (!configuration.GrandCompany.IsNullOrEmpty() &&
                     !quest.Gc.IsNullOrEmpty() &&
                     quest.Gc != configuration.GrandCompany)
                     continue;
 
-                // Start class filter
                 if (configuration.StartClass != 0 &&
                     quest.Id.Contains(configuration.StartClass))
                     continue;
 
-                // Branching quest mutual exclusion
                 if ((QuestManager.IsQuestComplete(67001) && (quest.Id.Contains(67002) || quest.Id.Contains(67003))) ||
                     (QuestManager.IsQuestComplete(67002) && (quest.Id.Contains(67001) || quest.Id.Contains(67003))) ||
                     (QuestManager.IsQuestComplete(67003) && (quest.Id.Contains(67001) || quest.Id.Contains(67002))) ||
@@ -243,6 +244,7 @@ namespace TimeMemoria
             return filtered;
         }
 
+
         /// <summary>
         /// Clears the direct bucket cache. Call this when DisplayOption changes
         /// so that filters are recalculated on next render.
@@ -253,15 +255,13 @@ namespace TimeMemoria
             pluginLog.Debug("[InvalidateDirectBucketCache] Direct bucket cache cleared.");
         }
 
+
         private List<Quest>? LoadBucketFromDisk(string bucketPath)
         {
             try
             {
                 var pluginDir = pluginInterface.AssemblyLocation.DirectoryName!;
-                var repoRoot  = Path.GetDirectoryName(
-                                    Path.GetDirectoryName(
-                                        Path.GetDirectoryName(pluginDir)!)!)!;
-                var questsDir = Path.Combine(repoRoot, "Quests");
+                var questsDir = Path.Combine(pluginDir, "Quests");
 
                 var parts = bucketPath.Split('/');
                 if (parts.Length != 3)
@@ -283,7 +283,7 @@ namespace TimeMemoria
                     return null;
                 }
 
-                var json = File.ReadAllText(fullPath);
+                var json = File.ReadAllText(fullPath, System.Text.Encoding.UTF8);
                 return JsonConvert.DeserializeObject<List<Quest>>(json);
             }
             catch (Exception ex)
@@ -292,6 +292,7 @@ namespace TimeMemoria
                 return null;
             }
         }
+
 
         private void PopulateAllStubsForBucket(string bucketPath, List<Quest> quests)
         {
@@ -310,6 +311,7 @@ namespace TimeMemoria
             }
         }
 
+
         private List<QuestData> FindAllStubsWithBucketPath(QuestData root, string bucketPath)
         {
             var result = new List<QuestData>();
@@ -322,6 +324,7 @@ namespace TimeMemoria
 
             return result;
         }
+
 
         public void UnloadBucket(string bucketPath)
         {
@@ -344,17 +347,20 @@ namespace TimeMemoria
                 _activeBucketPath = null;
         }
 
+
         public void UnloadActiveBucket()
         {
             if (_activeBucketPath != null)
                 UnloadBucket(_activeBucketPath);
         }
 
+
         private bool CheckLastQuestComplete(QuestData stub)
         {
             return stub.LastQuestId != 0 &&
                    QuestManager.IsQuestComplete(stub.LastQuestId);
         }
+
 
         private bool CheckAllQuestsComplete(QuestData stub)
         {
@@ -370,15 +376,17 @@ namespace TimeMemoria
             return true;
         }
 
+
         private void DetermineStartArea()
         {
             configuration.StartArea =
                 QuestManager.IsQuestComplete(65575) ? "Gridania"      :
                 QuestManager.IsQuestComplete(65643) ? "Limsa Lominsa" :
-                QuestManager.IsQuestComplete(66130) ? "Ul'dah"        : "";
+                QuestManager.IsQuestComplete(65643) ? "Ul'dah"        : "";
 
             pluginLog.Debug($"Start Area {configuration.StartArea}");
         }
+
 
         private void DetermineGrandCompany()
         {
@@ -389,6 +397,7 @@ namespace TimeMemoria
 
             pluginLog.Debug($"Grand Company {configuration.GrandCompany}");
         }
+
 
         private void DetermineStartClass()
         {
@@ -406,6 +415,7 @@ namespace TimeMemoria
             pluginLog.Debug($"Start Class {configuration.StartClass}");
         }
 
+
         public void UpdateQuestData()
         {
             UpdateQuestData(plugin.QuestData);
@@ -415,6 +425,7 @@ namespace TimeMemoria
 
             DetectNewCompletions();
         }
+
 
         private void UpdateQuestData(QuestData questData)
         {
@@ -513,6 +524,7 @@ namespace TimeMemoria
             }
         }
 
+
         private void DetectNewCompletions()
         {
             var currentTotal = (int)plugin.QuestData.NumComplete;
@@ -535,6 +547,7 @@ namespace TimeMemoria
                 _previousTotalComplete = currentTotal;
             }
         }
+
 
         public static bool IsQuestComplete(Quest quest)
         {

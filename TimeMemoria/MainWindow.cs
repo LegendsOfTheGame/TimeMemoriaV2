@@ -12,6 +12,7 @@ using TimeMemoria.Services;
 using TimeMemoria.UI;
 
 
+
 namespace TimeMemoria
 {
     class MainWindow : Window, IDisposable
@@ -23,19 +24,16 @@ namespace TimeMemoria
         private readonly NewsService newsService;
         private readonly TocService tocService;
 
-        // Search text — only active when DisableLazyLoad is on
         private string searchText = "";
 
-        // Quests tab selection state — reset on window close
-        private string? _selectedKey        = null;  // "{questlineName}|{bucketSuffix}"
-        private string? _selectedLabel      = null;  // right panel header
-        private string? _lockMessage        = null;  // shown instead of quest list when locked
+        private string? _selectedKey        = null;
+        private string? _selectedLabel      = null;
+        private string? _lockMessage        = null;
         private List<Quest>? _selectedQuests = null;
 
-        // Tab reset on reopen
         private bool _forceOverviewTab = false;
         private bool _wasVisible       = false;
-        private bool _dummyOpen        = true;
+
 
         public MainWindow(
             Plugin plugin,
@@ -59,23 +57,25 @@ namespace TimeMemoria
             this.Flags        |= ImGuiWindowFlags.NoResize;
         }
 
+
         public void Dispose() { }
+
 
         public override void OnClose()
         {
-            _wasVisible    = false;
-            _selectedKey   = null;
-            _selectedLabel = null;
+            _wasVisible     = false;
+            _selectedKey    = null;
+            _selectedLabel  = null;
             _selectedQuests = null;
-            _lockMessage   = null;
-            searchText     = "";
+            _lockMessage    = null;
+            searchText      = "";
         }
+
 
         public override void Draw()
         {
             questDataManager.UpdateQuestData();
 
-            // Reset to Overview each time the window is reopened
             if (!_wasVisible)
             {
                 _forceOverviewTab = true;
@@ -117,7 +117,9 @@ namespace TimeMemoria
             }
         }
 
+
         // ── Overview Tab ──────────────────────────────────────────────────────
+
 
         private void DrawOverviewTab()
         {
@@ -139,11 +141,12 @@ namespace TimeMemoria
             ImGui.EndChild();
         }
 
+
         // ── Quests Tab ────────────────────────────────────────────────────────
+
 
         private void DrawQuestsTab()
         {
-            // Auto-select oldest incomplete on first open
             if (_selectedKey == null && _lockMessage == null)
                 AutoSelectOldestIncomplete();
 
@@ -151,7 +154,6 @@ namespace TimeMemoria
             float leftWidth  = 200f;
             float rightWidth = totalWidth - leftWidth - ImGui.GetStyle().ItemSpacing.X;
 
-            // Optional search bar — only when lazy load is disabled
             if (configuration.DisableLazyLoad)
             {
                 ImGui.SetNextItemWidth(-1);
@@ -188,24 +190,21 @@ namespace TimeMemoria
 
                         bool isLocked = state != QuestlineUnlockState.Unlocked;
 
-                        // Aggregate % for this questline header (non-seasonal only)
                         var (qlComplete, qlTotal) = GetQuestlineAggregateStats(ql);
                         string pctText = qlTotal > 0
                             ? $"{(int)(qlComplete / (float)qlTotal * 100)}%"
                             : "—";
-                        float avail  = ImGui.GetContentRegionAvail().X;
-                        float pctW   = ImGui.CalcTextSize(pctText).X;
+                        float avail = ImGui.GetContentRegionAvail().X;
+                        float pctW  = ImGui.CalcTextSize(pctText).X;
 
                         if (isLocked)
                             ImGui.PushStyleColor(ImGuiCol.Text,
                                 ImGui.GetStyle().Colors[(int)ImGuiCol.TextDisabled]);
 
-                        // Questline sub-tree
                         bool qlOpen = ImGui.TreeNodeEx(
                             $"{ql.Name}##qlnode_{ql.Name}",
                             ImGuiTreeNodeFlags.SpanAvailWidth);
 
-                        // Draw % on the same line as the questline header
                         ImGui.SameLine(avail - pctW);
                         ImGui.TextDisabled(pctText);
 
@@ -223,7 +222,6 @@ namespace TimeMemoria
                                 string bucketKey = $"{ql.Name}|{suffix}";
                                 bool   selected  = _selectedKey == bucketKey;
 
-                                // Per-bucket completion %
                                 string bPctText = "";
                                 if (!isSeasonal)
                                 {
@@ -294,10 +292,9 @@ namespace TimeMemoria
             {
                 var displayQuests = GetDisplayQuests();
 
-                // Header row
-                int   rc    = _selectedQuests.Count(q => QuestDataManager.IsQuestComplete(q));
-                int   rt    = _selectedQuests.Count;
-                float rpct  = rt > 0 ? rc / (float)rt * 100f : 0f;
+                int   rc   = _selectedQuests.Count(q => QuestDataManager.IsQuestComplete(q));
+                int   rt   = _selectedQuests.Count;
+                float rpct = rt > 0 ? rc / (float)rt * 100f : 0f;
                 string stats = $"{rc}/{rt} {(int)rpct}%";
                 float statsW = ImGui.CalcTextSize(stats).X;
                 float hAvail = ImGui.GetContentRegionAvail().X;
@@ -308,7 +305,6 @@ namespace TimeMemoria
                 ImGui.Separator();
                 ImGui.Spacing();
 
-                // Search result count
                 if (configuration.DisableLazyLoad &&
                     !string.IsNullOrWhiteSpace(searchText))
                 {
@@ -319,7 +315,6 @@ namespace TimeMemoria
                     ImGui.Spacing();
                 }
 
-                // Quest table
                 if (ImGui.BeginTable("##ql_table", 2,
                     ImGuiTableFlags.ScrollY | ImGuiTableFlags.BordersInnerV,
                     ImGui.GetContentRegionAvail()))
@@ -362,7 +357,9 @@ namespace TimeMemoria
             ImGui.EndChild();
         }
 
+
         // ── Settings Tab ──────────────────────────────────────────────────────
+
 
         private void DrawSettingsTab()
         {
@@ -374,7 +371,7 @@ namespace TimeMemoria
 
             ImGui.SetNextItemWidth(130);
             var displayOption = configuration.DisplayOption;
-            string[] displayList = { "Show All", "Show Complete", "Show Incomplete" };
+            string[] displayList = { "Show All", "Show Incomplete", "Show Complete" };
             if (ImGui.BeginCombo("##display_option", displayList[displayOption]))
             {
                 for (int i = 0; i < displayList.Length; i++)
@@ -471,7 +468,9 @@ namespace TimeMemoria
             ImGui.EndChild();
         }
 
+
         // ── Quests Tab Helpers ────────────────────────────────────────────────
+
 
         private void SelectBucket(QuestlineDefinition ql, string suffix)
         {
@@ -482,6 +481,7 @@ namespace TimeMemoria
             _selectedLabel  = $"{ql.Name} — {label}";
             _selectedQuests = LoadBucketQuestsDirect(ql, suffix);
         }
+
 
         private void SetLockMessage(QuestlineDefinition ql, QuestlineUnlockState state)
         {
@@ -495,12 +495,12 @@ namespace TimeMemoria
                   "Enable Spoiler Mode in Settings to access this content.";
         }
 
+
         private List<Quest> LoadBucketQuestsDirect(QuestlineDefinition ql, string suffix)
         {
             var result = new List<Quest>();
             foreach (int prefix in ql.PatchPrefixes)
             {
-                // BucketPath format: "2.x/2.0/msq"
                 string major = $"{prefix / 10}.x";
                 string minor = $"{prefix / 10}.{prefix % 10}";
                 string path  = $"{major}/{minor}/{suffix}";
@@ -508,6 +508,7 @@ namespace TimeMemoria
             }
             return result;
         }
+
 
         private List<Quest> GetDisplayQuests()
         {
@@ -527,14 +528,16 @@ namespace TimeMemoria
             return quests.ToList();
         }
 
+
         private (int complete, int total) GetBucketStats(
             QuestlineDefinition ql, string suffix)
         {
-            var quests  = LoadBucketQuestsDirect(ql, suffix);
-            int total   = quests.Count;
+            var quests   = LoadBucketQuestsDirect(ql, suffix);
+            int total    = quests.Count;
             int complete = quests.Count(q => QuestDataManager.IsQuestComplete(q));
             return (complete, total);
         }
+
 
         private (int complete, int total) GetQuestlineAggregateStats(
             QuestlineDefinition ql)
@@ -549,6 +552,7 @@ namespace TimeMemoria
             }
             return (complete, total);
         }
+
 
         private void AutoSelectOldestIncomplete()
         {
@@ -573,6 +577,7 @@ namespace TimeMemoria
                 }
             }
         }
+
 
         private void RenderHighlightedText(string text, string match, bool dimmed)
         {
@@ -607,7 +612,9 @@ namespace TimeMemoria
             }
         }
 
-        // ── Legacy Helpers (unchanged) ────────────────────────────────────────
+
+        // ── Legacy Helpers ────────────────────────────────────────────────────
+
 
         private void ResetSelections()
         {
@@ -630,6 +637,7 @@ namespace TimeMemoria
             configuration.Save();
         }
 
+
         private string GetDisplayText(QuestData questData)
         {
             var text = $"{questData.Title}";
@@ -639,6 +647,7 @@ namespace TimeMemoria
                 text += $" {questData.NumComplete / questData.Total:P2}";
             return text;
         }
+
 
         private void OpenAreaMap(Quest quest)
         {
@@ -659,6 +668,7 @@ namespace TimeMemoria
 
             plugin.GameGui.OpenMapWithMapLink(mapLink);
         }
+
 
         private string GetStartClassName()
         {

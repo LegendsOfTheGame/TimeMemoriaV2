@@ -1,27 +1,20 @@
 ﻿using Dalamud.Game.Command;
-using Dalamud.IoC;
 using Dalamud.Plugin;
 using Dalamud.Plugin.Services;
 using Dalamud.Interface.Windowing;
 using TimeMemoria.Services;
 
+
 namespace TimeMemoria
 {
     public class Plugin : IDalamudPlugin
     {
-        public string Name => "Time Memoria";
-
         public QuestData QuestData { get; set; } = new();
 
-        [PluginService]
         public IDalamudPluginInterface PluginInterface { get; init; } = null!;
-        [PluginService]
         public ICommandManager CommandManager { get; init; } = null!;
-        [PluginService]
         public IDataManager DataManager { get; init; } = null!;
-        [PluginService]
         public IGameGui GameGui { get; init; } = null!;
-        [PluginService]
         public IPluginLog PluginLog { get; init; } = null!;
 
         private readonly Configuration configuration;
@@ -32,6 +25,7 @@ namespace TimeMemoria
         private readonly PlaytimeStatsService playtimeStatsService;
         private readonly NewsService newsService;
         private readonly TocService tocService;
+
 
         public Plugin(
             IDalamudPluginInterface pluginInterface,
@@ -63,13 +57,9 @@ namespace TimeMemoria
                                        PluginInterface, PluginLog, this,
                                        configuration, playtimeStatsService);
 
-            // Resolve toc.json path — sits in Quests/ alongside the bucket files
-            var pluginDir  = PluginInterface.AssemblyLocation.DirectoryName!;
-            var repoRoot   = System.IO.Path.GetDirectoryName(
-                                 System.IO.Path.GetDirectoryName(
-                                     System.IO.Path.GetDirectoryName(pluginDir)!)!)!;
-            var tocPath    = System.IO.Path.Combine(repoRoot, "Quests", "toc.json");
-            tocService     = new TocService(PluginLog, tocPath);
+            var pluginDir = PluginInterface.AssemblyLocation.DirectoryName!;
+            var tocPath   = System.IO.Path.Combine(pluginDir, "Quests", "toc.json");
+            tocService    = new TocService(PluginLog, tocPath);
 
             windowSystem = new WindowSystem("TimeMemoriaWindows");
             mainWindow   = new MainWindow(
@@ -88,19 +78,35 @@ namespace TimeMemoria
 
             PluginInterface.UiBuilder.Draw        += DrawUi;
             PluginInterface.UiBuilder.OpenConfigUi += DrawConfigUi;
-            PluginInterface.UiBuilder.OpenMainUi  += () => mainWindow.IsOpen = true;
+            PluginInterface.UiBuilder.OpenMainUi  += OpenMainUi;
         }
+
 
         public void Dispose()
         {
+            PluginInterface.UiBuilder.Draw        -= DrawUi;
+            PluginInterface.UiBuilder.OpenConfigUi -= DrawConfigUi;
+            PluginInterface.UiBuilder.OpenMainUi  -= OpenMainUi;
+
+            CommandManager.RemoveHandler("/timememoria");
+            CommandManager.RemoveHandler("/tm");
+
+            windowSystem.RemoveAllWindows();
+
             mainWindow.Dispose();
             playtimeStatsService?.Dispose();
             newsService?.Dispose();
         }
 
+
         private void OnCommand(string command, string args)
         {
             mainWindow.IsOpen = !mainWindow.IsOpen;
+        }
+
+        private void OpenMainUi()
+        {
+            mainWindow.IsOpen = true;
         }
 
         private void DrawUi()

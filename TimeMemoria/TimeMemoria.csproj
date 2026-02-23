@@ -30,8 +30,15 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
-    
+
   <ItemGroup>
     <EmbeddedResource Include="data.json" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Quests\**\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
