@@ -27,9 +27,6 @@ namespace TimeMemoria
         private int _previousTotalComplete = 0;
         private bool _initialized = false;
 
-        // Cache for path-based bucket loads used by the new Quests tab UI.
-        // Keyed by bucketPath (e.g. "2.x/2.0/msq"), value is filtered quest list.
-        // These are never unloaded — they are lightweight and UI-driven only.
         private readonly Dictionary<string, List<Quest>> _directBucketCache = new();
 
 
@@ -197,31 +194,23 @@ namespace TimeMemoria
             var filtered = new List<Quest>();
             foreach (var quest in raw)
             {
-                if (!configuration.StartArea.IsNullOrEmpty())
-                {
-                    if (!quest.Area.IsNullOrEmpty() && quest.Area != configuration.StartArea)
-                    {
-                        bool isStartingCityVariant =
-                            quest.Area == "Gridania"      ||
-                            quest.Area == "Limsa Lominsa" ||
-                            quest.Area == "Ul'dah";
+                // ARR starting city filter — ID-based, no error logging
+                if (!configuration.StartArea.IsNullOrEmpty() &&
+                    ArrStartingPaths.IsExcludedForStartArea(quest.Id, configuration.StartArea))
+                    continue;
 
-                        if (isStartingCityVariant) continue;
-                    }
-
-                    if (!quest.Start.IsNullOrEmpty() && quest.Start != configuration.StartArea)
-                        continue;
-                }
-
+                // Grand company filter
                 if (!configuration.GrandCompany.IsNullOrEmpty() &&
                     !quest.Gc.IsNullOrEmpty() &&
                     quest.Gc != configuration.GrandCompany)
                     continue;
 
+                // Start class filter
                 if (configuration.StartClass != 0 &&
                     quest.Id.Contains(configuration.StartClass))
                     continue;
 
+                // Branching quest mutual exclusion
                 if ((QuestManager.IsQuestComplete(67001) && (quest.Id.Contains(67002) || quest.Id.Contains(67003))) ||
                     (QuestManager.IsQuestComplete(67002) && (quest.Id.Contains(67001) || quest.Id.Contains(67003))) ||
                     (QuestManager.IsQuestComplete(67003) && (quest.Id.Contains(67001) || quest.Id.Contains(67002))) ||
@@ -382,7 +371,7 @@ namespace TimeMemoria
             configuration.StartArea =
                 QuestManager.IsQuestComplete(65575) ? "Gridania"      :
                 QuestManager.IsQuestComplete(65643) ? "Limsa Lominsa" :
-                QuestManager.IsQuestComplete(65643) ? "Ul'dah"        : "";
+                QuestManager.IsQuestComplete(66130) ? "Ul'dah"        : "";
 
             pluginLog.Debug($"Start Area {configuration.StartArea}");
         }

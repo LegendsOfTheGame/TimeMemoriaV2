@@ -39,6 +39,16 @@ namespace TimeMemoria.Services
         public List<int> PatchPrefixes { get; init; } = new();
         public string? UnlockPatch    { get; init; }
         public bool RequiresFullVersion { get; init; }
+
+        public string DisplayName
+        {
+            get
+            {
+                if (PatchPrefixes.Count == 0) return Name;
+                int first = PatchPrefixes[0];
+                return $"{first / 10}.{first % 10} {Name}";
+            }
+        }
     }
 
     public static class QuestlineRegistry

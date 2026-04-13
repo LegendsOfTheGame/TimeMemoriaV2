@@ -34,7 +34,7 @@ namespace TimeMemoria
         private bool _forceOverviewTab = false;
         private bool _wasVisible       = false;
 
-        private float _leftPanelWidth = 282f;
+        private float _leftPanelWidth = 220f;
 
 
         public MainWindow(
@@ -54,13 +54,8 @@ namespace TimeMemoria
             this.newsService      = newsService;
             this.tocService       = tocService;
 
-            this.Size          = new Vector2(832, 470);
-            this.SizeCondition = ImGuiCond.Appearing;
-            this.SizeConstraints = new WindowSizeConstraints
-            {
-                MinimumSize = new Vector2(700, 470),
-                MaximumSize = new Vector2(float.MaxValue, float.MaxValue)
-            };
+            this.Size          = new Vector2(620, 450);
+            this.SizeCondition = ImGuiCond.FirstUseEver;
         }
 
 
@@ -174,9 +169,8 @@ namespace TimeMemoria
             }
 
             // ── Left panel ────────────────────────────────────────────────
-            float panelHeight = ImGui.GetContentRegionAvail().Y;
             ImGui.BeginChild("##ql_left",
-                new Vector2(leftWidth, panelHeight), true);
+                new Vector2(leftWidth, ImGui.GetContentRegionAvail().Y), true);
 
             foreach (var expansion in QuestlineRegistry.Expansions)
             {
@@ -202,20 +196,18 @@ namespace TimeMemoria
                         string pctText = qlTotal > 0
                             ? $"{(int)(qlComplete / (float)qlTotal * 100)}%"
                             : "—";
-                        float pctColW  = ImGui.CalcTextSize("100%").X + 4f;
-                        float fixedPctX = ImGui.GetWindowWidth() - pctColW
-                                        - ImGui.GetStyle().WindowPadding.X
-                                        - ImGui.GetStyle().ScrollbarSize;
+                        float pctColW = ImGui.CalcTextSize("100%").X + 4f;
+                        float avail   = ImGui.GetContentRegionAvail().X;
 
                         if (isLocked)
                             ImGui.PushStyleColor(ImGuiCol.Text,
                                 ImGui.GetStyle().Colors[(int)ImGuiCol.TextDisabled]);
 
                         bool qlOpen = ImGui.TreeNodeEx(
-                            $"{ql.DisplayName}##qlnode_{ql.Name}",
+                            $"{ql.Name}##qlnode_{ql.Name}",
                             ImGuiTreeNodeFlags.SpanAvailWidth);
 
-                        ImGui.SameLine(fixedPctX);
+                        ImGui.SameLine(avail - pctColW);
                         ImGui.TextDisabled(pctText);
 
                         if (isLocked)
@@ -240,6 +232,8 @@ namespace TimeMemoria
                                         ? $"{(int)(bc / (float)bt * 100)}%"
                                         : "—";
                                 }
+                                float bAvail = ImGui.GetContentRegionAvail().X;
+
                                 if (!canSelect)
                                     ImGui.PushStyleColor(ImGuiCol.Text,
                                         ImGui.GetStyle().Colors[(int)ImGuiCol.TextDisabled]);
@@ -248,7 +242,7 @@ namespace TimeMemoria
                                     $"  {label}##bkt_{ql.Name}_{suffix}",
                                     selected,
                                     ImGuiSelectableFlags.None,
-                                    new Vector2(fixedPctX - ImGui.GetCursorPosX() - 4f, 0)))
+                                    new Vector2(bAvail - pctColW - 4f, 0)))
                                 {
                                     if (canSelect)
                                         SelectBucket(ql, suffix);
@@ -258,7 +252,7 @@ namespace TimeMemoria
 
                                 if (!string.IsNullOrEmpty(bPctText))
                                 {
-                                    ImGui.SameLine(fixedPctX);
+                                    ImGui.SameLine(bAvail - pctColW);
                                     ImGui.TextDisabled(bPctText);
                                 }
 
@@ -278,36 +272,15 @@ namespace TimeMemoria
 
             // ── Draggable splitter ────────────────────────────────────────
             ImGui.SameLine();
-            var splitterPos = ImGui.GetCursorScreenPos();
-            ImGui.InvisibleButton("##splitter", new Vector2(splitterW, panelHeight));
-            bool splitterHovered = ImGui.IsItemHovered();
-            bool splitterActive  = ImGui.IsItemActive();
-            if (splitterHovered || splitterActive)
+            float splitterHeight = ImGui.GetContentRegionAvail().Y;
+            ImGui.InvisibleButton("##splitter", new Vector2(splitterW, splitterHeight));
+            if (ImGui.IsItemHovered())
                 ImGui.SetMouseCursor(ImGuiMouseCursor.ResizeAll);
-            if (splitterActive)
+            if (ImGui.IsItemActive())
             {
                 _leftPanelWidth += ImGui.GetIO().MouseDelta.X;
-                _leftPanelWidth  = Math.Clamp(_leftPanelWidth, 282f, totalWidth - 200f);
+                _leftPanelWidth  = Math.Clamp(_leftPanelWidth, 150f, totalWidth - 200f);
             }
-            var lineColor = splitterActive  ? ImGui.GetColorU32(ImGuiCol.SeparatorActive)  :
-                            splitterHovered ? ImGui.GetColorU32(ImGuiCol.SeparatorHovered) :
-                                             ImGui.GetColorU32(ImGuiCol.Separator);
-            var drawList  = ImGui.GetWindowDrawList();
-            float midX    = splitterPos.X + splitterW / 2f;
-            float midY    = splitterPos.Y + panelHeight / 2f;
-            var   icon    = "\u2194";
-            var   iconSz  = ImGui.CalcTextSize(icon);
-            drawList.AddLine(
-                new Vector2(midX, splitterPos.Y),
-                new Vector2(midX, midY - iconSz.Y / 2f - 2f),
-                lineColor, 1f);
-            drawList.AddLine(
-                new Vector2(midX, midY + iconSz.Y / 2f + 2f),
-                new Vector2(midX, splitterPos.Y + panelHeight),
-                lineColor, 1f);
-            drawList.AddText(
-                new Vector2(splitterPos.X + splitterW / 2f - iconSz.X / 2f, midY - iconSz.Y / 2f),
-                lineColor, icon);
 
             // ── Right panel ───────────────────────────────────────────────
             ImGui.SameLine();
@@ -573,7 +546,7 @@ namespace TimeMemoria
             _selectedKey    = $"{ql.Name}|{suffix}";
             string label    = QuestlineRegistry.BucketDisplayNames
                 .First(b => b.Suffix == suffix).Label;
-            _selectedLabel  = $"{ql.DisplayName} — {label}";
+            _selectedLabel  = $"{ql.Name} — {label}";
             _selectedQuests = LoadBucketQuestsDirect(ql, suffix);
         }
 
