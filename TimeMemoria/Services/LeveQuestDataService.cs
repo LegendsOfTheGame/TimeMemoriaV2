@@ -106,13 +106,13 @@ namespace TimeMemoria.Services
             }
         }
 
-        private bool IsLevequestComplete(Quest quest)
+        private unsafe bool IsLevequestComplete(Quest quest)
         {
             try
             {
                 foreach (var id in quest.Id)
                 {
-                    if (QuestManager.IsQuestComplete(id))
+                    if (QuestManager.Instance()->IsLevequestComplete((ushort)id))
                         return true;
                 }
                 return false;
