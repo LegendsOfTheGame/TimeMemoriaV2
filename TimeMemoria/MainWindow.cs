@@ -847,12 +847,6 @@ namespace TimeMemoria
                     ? child.Title
                     : $"{parentPath}/{child.Title}";
 
-                // Load bucket if it has a BucketPath
-                if (!string.IsNullOrEmpty(child.BucketPath) && child.Categories.Count == 0 && child.Quests.Count == 0)
-                {
-                    questDataManager.LoadBucketIfNeeded(child);
-                }
-
                 bool hasSubcategories = child.Categories.Count > 0;
                 bool hasQuests = child.Quests.Count > 0;
                 bool hasChildren = hasSubcategories || hasQuests;
@@ -880,6 +874,12 @@ namespace TimeMemoria
                 // Handle click/selection for NPC nodes (those with quests but no subcategories)
                 if (hasQuests && !hasSubcategories && ImGui.IsItemClicked())
                 {
+                    // Load bucket if needed
+                    if (!string.IsNullOrEmpty(child.BucketPath))
+                    {
+                        questDataManager.LoadBucketIfNeeded(child, forceLoad: true);
+                    }
+
                     _lockMessage = null;
                     _selectedKey = childPath;
                     _selectedLabel = child.Title;
