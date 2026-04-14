@@ -21,6 +21,14 @@ public class QuestData
     
     // UI message for empty buckets
     public string? EmptyMessage { get; set; }
+
+    // Levequest metadata
+    public uint? NpcId { get; set; }
+    public string? Zone { get; set; }
+    public List<string>? LeveTypes { get; set; }
+
+    // Cached completion count (persists when bucket is unloaded)
+    public int CachedNumComplete { get; set; } = -1;
 }
 
 [Serializable]

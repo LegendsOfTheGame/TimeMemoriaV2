@@ -55,7 +55,7 @@ namespace TimeMemoria
             newsService          = new NewsService(PluginLog);
             questDataManager     = new QuestDataManager(
                                        PluginInterface, PluginLog, this,
-                                       configuration, playtimeStatsService);
+                                       configuration, playtimeStatsService, DataManager);
 
             var pluginDir = PluginInterface.AssemblyLocation.DirectoryName!;
             var tocPath   = System.IO.Path.Combine(pluginDir, "Quests", "toc.json");

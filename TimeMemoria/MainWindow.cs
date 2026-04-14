@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
+using System.Threading.Tasks;
 using Dalamud.Game.Text.SeStringHandling.Payloads;
 using Dalamud.Interface;
 using Dalamud.Interface.Utility;
@@ -66,6 +67,12 @@ namespace TimeMemoria
 
         public void Dispose() { }
 
+
+        public override void OnOpen()
+        {
+            base.OnOpen();
+            // Don't pre-load levequests - load on-demand when expanded
+        }
 
         public override void OnClose()
         {
@@ -849,14 +856,15 @@ namespace TimeMemoria
 
                 bool hasSubcategories = child.Categories.Count > 0;
                 bool hasQuests = child.Quests.Count > 0;
-                bool hasChildren = hasSubcategories || hasQuests;
+                bool hasBucketToLoad = !string.IsNullOrEmpty(child.BucketPath) && !hasSubcategories && !hasQuests;
+                bool hasChildren = hasSubcategories || hasQuests || hasBucketToLoad;
 
                 string pctText = child.Total > 0
                     ? $"{(int)(child.NumComplete / (float)child.Total * 100)}%"
                     : "—";
 
                 // Check if this node is selected
-                bool isSelected = _selectedKey == childPath && hasQuests && !hasSubcategories;
+                bool isSelected = _selectedKey == childPath;
 
                 ImGuiTreeNodeFlags flags = ImGuiTreeNodeFlags.SpanAvailWidth;
                 if (!hasChildren)
@@ -868,45 +876,53 @@ namespace TimeMemoria
                     $"{child.Title}##leve_{childPath}",
                     flags);
 
+                // Check click on tree node BEFORE drawing other items
+                // Detect clicks on leaf nodes (NPCs with quests) or city nodes with buckets to load
+                bool isClicked = (hasBucketToLoad || hasQuests) && !hasSubcategories && ImGui.IsItemClicked();
+
                 ImGui.SameLine(fixedPctX);
                 ImGui.TextDisabled(pctText);
 
-                // Handle click/selection for NPC nodes (those with quests but no subcategories)
-                if (hasQuests && !hasSubcategories && ImGui.IsItemClicked())
+                // Handle click/selection for NPC or city nodes
+                if (isClicked)
                 {
-                    // Load bucket if needed
-                    if (!string.IsNullOrEmpty(child.BucketPath))
+                    // If this is a city node with a bucket, load it first
+                    if (hasBucketToLoad && !string.IsNullOrEmpty(child.BucketPath))
                     {
                         questDataManager.LoadBucketIfNeeded(child, forceLoad: true);
                     }
+                    // If this is an NPC node in an unloaded city, load the parent bucket
+                    else if (child.Quests.Count == 0 && !string.IsNullOrEmpty(node.BucketPath))
+                    {
+                        questDataManager.LoadBucketIfNeeded(node, forceLoad: true);
+                    }
 
-                    _lockMessage = null;
-                    _selectedKey = childPath;
-                    _selectedLabel = child.Title;
-                    _selectedQuests = child.Quests;
+                    // After loading, check if we have quests to display
+                    if (child.Quests.Count > 0)
+                    {
+                        _lockMessage = null;
+                        _selectedKey = childPath;
+                        _selectedLabel = child.Title;
+                        _selectedQuests = child.Quests;
+                    }
+                    else
+                    {
+                        // No quests loaded - show error
+                        _lockMessage = "Failed to load quests for this NPC.";
+                    }
                 }
 
                 if (isOpen)
                 {
+                    // Don't auto-load buckets here - only load when user clicks on an NPC
+                    // (buckets load on-demand when NPC is clicked via isClicked check above)
+
                     if (hasSubcategories)
                     {
                         RenderLevequestTree(child, childPath, fixedPctX);
                     }
 
-                    if (hasQuests)
-                    {
-                        // Render quests for this NPC
-                        foreach (var quest in child.Quests)
-                        {
-                            bool done = QuestDataManager.IsQuestComplete(quest);
-                            string questLabel = done ? $"[OK] {quest.Title}" : quest.Title;
-
-                            if (done)
-                                ImGui.TextDisabled(questLabel);
-                            else
-                                ImGui.Text(questLabel);
-                        }
-                    }
+                    // Don't render quests in the tree - they'll show on the right panel when selected
 
                     ImGui.TreePop();
                 }

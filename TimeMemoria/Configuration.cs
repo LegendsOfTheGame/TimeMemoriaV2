@@ -25,6 +25,7 @@ namespace TimeMemoria
 
         // Quest browser options
         public bool DisableLazyLoad { get; set; } = false;
+        public bool ShowQuestArea   { get; set; } = true;
 
         // Spoiler / access control
         public bool SpoilerMode   { get; set; } = false;
