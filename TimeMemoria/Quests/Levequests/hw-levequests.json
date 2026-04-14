@@ -1,0 +1,2900 @@
+{
+  "Title": "Heavensward",
+  "Categories": [
+    {
+      "Title": "Ishgard",
+      "Categories": [
+        {
+          "Title": "Eloin",
+          "Categories": [],
+          "Quests": [
+            {
+              "Title": "Necrologos: Of Sallow Vizards (L)",
+              "Id": [
+                883
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "We're So Above This (L)",
+              "Id": [
+                881
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Don't Come Back",
+              "Id": [
+                879
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Necrologos: Of Sallow Vizards",
+              "Id": [
+                880
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Unexpected Tourist",
+              "Id": [
+                878
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Second Coming of Yak (L)",
+              "Id": [
+                882
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Quit Loafing Around",
+              "Id": [
+                884
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Last Priest Profaned (L)",
+              "Id": [
+                887
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Jailbird Break",
+              "Id": [
+                886
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Return to Sender (L)",
+              "Id": [
+                889
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Feathers Unsullied",
+              "Id": [
+                885
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Scavenger Hunt (L)",
+              "Id": [
+                888
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Puppet Show",
+              "Id": [
+                891
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Hello, Cousin (L)",
+              "Id": [
+                895
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "More Than One Way (L)",
+              "Id": [
+                894
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Family Comes First (L)",
+              "Id": [
+                893
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Cry Home",
+              "Id": [
+                892
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Show Your Work",
+              "Id": [
+                890
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Marl-ementary Procedure",
+              "Id": [
+                898
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Nobody Can Farm Marl, but Marl (L)",
+              "Id": [
+                901
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Needs More Fervor (L)",
+              "Id": [
+                900
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Just Washed (L)",
+              "Id": [
+                899
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Two Birds, One Culling",
+              "Id": [
+                896
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Don't Eat the Shrooms",
+              "Id": [
+                897
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Bareback Riding (L)",
+              "Id": [
+                907
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Necrologos: His Treasure Forhelen (L)",
+              "Id": [
+                906
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Necrologos: His Treasure Forhelen",
+              "Id": [
+                903
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Goblin Up Sharlayan (L)",
+              "Id": [
+                905
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Dance, Magic Dance",
+              "Id": [
+                902
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Whither the Morbol Goeth",
+              "Id": [
+                904
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Dodging the Draft (L)",
+              "Id": [
+                1063
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Summoning for Dummies",
+              "Id": [
+                1059
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Summoning the Courage to Be Different (L)",
+              "Id": [
+                1062
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Forgery of Convenience (L)",
+              "Id": [
+                1061
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Forged from the Void",
+              "Id": [
+                1060
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Mustache Suits Him",
+              "Id": [
+                1058
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Surgical Substitution (L)",
+              "Id": [
+                1068
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Steeling the Knife, Steeling the Mind",
+              "Id": [
+                1065
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Curbing the Contagion (L)",
+              "Id": [
+                1069
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Consecrating Congregation",
+              "Id": [
+                1066
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Can't Sleep, Inquisitors Will Eat Me",
+              "Id": [
+                1064
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Allow No Fallacies (L)",
+              "Id": [
+                1067
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Tomes Roam on the Range",
+              "Id": [
+                1071
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Field Trip to the Unknown (L)",
+              "Id": [
+                1074
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Warding Off Temptation",
+              "Id": [
+                1072
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Garden of Arcane Delights (L)",
+              "Id": [
+                1075
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Adhesive of Antipathy",
+              "Id": [
+                1070
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "It's Gonna Grow Back (L)",
+              "Id": [
+                1073
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Volunteering with Staff",
+              "Id": [
+                1077
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Washing Away the Sins (L)",
+              "Id": [
+                1079
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Scripture Is the Best Medicine (L)",
+              "Id": [
+                1080
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Rolling on Initiative",
+              "Id": [
+                1078
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Darkly Dreaming Dexterity (L)",
+              "Id": [
+                1081
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Cleansing the Wicked Humours",
+              "Id": [
+                1076
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Ink into Antiquity (L)",
+              "Id": [
+                1085
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Grave of Hemlock Groves",
+              "Id": [
+                1084
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Filling in the Blanks",
+              "Id": [
+                1082
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "There Was a Late Fee",
+              "Id": [
+                1083
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Dappling the Highlands (L)",
+              "Id": [
+                1087
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "A Gate Arcane Is Dragon's Bane (L)",
+              "Id": [
+                1086
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Rivets Run through It",
+              "Id": [
+                999
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "A Riveting Revival (L)",
+              "Id": [
+                1002
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Don't Scuttle with Scuta",
+              "Id": [
+                1000
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Hauberk and No Play",
+              "Id": [
+                998
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Shielded by Bureaucracy (L)",
+              "Id": [
+                1003
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Knights without Armor (L)",
+              "Id": [
+                1001
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Sheer Distill Power (L)",
+              "Id": [
+                1008
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Skillet with Fire (L)",
+              "Id": [
+                1009
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Cut Alembical Cord",
+              "Id": [
+                1005
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Fifty Shields of Blades (L)",
+              "Id": [
+                1007
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Let Faith Light the Way",
+              "Id": [
+                1004
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Pan That Laid the Golden Egg",
+              "Id": [
+                1006
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Rage against the Scream (L)",
+              "Id": [
+                1014
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Heavy Metal Banned (L)",
+              "Id": [
+                1013
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Someone Put Dung in My Helmet",
+              "Id": [
+                1011
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Sometimes the South Wins",
+              "Id": [
+                1012
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "As the Bolt Flies",
+              "Id": [
+                1010
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Thriller of Autumn (L)",
+              "Id": [
+                1015
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "A Halonic Masquerade",
+              "Id": [
+                1017
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Why I Wear a Mask (L)",
+              "Id": [
+                1020
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Shouldering the Shut-ins (L)",
+              "Id": [
+                1021
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Belle of the Brawl",
+              "Id": [
+                1018
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "All's Fair in Highborn Assassination (L)",
+              "Id": [
+                1019
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "A Squire to Inspire",
+              "Id": [
+                1016
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Sir, Dost Thou Even Heft",
+              "Id": [
+                1022
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Men in Adamantite (L)",
+              "Id": [
+                1025
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Look Before You Leap",
+              "Id": [
+                1023
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Mast Chance",
+              "Id": [
+                1024
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Rose and the Riveter (L)",
+              "Id": [
+                1027
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Patience, Young Grasshopper (L)",
+              "Id": [
+                1026
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "With Bearings Straight",
+              "Id": [
+                970
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Foreign Exchange (L)",
+              "Id": [
+                972
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Starting Young (L)",
+              "Id": [
+                971
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Barring the Gates to Foundation",
+              "Id": [
+                968
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Punching Your Way to Success",
+              "Id": [
+                969
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Bearing the Brunt (L)",
+              "Id": [
+                973
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "It's All about Execution",
+              "Id": [
+                974
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Too Big to Miss (L)",
+              "Id": [
+                977
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Cautionary Cutlery",
+              "Id": [
+                976
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Saw, Shank, and Redemption (L)",
+              "Id": [
+                979
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Freight and Barrel",
+              "Id": [
+                975
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Stepping on My Heart with Stilettos (L)",
+              "Id": [
+                978
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Tensions in Creasing (L)",
+              "Id": [
+                983
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Unconventional Weaponry (L)",
+              "Id": [
+                985
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "I Came, I Sawed, I Conquered (L)",
+              "Id": [
+                984
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "I Could Feel That from Here",
+              "Id": [
+                980
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "I Saw the Pine",
+              "Id": [
+                981
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Keep Up with the Mechanics",
+              "Id": [
+                982
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Diamond Sawdust",
+              "Id": [
+                987
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Unbreaker",
+              "Id": [
+                986
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Clamor for Hammers (L)",
+              "Id": [
+                991
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Spirituality Inspector",
+              "Id": [
+                988
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "I'm a Lumberjack and I'm Okay (L)",
+              "Id": [
+                990
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Attack on Titanium (L)",
+              "Id": [
+                989
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Swords for Plowshares",
+              "Id": [
+                994
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Nightsoil Is Dark and Full of Terrors (L)",
+              "Id": [
+                996
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Through Thick and Thin",
+              "Id": [
+                992
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Piercing Eyes Deserve Piercing Shafts (L)",
+              "Id": [
+                995
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Negative, They Are Meat Popsicles (L)",
+              "Id": [
+                997
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Winter Weather Conditions",
+              "Id": [
+                993
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Living Bow to Mouth (L)",
+              "Id": [
+                913
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Almost as Fun as Slingshotting Birds",
+              "Id": [
+                910
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Lumber of Their Discontent (L)",
+              "Id": [
+                911
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Sticks and Stones (L)",
+              "Id": [
+                912
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Splinter in the Sewers",
+              "Id": [
+                908
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "So You Think You Can Lance?",
+              "Id": [
+                909
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "A Reward Fitting of the Faithful",
+              "Id": [
+                916
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Win One Bow, Get Three Free (L)",
+              "Id": [
+                917
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Do You Even String Bow",
+              "Id": [
+                914
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Fishing for Profits (L)",
+              "Id": [
+                918
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Just Rewards for Just Devotion (L)",
+              "Id": [
+                919
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Landing the Big One",
+              "Id": [
+                915
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Walking on Pins and Needles",
+              "Id": [
+                922
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Darkest Hearth",
+              "Id": [
+                921
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Purified Polyrhythm (L)",
+              "Id": [
+                923
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Like Lemon on a Lumbercut (L)",
+              "Id": [
+                925
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "License to Heal",
+              "Id": [
+                920
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Fruit of the Loom (L)",
+              "Id": [
+                924
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "A Sky Pirate's Life for Me (L)",
+              "Id": [
+                930
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Don't Ask Wyvern",
+              "Id": [
+                927
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Long Armillae of the Law",
+              "Id": [
+                926
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "To Protect My City, I Must Wear a Mask (L)",
+              "Id": [
+                931
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Aim to Please",
+              "Id": [
+                928
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Wooden Ambitions (L)",
+              "Id": [
+                929
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Pulling Them to the Grind (L)",
+              "Id": [
+                936
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Hold on Adamantite",
+              "Id": [
+                934
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Spears for Stone Vigilantes (L)",
+              "Id": [
+                937
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Built This City on Blocks and Soul (L)",
+              "Id": [
+                935
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Birch, Please",
+              "Id": [
+                932
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Anatomy of a Drill Bit",
+              "Id": [
+                933
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Confections of Confession (L)",
+              "Id": [
+                1031
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Next to Last Supper",
+              "Id": [
+                1029
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Aroma of Faith",
+              "Id": [
+                1030
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Little Orphan Candy",
+              "Id": [
+                1028
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Soup's On (L)",
+              "Id": [
+                1033
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Nostalgia through the Stomach (L)",
+              "Id": [
+                1032
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Persona non Gratin",
+              "Id": [
+                1036
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Such a Butter Face",
+              "Id": [
+                1034
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Loving That Muffin Top",
+              "Id": [
+                1035
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Recipe for Disaster (L)",
+              "Id": [
+                1039
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Muffin of the Morn (L)",
+              "Id": [
+                1038
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "No Margarine of Error (L)",
+              "Id": [
+                1037
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Time for a Midnight Snack (L)",
+              "Id": [
+                1043
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Nutcracker's Sweets",
+              "Id": [
+                1040
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Eats of Authenticity (L)",
+              "Id": [
+                1045
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Old Victories, New Tastes",
+              "Id": [
+                1042
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Breakfast of Champions",
+              "Id": [
+                1041
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Emerald Soup for the Soul (L)",
+              "Id": [
+                1044
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Persuasion of a Higher Power",
+              "Id": [
+                1048
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Quenching the Flame (L)",
+              "Id": [
+                1050
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Saucy for a Suitor",
+              "Id": [
+                1046
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Saved by the Sauce (L)",
+              "Id": [
+                1049
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Loaves and Fishes (L)",
+              "Id": [
+                1051
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "It Goes Down Smoothly",
+              "Id": [
+                1047
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Luxury Spillover (L)",
+              "Id": [
+                1055
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Soup That Eats Like a Knight",
+              "Id": [
+                1053
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Like Ma Used to Make (L)",
+              "Id": [
+                1056
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Let's Not Get Sappy",
+              "Id": [
+                1052
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Don't Let It Fall Apart",
+              "Id": [
+                1054
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Better Come Back with a Sandwich (L)",
+              "Id": [
+                1057
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Not on My Table",
+              "Id": [
+                1119
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Peril Never Wore Safety Goggles (L)",
+              "Id": [
+                1121
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Goggles, They Do Naught",
+              "Id": [
+                1118
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Transposing Theology (L)",
+              "Id": [
+                1123
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Halonic Hermeneutics",
+              "Id": [
+                1120
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Heinz's Dilemma (L)",
+              "Id": [
+                1122
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Sense of Entitlement",
+              "Id": [
+                1124
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Old-school Spooling (L)",
+              "Id": [
+                1128
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Hulls of Broken Dreams (L)",
+              "Id": [
+                1129
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Charting the Trends (L)",
+              "Id": [
+                1127
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "High Above Me, She Sews Lovely",
+              "Id": [
+                1125
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Sky Is the Limit",
+              "Id": [
+                1126
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Watchers within the Walls (L)",
+              "Id": [
+                1134
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Unfortunate Retirony",
+              "Id": [
+                1130
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Life Ends at Retirement (L)",
+              "Id": [
+                1133
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Monuments Mages",
+              "Id": [
+                1132
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Deal with It (L)",
+              "Id": [
+                1135
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Citizen's Arrest",
+              "Id": [
+                1131
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Grander Temple",
+              "Id": [
+                1137
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "With a Noise That Reaches Heaven (L)",
+              "Id": [
+                1139
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Silver Bar of Upcycling (L)",
+              "Id": [
+                1141
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Appeasing the Astromancer",
+              "Id": [
+                1138
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Needs More Prayerbell",
+              "Id": [
+                1136
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Man with a Dragon Earring (L)",
+              "Id": [
+                1140
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Ring of Reciprocity (L)",
+              "Id": [
+                1145
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Lovely Hands of Haillenarte (L)",
+              "Id": [
+                1146
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Keeping Claw and Order",
+              "Id": [
+                1142
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "It's the Circlet of Life (L)",
+              "Id": [
+                1147
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Embroiling Embroidery",
+              "Id": [
+                1143
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "A Halo for Her Head",
+              "Id": [
+                1144
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Treat Them with Kid Gloves (L)",
+              "Id": [
+                943
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "These Boots Are Made for Hawkin' (L)",
+              "Id": [
+                942
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "From Mud to Mourning",
+              "Id": [
+                939
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Glorified Hole-punchers",
+              "Id": [
+                940
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Style of the Time (L)",
+              "Id": [
+                941
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Pummeling Abroad",
+              "Id": [
+                938
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "(Don't) Love the Skin You're In",
+              "Id": [
+                946
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Maybe He's a Lion",
+              "Id": [
+                945
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Wrist Apart (L)",
+              "Id": [
+                949
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "They Call It Bloody Mary (L)",
+              "Id": [
+                947
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Wyvern of It (L)",
+              "Id": [
+                948
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "You Could Say It's a Moving Target",
+              "Id": [
+                944
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Exploiting the Adroit (L)",
+              "Id": [
+                955
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Overall, We Blend In",
+              "Id": [
+                950
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Hunting Heretics (L)",
+              "Id": [
+                954
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Dragoon Drop Rate",
+              "Id": [
+                952
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Tally Ho, Chocobo",
+              "Id": [
+                951
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Eviction Notice (L)",
+              "Id": [
+                953
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "It's All in the Wrists (L)",
+              "Id": [
+                959
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Don't Sweat the Small Fry",
+              "Id": [
+                956
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Training Is Only Skintight (L)",
+              "Id": [
+                961
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Trainin' the Neck",
+              "Id": [
+                958
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Halonic Drake Handlers (L)",
+              "Id": [
+                960
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "I Need Your Glove Tonight",
+              "Id": [
+                957
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "It Will Knock Your Socks Off",
+              "Id": [
+                964
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Starting Off on the Wrong Foot",
+              "Id": [
+                962
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Raising the Dragoons (L)",
+              "Id": [
+                965
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Bar of the Bannermen",
+              "Id": [
+                963
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Do My Little Turn on the Stonewalk (L)",
+              "Id": [
+                966
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "On My Own Two Feet (L)",
+              "Id": [
+                967
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Protecting the Foundation",
+              "Id": [
+                1089
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Pride Up in Smoke",
+              "Id": [
+                1088
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Ribbon of Remembrance",
+              "Id": [
+                1090
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Road Was a Ribbon of Moonlight (L)",
+              "Id": [
+                1093
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Curb the Gnawing Feeling (L)",
+              "Id": [
+                1092
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Desperate for Diversionaries (L)",
+              "Id": [
+                1091
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Soot in My Hair and Scars on My Feet (L)",
+              "Id": [
+                1099
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "An Account of My Boots",
+              "Id": [
+                1096
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "What Not to Wear",
+              "Id": [
+                1094
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Fashion Patrol",
+              "Id": [
+                1095
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Dress Code Violation (L)",
+              "Id": [
+                1098
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Appeal of Foreign Apparel (L)",
+              "Id": [
+                1097
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Finger on the Pulse",
+              "Id": [
+                1102
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Clothing the Naked Truth",
+              "Id": [
+                1100
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Storm upon Bald Mountain",
+              "Id": [
+                1101
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Chirurgeon Hand in Glove (L)",
+              "Id": [
+                1105
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "When in Robes (L)",
+              "Id": [
+                1103
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Abrupt Apprentices (L)",
+              "Id": [
+                1104
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "To Kill a Dragon on Nameday (L)",
+              "Id": [
+                1110
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Where the Dragonflies, the Net Catches",
+              "Id": [
+                1107
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Pants Fit for Battle (L)",
+              "Id": [
+                1109
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Maids of Honor (L)",
+              "Id": [
+                1111
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Investing in the Future",
+              "Id": [
+                1108
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Healing with Flair",
+              "Id": [
+                1106
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Pom Hemlock (L)",
+              "Id": [
+                1116
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Hat List",
+              "Id": [
+                1114
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "He Wears the Pants",
+              "Id": [
+                1113
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Felt for the Fallen",
+              "Id": [
+                1112
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Blinded Veil of Vigilance (L)",
+              "Id": [
+                1115
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Knight Incognito (L)",
+              "Id": [
+                1117
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "A Crown for Every Head (L)",
+              "Id": [
+                1152
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Warm in Their Beds",
+              "Id": [
+                1150
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Breathe Deeply",
+              "Id": [
+                1149
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Secondhand Smoke Screen (L)",
+              "Id": [
+                1151
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Does This Look Infected?",
+              "Id": [
+                1148
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "No Rest for the Thicket (L)",
+              "Id": [
+                1153
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Ladies and Gentians",
+              "Id": [
+                1154
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Sour Patch Grids (L)",
+              "Id": [
+                1158
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Bitter, the Better",
+              "Id": [
+                1155
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Six Hours in a Leaky Boat",
+              "Id": [
+                1156
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Coat the Harm (L)",
+              "Id": [
+                1157
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Hot Tub Clime Machine (L)",
+              "Id": [
+                1159
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Sacrilege Neutralized (L)",
+              "Id": [
+                1164
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Your Mother Is Medicine and Your Father Is the Wild",
+              "Id": [
+                1160
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Hybrid Theories (L)",
+              "Id": [
+                1165
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Exotic Remedies (L)",
+              "Id": [
+                1163
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Dandelion Don't Tell No Lies",
+              "Id": [
+                1161
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Chewed Up and Snuffed Out",
+              "Id": [
+                1162
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Nectar of the Goddess (L)",
+              "Id": [
+                1171
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Heart to Heart",
+              "Id": [
+                1166
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Putting on Airs (L)",
+              "Id": [
+                1169
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Anointing of the Dead",
+              "Id": [
+                1168
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Bold and Blue",
+              "Id": [
+                1167
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "These Colors Run Not (L)",
+              "Id": [
+                1170
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "A Taste of Their Own Medicine",
+              "Id": [
+                1174
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Thank You for Smoke Screening (L)",
+              "Id": [
+                1177
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Blending In (L)",
+              "Id": [
+                1175
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Bleeding Out",
+              "Id": [
+                1173
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Watching the Western Wall",
+              "Id": [
+                1172
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Mending Wings (L)",
+              "Id": [
+                1176
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "A Whole Lot of Nope (L)",
+              "Id": [
+                1212
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Dine or Spine",
+              "Id": [
+                1210
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Voice of the Fury",
+              "Id": [
+                1209
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Snipped for Spirituality (L)",
+              "Id": [
+                1211
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Lurchin' from Urchins (L)",
+              "Id": [
+                1213
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Please Halone, Tell Me I'm Still Asleep",
+              "Id": [
+                1208
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Bounty of Sky, Bounty of Earth",
+              "Id": [
+                1216
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Prayer and Prejudice (L)",
+              "Id": [
+                1217
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Valuing the Vintage (L)",
+              "Id": [
+                1218
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Eating Like the Natives (L)",
+              "Id": [
+                1219
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Fish Oils and Forgotten Spoils",
+              "Id": [
+                1215
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Loose Lips Heal (Broken) Hips",
+              "Id": [
+                1214
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Analysis of Paralysis",
+              "Id": [
+                1220
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Aquariums of Ishgard",
+              "Id": [
+                1221
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Blue of Sky and Sea (L)",
+              "Id": [
+                1225
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Send a Feeling to My Spine (L)",
+              "Id": [
+                1223
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "A Win-win Situation (L)",
+              "Id": [
+                1224
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Bearing of the Blue",
+              "Id": [
+                1222
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Plus One or Two or Three (L)",
+              "Id": [
+                1231
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Pipira Pirouette",
+              "Id": [
+                1228
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Solo Out the Bolo",
+              "Id": [
+                1227
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Sucking on Face (L)",
+              "Id": [
+                1230
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Hundred Fins for a Hundred Wings (L)",
+              "Id": [
+                1229
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Dining with Dravanians",
+              "Id": [
+                1226
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Angling for Ailments (L)",
+              "Id": [
+                1236
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Spew Forth and Spawn",
+              "Id": [
+                1232
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "They Call It the Kissing Disease",
+              "Id": [
+                1233
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Unleash the Hydro Cannons (L)",
+              "Id": [
+                1235
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Warmer than Wine",
+              "Id": [
+                1234
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "What Does Not Break Us, Devours Us (L)",
+              "Id": [
+                1237
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Basics of Forgery (L)",
+              "Id": [
+                1181
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Breaking Beacons (L)",
+              "Id": [
+                1183
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Road to Pilgrimage",
+              "Id": [
+                1179
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Merits of Upcycling",
+              "Id": [
+                1180
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "For Vares Beyond Compare (L)",
+              "Id": [
+                1182
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Taken for Granite",
+              "Id": [
+                1178
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Rose Never Lets Go (L)",
+              "Id": [
+                1187
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Polished till They Shine (L)",
+              "Id": [
+                1189
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Permit for Destruction of Religious Property",
+              "Id": [
+                1184
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Forging Lance Base (L)",
+              "Id": [
+                1188
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Halone's Jewelry Box",
+              "Id": [
+                1186
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "I'll Show You My Battle Shards",
+              "Id": [
+                1185
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Talk about Boundaries",
+              "Id": [
+                1192
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "All of These Bases Belong to Us (L)",
+              "Id": [
+                1193
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "From Creepers to Squatters",
+              "Id": [
+                1190
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "History Needs Some Revisions (L)",
+              "Id": [
+                1195
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Dreams of War, Dreams of Liars, Dreams of Dragon Fire",
+              "Id": [
+                1191
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "There's Sand in My Water (L)",
+              "Id": [
+                1194
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "The Puppets of War (L)",
+              "Id": [
+                1200
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "A Spire for New Heights (L)",
+              "Id": [
+                1201
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "What Goes Up",
+              "Id": [
+                1197
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Mortarin'",
+              "Id": [
+                1198
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Fool Me Once (L)",
+              "Id": [
+                1199
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Fake-icite",
+              "Id": [
+                1196
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Sticking It Out",
+              "Id": [
+                1202
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Sharlayan Sympathizers (L)",
+              "Id": [
+                1207
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Pommeling the Enemy (L)",
+              "Id": [
+                1205
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Dragonproofing",
+              "Id": [
+                1204
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Crystal Chronicles",
+              "Id": [
+                1203
+              ],
+              "Area": null,
+              "Level": 50
+            },
+            {
+              "Title": "Not So Crystal Clear (L)",
+              "Id": [
+                1206
+              ],
+              "Area": null,
+              "Level": 50
+            }
+          ],
+          "NpcId": 1011208,
+          "Zone": "Foundation"
+        }
+      ],
+      "Quests": []
+    }
+  ],
+  "Quests": []
+}

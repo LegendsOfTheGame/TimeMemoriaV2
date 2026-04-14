@@ -1,0 +1,980 @@
+{
+  "Title": "Endwalker",
+  "Categories": [
+    {
+      "Title": "Old Sharlayan",
+      "Categories": [
+        {
+          "Title": "Grigge",
+          "Categories": [],
+          "Quests": [
+            {
+              "Title": "Nearly Bare",
+              "Id": [
+                1629
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Wishful Inking",
+              "Id": [
+                1628
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Body over Mind",
+              "Id": [
+                1631
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Luncheon Bound",
+              "Id": [
+                1630
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Liquid Competence",
+              "Id": [
+                1633
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Rebuilding to Code",
+              "Id": [
+                1632
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Nearly There",
+              "Id": [
+                1634
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Practical Command",
+              "Id": [
+                1635
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Mindful Study",
+              "Id": [
+                1637
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Technically Still Magic",
+              "Id": [
+                1636
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "The Armoire Is Open",
+              "Id": [
+                1589
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Haste for High Durium",
+              "Id": [
+                1588
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Ace of Gloves",
+              "Id": [
+                1590
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "The Incomplete Costume",
+              "Id": [
+                1591
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Armoire Aftercare",
+              "Id": [
+                1592
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Once and for Alchemy",
+              "Id": [
+                1593
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Heading toward Bankruptcy",
+              "Id": [
+                1594
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "In-kweh-dible Cooking",
+              "Id": [
+                1595
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "A Gift of Gloves",
+              "Id": [
+                1596
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Additions to the Armoire",
+              "Id": [
+                1597
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Archon Denied",
+              "Id": [
+                1579
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "To Delight a Dancer",
+              "Id": [
+                1578
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Archon of His Eye",
+              "Id": [
+                1581
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "History of the Hrothgar",
+              "Id": [
+                1580
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "In Pursuit of Panaloaf",
+              "Id": [
+                1583
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Records of the Republic",
+              "Id": [
+                1582
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Mangalomania",
+              "Id": [
+                1584
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Pruned to Perfection",
+              "Id": [
+                1585
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Annals of the Empire I",
+              "Id": [
+                1586
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Plying with Precision",
+              "Id": [
+                1587
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "A Real Grind",
+              "Id": [
+                1569
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Timber of Tenkonto",
+              "Id": [
+                1568
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "A Wristy Experiment",
+              "Id": [
+                1571
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Earring Awakening",
+              "Id": [
+                1570
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "A Better Conductor",
+              "Id": [
+                1572
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "In Rod We Trust",
+              "Id": [
+                1573
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "An A-prop-riate Request",
+              "Id": [
+                1574
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Spinning the Time Away",
+              "Id": [
+                1575
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "An Integral Reward",
+              "Id": [
+                1577
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Annals of the Empire II",
+              "Id": [
+                1576
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Salt of the North",
+              "Id": [
+                1638
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Topping Up the Pot",
+              "Id": [
+                1639
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "At Any Temperature",
+              "Id": [
+                1641
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Bobbing for Compliments",
+              "Id": [
+                1640
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "A Stickler for Carrots",
+              "Id": [
+                1643
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Imperial Palate",
+              "Id": [
+                1642
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "An Historical Flavor",
+              "Id": [
+                1644
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Comfort Food",
+              "Id": [
+                1645
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Blast from the Pasta",
+              "Id": [
+                1646
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "The Mountain Steeped",
+              "Id": [
+                1647
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Awarding Academic Excellence",
+              "Id": [
+                1598
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Workplace Workout",
+              "Id": [
+                1599
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Pewter-hewn Punishment",
+              "Id": [
+                1601
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "The Sage's Successor",
+              "Id": [
+                1600
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Gold Rush Order",
+              "Id": [
+                1602
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Sage with the Golden Earrings",
+              "Id": [
+                1603
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "The Needle That Binds",
+              "Id": [
+                1605
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "To Fight at Her Side",
+              "Id": [
+                1604
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Planisphere to Paper",
+              "Id": [
+                1606
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Star Athletes",
+              "Id": [
+                1607
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Running up the Tabi",
+              "Id": [
+                1609
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Hell on Leather",
+              "Id": [
+                1608
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Boot Legs",
+              "Id": [
+                1610
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Scouting Talent",
+              "Id": [
+                1611
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Battered Books",
+              "Id": [
+                1612
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Loyal Turncoat",
+              "Id": [
+                1613
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Grips of Fear",
+              "Id": [
+                1614
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Loving Soles",
+              "Id": [
+                1615
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "For What Was Gleaned",
+              "Id": [
+                1617
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Generous Soles",
+              "Id": [
+                1616
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Heavy Armoire",
+              "Id": [
+                1618
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Helping Handwear",
+              "Id": [
+                1619
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Color Coated",
+              "Id": [
+                1621
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Hot Heads",
+              "Id": [
+                1620
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "A Polished Purchase",
+              "Id": [
+                1622
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Turban Sprawl",
+              "Id": [
+                1623
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Lifetime of Gleaning",
+              "Id": [
+                1625
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Lightening Up",
+              "Id": [
+                1624
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "A Better Bottom Line",
+              "Id": [
+                1627
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Skill Cap",
+              "Id": [
+                1626
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "A Balanced Diet",
+              "Id": [
+                1649
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Bug Report",
+              "Id": [
+                1650
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Paper Minds",
+              "Id": [
+                1648
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Don't Have a Yakow",
+              "Id": [
+                1651
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Explosive Palms",
+              "Id": [
+                1653
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Soup for the Stars",
+              "Id": [
+                1652
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Beet It",
+              "Id": [
+                1654
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Into the Pines",
+              "Id": [
+                1655
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Through the Fires and Flames",
+              "Id": [
+                1656
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "In Case of Emergency",
+              "Id": [
+                1659
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Tea Off",
+              "Id": [
+                1657
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "When Size Matters",
+              "Id": [
+                1658
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "A Natural Style",
+              "Id": [
+                1660
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Poisonous Palms",
+              "Id": [
+                1662
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Wood Envy",
+              "Id": [
+                1661
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Crabs for the Crabby",
+              "Id": [
+                1679
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Fish for Thought",
+              "Id": [
+                1678
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Fishing for the Future",
+              "Id": [
+                1681
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Water Works",
+              "Id": [
+                1680
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Making Waves",
+              "Id": [
+                1682
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "What Would You Do for a Pickle",
+              "Id": [
+                1683
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Fungi of the Firmament",
+              "Id": [
+                1684
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Simple as Salt",
+              "Id": [
+                1685
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Plumbing the Past",
+              "Id": [
+                1686
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "What's in the Air",
+              "Id": [
+                1687
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "An Unstable Foundation",
+              "Id": [
+                1665
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Explosive Progress",
+              "Id": [
+                1664
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "One Man's Rock",
+              "Id": [
+                1663
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Just in Lime",
+              "Id": [
+                1667
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "The Gall on That Giant",
+              "Id": [
+                1666
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "To Boldly Gall",
+              "Id": [
+                1668
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "A Rock After My Own Heart",
+              "Id": [
+                1670
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "March for Magitek",
+              "Id": [
+                1671
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Training Up",
+              "Id": [
+                1669
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Enriching the Soil",
+              "Id": [
+                1674
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Sand in My Boots",
+              "Id": [
+                1673
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Stone Cold",
+              "Id": [
+                1672
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Reactionary Reactors",
+              "Id": [
+                1677
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "Rocks of a Feather",
+              "Id": [
+                1675
+              ],
+              "Area": null,
+              "Level": 80
+            },
+            {
+              "Title": "The Final Touch",
+              "Id": [
+                1676
+              ],
+              "Area": null,
+              "Level": 80
+            }
+          ],
+          "NpcId": 1037263,
+          "Zone": "Old Sharlayan"
+        }
+      ],
+      "Quests": []
+    }
+  ],
+  "Quests": []
+}

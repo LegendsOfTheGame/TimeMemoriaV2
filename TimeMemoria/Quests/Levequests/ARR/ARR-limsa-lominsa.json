@@ -1,0 +1,1998 @@
+{
+  "Title": "Limsa Lominsa",
+  "Categories": [
+    {
+      "Title": "T'mokkri",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "On the Lamb",
+          "Id": [
+            511
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Birds of a Feather",
+          "Id": [
+            626
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Skillet Labor",
+          "Id": [
+            202
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Ain't Got No Ingots",
+          "Id": [
+            201
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Eyes Bigger than the Plate",
+          "Id": [
+            203
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "You've Got Mail",
+          "Id": [
+            207
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Bronzed and Burnt",
+          "Id": [
+            209
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Headbangers' Thrall",
+          "Id": [
+            208
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Greavous Losses",
+          "Id": [
+            215
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "All Ovo That",
+          "Id": [
+            214
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Waste Not, Want Not",
+          "Id": [
+            213
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Cover Girl",
+          "Id": [
+            219
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Kiss the Pan (Good-bye)",
+          "Id": [
+            221
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Fashion Weak",
+          "Id": [
+            220
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Night Squawker",
+          "Id": [
+            225
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "246 Kinds of Cheese",
+          "Id": [
+            227
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Get Me the Hard Stuff",
+          "Id": [
+            226
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Leg to Stand On",
+          "Id": [
+            232
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Ingot We Trust",
+          "Id": [
+            231
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Insistent Sallets",
+          "Id": [
+            233
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Eyes on a Hard Body",
+          "Id": [
+            237
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Romper Stomper",
+          "Id": [
+            239
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Aurochs Star",
+          "Id": [
+            238
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Hollow Hallmarks",
+          "Id": [
+            244
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Very Slow Array",
+          "Id": [
+            243
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Get Me the Usual",
+          "Id": [
+            245
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Everybody Cut Footloose",
+          "Id": [
+            250
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Liquid Persuasion",
+          "Id": [
+            249
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Distill and Know that I'm Right",
+          "Id": [
+            251
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Feasting the Night Away",
+          "Id": [
+            255
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Cobalt Aforethought",
+          "Id": [
+            256
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Some Dragoons Have All the Luck",
+          "Id": [
+            257
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Mending Fences",
+          "Id": [
+            143
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Proly Hatchet",
+          "Id": [
+            141
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Hells Bells",
+          "Id": [
+            142
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Stainless Chef",
+          "Id": [
+            147
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Bring Me the Head Knife of Al'bedo Derssia",
+          "Id": [
+            149
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "I, Gladius",
+          "Id": [
+            148
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Farriers of Fortune",
+          "Id": [
+            153
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Port of Call: Ul'dah",
+          "Id": [
+            155
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Anutha Spatha",
+          "Id": [
+            154
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Smelt and Dealt",
+          "Id": [
+            159
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Riveting Run",
+          "Id": [
+            161
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Awl or Nothing",
+          "Id": [
+            160
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Hearth Maul",
+          "Id": [
+            167
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Claw Daddy",
+          "Id": [
+            166
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Unseamly Conditions",
+          "Id": [
+            165
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Cleaving the Glim",
+          "Id": [
+            173
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Time to Upgrade",
+          "Id": [
+            171
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Mors Dagger",
+          "Id": [
+            172
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Naked Blade",
+          "Id": [
+            177
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Out on a Limb",
+          "Id": [
+            178
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Can You Spare a Dolabra",
+          "Id": [
+            179
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Awl about Who You Know",
+          "Id": [
+            184
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "You Spin Me Round",
+          "Id": [
+            183
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Spice Cadet",
+          "Id": [
+            185
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Mixed Message",
+          "Id": [
+            190
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Weighty Question",
+          "Id": [
+            189
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "File That under Whatever",
+          "Id": [
+            191
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "No Refunds, Only Exchanges",
+          "Id": [
+            196
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "I'd Rather Be Digging",
+          "Id": [
+            195
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "You Stay on That Side",
+          "Id": [
+            197
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Trout Fishing in Limsa",
+          "Id": [
+            262
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "In Hot Water",
+          "Id": [
+            263
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Pork Is a Salty Food",
+          "Id": [
+            261
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Whip It",
+          "Id": [
+            267
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Real Fungi",
+          "Id": [
+            269
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Jack of All Plates",
+          "Id": [
+            268
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Keep Your Powder Dry",
+          "Id": [
+            273
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Pretty Enough to Eat",
+          "Id": [
+            274
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Go Ahead and Dig In",
+          "Id": [
+            275
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Total Nut Job",
+          "Id": [
+            281
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Shy Is the Oyster",
+          "Id": [
+            280
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Omelette's Be Friends",
+          "Id": [
+            279
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Grape Idea",
+          "Id": [
+            285
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Feast of All Soles",
+          "Id": [
+            287
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Brain Food",
+          "Id": [
+            286
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Cooking with Gas",
+          "Id": [
+            292
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Convalescence Precedes Essence",
+          "Id": [
+            291
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Fever Pitch",
+          "Id": [
+            293
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Bloody Good Tart, This",
+          "Id": [
+            298
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Pretty as a Picture",
+          "Id": [
+            297
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "True Grits",
+          "Id": [
+            299
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "No More Dumpster Diving",
+          "Id": [
+            303
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Feeding Frenzy",
+          "Id": [
+            305
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Don't Turn Up Your Nose",
+          "Id": [
+            304
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Made by Apple in Coerthas",
+          "Id": [
+            311
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Perks of Life at Sea",
+          "Id": [
+            310
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Moving Up in the World",
+          "Id": [
+            309
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Bread in the Clouds",
+          "Id": [
+            317
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Egg Files",
+          "Id": [
+            316
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Culture Club",
+          "Id": [
+            315
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Always Right",
+          "Id": [
+            701
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Bleeding Them Dry",
+          "Id": [
+            700
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Nature Calls",
+          "Id": [
+            699
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Palm in Your Hand",
+          "Id": [
+            698
+          ],
+          "Area": null,
+          "Level": 1
+        }
+      ],
+      "NpcId": 1000970,
+      "Zone": "Limsa Lominsa Upper Decks"
+    },
+    {
+      "Title": "Wyrkholsk",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "A Long and Winding Road",
+          "Id": [
+            510
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Ain't Nobody Got Time for Rats",
+          "Id": [
+            509
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Bug Bites",
+          "Id": [
+            512
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Bug Looks Like a Lady",
+          "Id": [
+            507
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "On the Lamb",
+          "Id": [
+            511
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Far from the Vine",
+          "Id": [
+            530
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "March of the Mandragoras",
+          "Id": [
+            527
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "No Pain, No Grain",
+          "Id": [
+            526
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Red Stead Redemption",
+          "Id": [
+            528
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Cure",
+          "Id": [
+            529
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Distill It Yourself",
+          "Id": [
+            206
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Don't Hit Me One More Time",
+          "Id": [
+            205
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Alloyed Truth",
+          "Id": [
+            204
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Get into Their Heads",
+          "Id": [
+            212
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Rodents of Unusual Size",
+          "Id": [
+            210
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Strait Ain't the Gate",
+          "Id": [
+            211
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Axe Me Anything",
+          "Id": [
+            144
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Thank You for Your Business",
+          "Id": [
+            146
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Unkindest Cut",
+          "Id": [
+            145
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Hit Job",
+          "Id": [
+            151
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "As Above, Below",
+          "Id": [
+            152
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Down on the Pharm",
+          "Id": [
+            150
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "It's Always Sunny in Vylbrand",
+          "Id": [
+            266
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Meat-lover's Special",
+          "Id": [
+            265
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "What a Sap",
+          "Id": [
+            264
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Butter Me Up",
+          "Id": [
+            271
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Fishy Revelations",
+          "Id": [
+            272
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Putting the Squeeze On",
+          "Id": [
+            270
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Kelping Hand",
+          "Id": [
+            756
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Adventurers' Relish",
+          "Id": [
+            754
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Poor Boys Eat Well",
+          "Id": [
+            757
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Soup to Guts",
+          "Id": [
+            755
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Cloud Cutlet",
+          "Id": [
+            758
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Splendor in the Glass",
+          "Id": [
+            761
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "They Taste Just as Pretty",
+          "Id": [
+            759
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Yummy in the Tummy",
+          "Id": [
+            760
+          ],
+          "Area": null,
+          "Level": 1
+        }
+      ],
+      "NpcId": 1004342,
+      "Zone": "Lower La Noscea"
+    },
+    {
+      "Title": "Swygskyf",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "A Tall Odor",
+          "Id": [
+            547
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "At the Gates",
+          "Id": [
+            551
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Fresh Meat",
+          "Id": [
+            553
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Grabbing Crabs",
+          "Id": [
+            556
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Jackal and the Livestock",
+          "Id": [
+            549
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "No Egg to Stand On",
+          "Id": [
+            555
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Shock Therapy",
+          "Id": [
+            550
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "The Sprite of Competition",
+          "Id": [
+            548
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Cook Intentions",
+          "Id": [
+            216
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Stadium Envy",
+          "Id": [
+            218
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Still the Best",
+          "Id": [
+            217
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "I'm into Leather",
+          "Id": [
+            157
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Peddle to the Metal",
+          "Id": [
+            156
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Twice as Slice",
+          "Id": [
+            158
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Chew the Fat",
+          "Id": [
+            276
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Fisher of Men",
+          "Id": [
+            277
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "The Bango Zango Diet",
+          "Id": [
+            278
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Brain Candy",
+          "Id": [
+            764
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Fish by Many Other Names",
+          "Id": [
+            762
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Just Add Water",
+          "Id": [
+            763
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "The Fertile Incandescent",
+          "Id": [
+            765
+          ],
+          "Area": null,
+          "Level": 10
+        }
+      ],
+      "NpcId": 1001788,
+      "Zone": "Western La Noscea"
+    },
+    {
+      "Title": "Orwen",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "A Glamourous Life",
+          "Id": [
+            575
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Barley Legal",
+          "Id": [
+            579
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Beasts of Bourbon",
+          "Id": [
+            577
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Field Testing",
+          "Id": [
+            578
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "First to Reave",
+          "Id": [
+            576
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Sucked Dry",
+          "Id": [
+            574
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Tail in Tow",
+          "Id": [
+            580
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "A Firm Hand",
+          "Id": [
+            223
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "A Well-rounded Crew",
+          "Id": [
+            222
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Still Crazy After All These Years",
+          "Id": [
+            224
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Get a Little Bit Closer",
+          "Id": [
+            162
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Honest Ballast",
+          "Id": [
+            163
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Tools of the Trade",
+          "Id": [
+            164
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Flakes for Friends",
+          "Id": [
+            284
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Rustic Repast",
+          "Id": [
+            283
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Sweet Smell of Success",
+          "Id": [
+            282
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Crab Life by the Horns",
+          "Id": [
+            769
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "My Own Private Shell",
+          "Id": [
+            766
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "The Deepest Cut",
+          "Id": [
+            767
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "The Moral of the Coral",
+          "Id": [
+            768
+          ],
+          "Area": null,
+          "Level": 15
+        }
+      ],
+      "NpcId": 1001791,
+      "Zone": "Western La Noscea"
+    },
+    {
+      "Title": "Ourawann",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "Another Egg Gone",
+          "Id": [
+            600
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "Claw-struck",
+          "Id": [
+            598
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "Man the Ore",
+          "Id": [
+            602
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "Strand by Me",
+          "Id": [
+            601
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "The Deathliest Catch",
+          "Id": [
+            603
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "The Light Stripes",
+          "Id": [
+            599
+          ],
+          "Area": null,
+          "Level": 20
+        }
+      ],
+      "NpcId": 1004347,
+      "Zone": "Lower La Noscea"
+    },
+    {
+      "Title": "Eugene",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "Don't Touch Our Stuff",
+          "Id": [
+            794
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "The Creeps from Work",
+          "Id": [
+            796
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "Throw the Book at Him",
+          "Id": [
+            797
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "Victory Is Mine, Not Yours",
+          "Id": [
+            795
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "Double Dose of Impin'",
+          "Id": [
+            808
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "Of Mice and Demons",
+          "Id": [
+            806
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "Wrong and Rite",
+          "Id": [
+            807
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "You're a Liar, Mansel Black",
+          "Id": [
+            809
+          ],
+          "Area": null,
+          "Level": 20
+        }
+      ],
+      "NpcId": 1004735,
+      "Zone": "Lower La Noscea"
+    },
+    {
+      "Title": "Nahctahr",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "Birds of a Feather",
+          "Id": [
+            626
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Call Me Mating",
+          "Id": [
+            624
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Clearing Steer",
+          "Id": [
+            628
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Necrologos: Igneous Toil",
+          "Id": [
+            625
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Out to Sea",
+          "Id": [
+            627
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Sol Survivors",
+          "Id": [
+            623
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Under Foot",
+          "Id": [
+            629
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Eye of the Beholder",
+          "Id": [
+            361
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Growing Is Knowing",
+          "Id": [
+            362
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "The Write Stuff",
+          "Id": [
+            360
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Kitty Get Your Helm",
+          "Id": [
+            241
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Skillet Scandal",
+          "Id": [
+            240
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "They've Got Legs",
+          "Id": [
+            242
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "A Spy in the House of Love",
+          "Id": [
+            180
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Don't Fear the Reaper",
+          "Id": [
+            182
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Hard Knock Life",
+          "Id": [
+            181
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Live Freelance or Die",
+          "Id": [
+            61
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "The Lone Bowman",
+          "Id": [
+            60
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "The Long Lance of the Law",
+          "Id": [
+            62
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Gegeruju Gets Down",
+          "Id": [
+            300
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Point Them with the Sticky End",
+          "Id": [
+            301
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Sole Survivor",
+          "Id": [
+            302
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Get the Green Stuff",
+          "Id": [
+            482
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "It's Only Love",
+          "Id": [
+            481
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Renascence Man",
+          "Id": [
+            480
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Slave to Fashion",
+          "Id": [
+            121
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Subordinate Clause",
+          "Id": [
+            122
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "The Hand that Bleeds",
+          "Id": [
+            120
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Half Is the New Double",
+          "Id": [
+            420
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Put on Your Party Pants",
+          "Id": [
+            421
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Walk Softly and Carry a Big Halberd",
+          "Id": [
+            422
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Always Right",
+          "Id": [
+            701
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Bleeding Them Dry",
+          "Id": [
+            700
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Nature Calls",
+          "Id": [
+            699
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "The Palm in Your Hand",
+          "Id": [
+            698
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "A Recipe for Disaster",
+          "Id": [
+            778
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Just Call Me Late for Dinner",
+          "Id": [
+            779
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Kitchen Nightmares No More",
+          "Id": [
+            780
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "The Blue Period",
+          "Id": [
+            781
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "I Kidd You Not",
+          "Id": [
+            738
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Shell Game",
+          "Id": [
+            741
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "That's What the Money Is For",
+          "Id": [
+            739
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "The Midden Fair",
+          "Id": [
+            740
+          ],
+          "Area": null,
+          "Level": 30
+        }
+      ],
+      "NpcId": 1004344,
+      "Zone": "Eastern La Noscea"
+    },
+    {
+      "Title": "Aileen",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "Appetite for Abduction",
+          "Id": [
+            635
+          ],
+          "Area": null,
+          "Level": 35
+        },
+        {
+          "Title": "Bud Bait",
+          "Id": [
+            633
+          ],
+          "Area": null,
+          "Level": 35
+        },
+        {
+          "Title": "Coeurl Scratch Fever",
+          "Id": [
+            630
+          ],
+          "Area": null,
+          "Level": 35
+        },
+        {
+          "Title": "Necrologos: Igneous Moil",
+          "Id": [
+            632
+          ],
+          "Area": null,
+          "Level": 35
+        },
+        {
+          "Title": "Walk Like a Mandragora",
+          "Id": [
+            631
+          ],
+          "Area": null,
+          "Level": 35
+        },
+        {
+          "Title": "Wonder Wine",
+          "Id": [
+            634
+          ],
+          "Area": null,
+          "Level": 35
+        }
+      ],
+      "NpcId": 1002367,
+      "Zone": "Eastern La Noscea"
+    },
+    {
+      "Title": "C'lafumyn",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "It's Better (for You) Under the Sea",
+          "Id": [
+            819
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Road Worriers",
+          "Id": [
+            818
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Twenty-nine Was the Cutoff",
+          "Id": [
+            821
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "You Are NOT a Pirate",
+          "Id": [
+            820
+          ],
+          "Area": null,
+          "Level": 30
+        }
+      ],
+      "NpcId": 1004736,
+      "Zone": "Eastern La Noscea"
+    }
+  ],
+  "Quests": []
+}

@@ -1,0 +1,1598 @@
+{
+  "Title": "Ul'dah",
+  "Categories": [
+    {
+      "Title": "Eustace",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "Root Rush",
+          "Id": [
+            323
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "One for the Books",
+          "Id": [
+            322
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Mercury Rising",
+          "Id": [
+            321
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Jawbreaking Weapon of Staggering Weight",
+          "Id": [
+            329
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Distill, My Heart",
+          "Id": [
+            328
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "On the Drip",
+          "Id": [
+            327
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Morning Glass of Ether",
+          "Id": [
+            334
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Wand-full Tonight",
+          "Id": [
+            333
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Using Your Arcane Powers for Fun and Profit",
+          "Id": [
+            335
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Shut Up and Take My Gil",
+          "Id": [
+            339
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Book and a Hard Place",
+          "Id": [
+            340
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Kiss of Life",
+          "Id": [
+            341
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Writing Is Not on the Wall",
+          "Id": [
+            347
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Don't Forget to Take Your Meds",
+          "Id": [
+            346
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Everything Is Impossible",
+          "Id": [
+            345
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Sophomore Slump",
+          "Id": [
+            353
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Glazed and Confused",
+          "Id": [
+            352
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Automata for the People",
+          "Id": [
+            351
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Stuck in the Moment",
+          "Id": [
+            359
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Riches' Brew",
+          "Id": [
+            358
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Just Give Him a Serum",
+          "Id": [
+            357
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Always Have an Exit Plan",
+          "Id": [
+            365
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Alive and Unwell",
+          "Id": [
+            363
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The House Always Wins",
+          "Id": [
+            364
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Bile Business",
+          "Id": [
+            370
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Patch-up Place",
+          "Id": [
+            369
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Your Courtesy Wake-up Call",
+          "Id": [
+            371
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Sleepless in Silvertear",
+          "Id": [
+            375
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Quit Your Jib-jab",
+          "Id": [
+            376
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Matter of Vital Importance",
+          "Id": [
+            377
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Copper and Robbers",
+          "Id": [
+            441
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Arms for the Poor",
+          "Id": [
+            443
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Needful Rings",
+          "Id": [
+            442
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Gods of Small Things",
+          "Id": [
+            447
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "I Ram What I Ram",
+          "Id": [
+            448
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Let's Talk about Hex",
+          "Id": [
+            449
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "All That Glitters",
+          "Id": [
+            453
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "An Offer We Can't Refuse",
+          "Id": [
+            455
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Tusk at Hand",
+          "Id": [
+            454
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Bad to the Bone",
+          "Id": [
+            461
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Brothers in Arms",
+          "Id": [
+            459
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Forever 21K",
+          "Id": [
+            460
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "You Burnt It, You Bought It",
+          "Id": [
+            467
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Perk of Fiction",
+          "Id": [
+            465
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "King for a Day",
+          "Id": [
+            466
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Thaumaturge Is Magic",
+          "Id": [
+            472
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "All Booked Up",
+          "Id": [
+            473
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Love in the Time of Umbra",
+          "Id": [
+            471
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "One Man's Trash",
+          "Id": [
+            478
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Little Bird Told Me",
+          "Id": [
+            479
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "He Has His Quartz",
+          "Id": [
+            477
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Lode It Up",
+          "Id": [
+            484
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Actually, It's Loyalty",
+          "Id": [
+            483
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Burning the Midnight Oil",
+          "Id": [
+            485
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "It's My Business to Know Things",
+          "Id": [
+            491
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Coral on My Mind",
+          "Id": [
+            489
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "When We Were Blings",
+          "Id": [
+            490
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Green and Bear It",
+          "Id": [
+            495
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Gold Is So Last Year",
+          "Id": [
+            496
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Big Red",
+          "Id": [
+            497
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Trew Enough",
+          "Id": [
+            382
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Unmentionables",
+          "Id": [
+            381
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Not Cool Enough",
+          "Id": [
+            383
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Taste for Dalmaticae",
+          "Id": [
+            388
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Adventurer's New Coat",
+          "Id": [
+            387
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Just for Kecks",
+          "Id": [
+            389
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Hat in Hand",
+          "Id": [
+            393
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Keep It under Wraps",
+          "Id": [
+            395
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Workplace Safety",
+          "Id": [
+            394
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Better Shroud than Sorry",
+          "Id": [
+            401
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Don't Trew So Hard",
+          "Id": [
+            400
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Read the Fine Print",
+          "Id": [
+            399
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Doublet Jeopardy",
+          "Id": [
+            407
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Hitting Below the Belt",
+          "Id": [
+            406
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "New Shoes, New Me",
+          "Id": [
+            405
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "I'll Be Your Wailer Today",
+          "Id": [
+            412
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Piling It On",
+          "Id": [
+            411
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "He's Got Legs",
+          "Id": [
+            413
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "By the Seat of the Pants",
+          "Id": [
+            417
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "By the Short Hairs",
+          "Id": [
+            418
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Our Man in Ul'dah",
+          "Id": [
+            419
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Private Concerns",
+          "Id": [
+            424
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Edmelle's Hair",
+          "Id": [
+            423
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Crunching the Numbers",
+          "Id": [
+            425
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Party Animals",
+          "Id": [
+            431
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "After the Smock-down",
+          "Id": [
+            430
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Cool to Be Southern",
+          "Id": [
+            429
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Full Moon Fever",
+          "Id": [
+            435
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Seeing It Through to the End",
+          "Id": [
+            437
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Glad As a Hatter",
+          "Id": [
+            436
+          ],
+          "Area": null,
+          "Level": 1
+        }
+      ],
+      "NpcId": 1001794,
+      "Zone": "Ul'dah - Steps of Nald"
+    },
+    {
+      "Title": "Graceful Song",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "Berries Got Bucked",
+          "Id": [
+            518
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Either Love Them or Kill Them",
+          "Id": [
+            517
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Nothing Compares to Shrews",
+          "Id": [
+            515
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Observe and Protect",
+          "Id": [
+            516
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Road Rage",
+          "Id": [
+            513
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Spoonful of Poison",
+          "Id": [
+            535
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Needles to Say",
+          "Id": [
+            533
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Procession of the Noble",
+          "Id": [
+            534
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Ore the Better",
+          "Id": [
+            532
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Two Yalms Under",
+          "Id": [
+            536
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Days of Chunder",
+          "Id": [
+            325
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Met a Sticky End",
+          "Id": [
+            324
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Bleat Is On",
+          "Id": [
+            326
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Don't Be So Tallow",
+          "Id": [
+            331
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Gotta Bounce",
+          "Id": [
+            330
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Hexster Runoff",
+          "Id": [
+            332
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Bad Bromance",
+          "Id": [
+            445
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Hora at Me",
+          "Id": [
+            444
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Water of Life",
+          "Id": [
+            446
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Needle Is a Small Sword",
+          "Id": [
+            452
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "A Ringing Success",
+          "Id": [
+            450
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Horn of Plenty",
+          "Id": [
+            451
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Burn Me Up",
+          "Id": [
+            385
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Hire in the Blood",
+          "Id": [
+            384
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Long Hair, Long Life",
+          "Id": [
+            386
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "This Is Why You Can't Have Nice Things",
+          "Id": [
+            391
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Time for Acton",
+          "Id": [
+            392
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Wiggle Room",
+          "Id": [
+            390
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Miners' Holiday",
+          "Id": [
+            717
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Rubble Bubble",
+          "Id": [
+            714
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "The Primrose Path",
+          "Id": [
+            716
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Who Needs the Paperwork",
+          "Id": [
+            715
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Do They Ore Don't They",
+          "Id": [
+            719
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "I Don't Zinc It's a Coincidence",
+          "Id": [
+            721
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Pipikkuli's Ship Comes In",
+          "Id": [
+            720
+          ],
+          "Area": null,
+          "Level": 1
+        },
+        {
+          "Title": "Vanishing Point",
+          "Id": [
+            718
+          ],
+          "Area": null,
+          "Level": 1
+        }
+      ],
+      "NpcId": 1003888,
+      "Zone": "Western Thanalan"
+    },
+    {
+      "Title": "Totonowa",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "Beak to Beak",
+          "Id": [
+            559
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Field of Beans",
+          "Id": [
+            561
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "From Ruins to Riches",
+          "Id": [
+            565
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Out of Body, Out of Mind",
+          "Id": [
+            560
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Reeking Havoc",
+          "Id": [
+            557
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Skin-deep",
+          "Id": [
+            558
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "What Peistes Crave",
+          "Id": [
+            566
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "You Cannot Kill the Metal",
+          "Id": [
+            563
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "One for the Road",
+          "Id": [
+            336
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Unbreak My Heart",
+          "Id": [
+            338
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "You Grow, Girl",
+          "Id": [
+            337
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Better Four Eyes than None",
+          "Id": [
+            458
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Gorgeous Gorget",
+          "Id": [
+            457
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Point of Honor",
+          "Id": [
+            456
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Dirt Cheap",
+          "Id": [
+            398
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Making Gloves Out of Nothing at All",
+          "Id": [
+            396
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Welcome to the Cotton Club",
+          "Id": [
+            397
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "Break It Up",
+          "Id": [
+            722
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "It Peiste to Listen",
+          "Id": [
+            724
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "That's Why They Call It Fool's Gold",
+          "Id": [
+            723
+          ],
+          "Area": null,
+          "Level": 10
+        },
+        {
+          "Title": "We Do This the Hard Way",
+          "Id": [
+            725
+          ],
+          "Area": null,
+          "Level": 10
+        }
+      ],
+      "NpcId": 1001796,
+      "Zone": "Western Thanalan"
+    },
+    {
+      "Title": "Poponagu",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "A Simple Solution",
+          "Id": [
+            583
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Death with Indignity",
+          "Id": [
+            584
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Earthbound",
+          "Id": [
+            586
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Going for Goat",
+          "Id": [
+            585
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "The Enterprise of Undeath",
+          "Id": [
+            581
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "The Law Won",
+          "Id": [
+            588
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "The Missing Merchant",
+          "Id": [
+            587
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Devil Take the Foremost",
+          "Id": [
+            344
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Sanity Points",
+          "Id": [
+            343
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "There's Something about Bury",
+          "Id": [
+            342
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Bad Guys Eat Brass",
+          "Id": [
+            463
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "I Am a Rock",
+          "Id": [
+            464
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Sharp Words",
+          "Id": [
+            462
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "A Drag of a Doublet",
+          "Id": [
+            404
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Pants Are Not Enough",
+          "Id": [
+            402
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Touch Me If You Can",
+          "Id": [
+            403
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "A Man's Gotta Dream",
+          "Id": [
+            726
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Earth Sprites Are Easy",
+          "Id": [
+            727
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "Eiderdown for Eidolons",
+          "Id": [
+            728
+          ],
+          "Area": null,
+          "Level": 15
+        },
+        {
+          "Title": "The Doom that Came to Belah'dia",
+          "Id": [
+            729
+          ],
+          "Area": null,
+          "Level": 15
+        }
+      ],
+      "NpcId": 1001799,
+      "Zone": "Eastern Thanalan"
+    },
+    {
+      "Title": "Esmond",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "Dead Men Lie",
+          "Id": [
+            611
+          ],
+          "Area": null,
+          "Level": 25
+        },
+        {
+          "Title": "Drakes' Misfortune",
+          "Id": [
+            612
+          ],
+          "Area": null,
+          "Level": 25
+        },
+        {
+          "Title": "Flower Power",
+          "Id": [
+            614
+          ],
+          "Area": null,
+          "Level": 25
+        },
+        {
+          "Title": "Necrologos: Fluid Corruption",
+          "Id": [
+            613
+          ],
+          "Area": null,
+          "Level": 25
+        },
+        {
+          "Title": "Necrologos: The Noctambulist",
+          "Id": [
+            616
+          ],
+          "Area": null,
+          "Level": 25
+        },
+        {
+          "Title": "Run, Run Away",
+          "Id": [
+            615
+          ],
+          "Area": null,
+          "Level": 25
+        }
+      ],
+      "NpcId": 1002365,
+      "Zone": "Southern Thanalan"
+    },
+    {
+      "Title": "Kikiri",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "A Cold-blooded Business",
+          "Id": [
+            802
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "Blood in the Water (20)",
+          "Id": [
+            804
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "The Burning Reason",
+          "Id": [
+            805
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "Watch Me If You Can",
+          "Id": [
+            803
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "A Heart Aflame",
+          "Id": [
+            817
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "Don't Tear Down This Wall",
+          "Id": [
+            814
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "Food for Thought",
+          "Id": [
+            815
+          ],
+          "Area": null,
+          "Level": 20
+        },
+        {
+          "Title": "The Third Prize Is that You're Slain",
+          "Id": [
+            816
+          ],
+          "Area": null,
+          "Level": 20
+        }
+      ],
+      "NpcId": 1004739,
+      "Zone": "Eastern Thanalan"
+    },
+    {
+      "Title": "Blue Herring",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "And Then There Were None",
+          "Id": [
+            829
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Bridges of Qiqirn Country",
+          "Id": [
+            828
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "Grapevine of Wrath",
+          "Id": [
+            831
+          ],
+          "Area": null,
+          "Level": 30
+        },
+        {
+          "Title": "The Cost of Living",
+          "Id": [
+            830
+          ],
+          "Area": null,
+          "Level": 30
+        }
+      ],
+      "NpcId": 1004740,
+      "Zone": "Southern Thanalan"
+    },
+    {
+      "Title": "Rurubana",
+      "Categories": [],
+      "Quests": [
+        {
+          "Title": "Blow-up Incubator",
+          "Id": [
+            648
+          ],
+          "Area": null,
+          "Level": 40
+        },
+        {
+          "Title": "Circling the Ceruleum",
+          "Id": [
+            646
+          ],
+          "Area": null,
+          "Level": 40
+        },
+        {
+          "Title": "Don't Forget to Cry",
+          "Id": [
+            645
+          ],
+          "Area": null,
+          "Level": 40
+        },
+        {
+          "Title": "Necrologos: Pale Oblation",
+          "Id": [
+            644
+          ],
+          "Area": null,
+          "Level": 40
+        },
+        {
+          "Title": "Someone's in the Doghouse",
+          "Id": [
+            647
+          ],
+          "Area": null,
+          "Level": 40
+        },
+        {
+          "Title": "Subduing the Subprime",
+          "Id": [
+            643
+          ],
+          "Area": null,
+          "Level": 40
+        }
+      ],
+      "NpcId": 1002398,
+      "Zone": "Northern Thanalan"
+    }
+  ],
+  "Quests": []
+}
