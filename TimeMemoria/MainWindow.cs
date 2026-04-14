@@ -274,6 +274,25 @@ namespace TimeMemoria
                 }
             }
 
+            // ── Levequests Section ────────────────────────────────────────
+            var levequestRoot = plugin.QuestData.Categories.FirstOrDefault(c => c.Title == "Levequests");
+            if (levequestRoot != null)
+            {
+                ImGui.Spacing();
+                ImGui.Separator();
+                ImGui.Spacing();
+
+                bool leveOpen = ImGui.TreeNodeEx(
+                    $"{levequestRoot.Title}##levequest_root",
+                    ImGuiTreeNodeFlags.SpanAvailWidth);
+
+                if (leveOpen)
+                {
+                    RenderLevequestTree(levequestRoot, "", fixedPctX: ImGui.GetWindowWidth() - ImGui.CalcTextSize("100%").X - 4f - ImGui.GetStyle().WindowPadding.X - ImGui.GetStyle().ScrollbarSize);
+                    ImGui.TreePop();
+                }
+            }
+
             ImGui.EndChild();
 
             // ── Draggable splitter ────────────────────────────────────────
@@ -364,23 +383,28 @@ namespace TimeMemoria
                         .GroupBy(q => q.Chain ?? "Other")
                         .OrderBy(g => g.Key);
 
-                    if (ImGui.BeginTable("##ql_table", 2,
+                    int neColCount = configuration.ShowQuestArea ? 4 : 3;
+                    if (ImGui.BeginTable("##ql_table", neColCount,
                         ImGuiTableFlags.ScrollY | ImGuiTableFlags.BordersInnerV,
                         ImGui.GetContentRegionAvail()))
                     {
                         ImGui.TableSetupScrollFreeze(0, 1);
-                        ImGui.TableSetupColumn("##chk",
-                            ImGuiTableColumnFlags.WidthFixed, 22f);
-                        ImGui.TableSetupColumn("Title",
-                            ImGuiTableColumnFlags.WidthStretch);
+                        ImGui.TableSetupColumn("##chk",  ImGuiTableColumnFlags.WidthFixed,   22f);
+                        ImGui.TableSetupColumn("##lvl",  ImGuiTableColumnFlags.WidthFixed,   36f);
+                        ImGui.TableSetupColumn("Title",  ImGuiTableColumnFlags.WidthStretch);
+                        if (configuration.ShowQuestArea)
+                            ImGui.TableSetupColumn("Area", ImGuiTableColumnFlags.WidthFixed, 140f);
                         ImGui.TableHeadersRow();
 
                         foreach (var group in byChain)
                         {
                             ImGui.TableNextRow();
-                            ImGui.TableNextColumn();
-                            ImGui.TableNextColumn();
+                            ImGui.TableNextColumn(); // chk
+                            ImGui.TableNextColumn(); // lvl
+                            ImGui.TableNextColumn(); // title — render chain header here
                             ImGui.TextColored(new Vector4(0.5f, 0.8f, 1.0f, 1.0f), group.Key);
+                            if (configuration.ShowQuestArea)
+                                ImGui.TableNextColumn(); // area (blank)
 
                             foreach (var quest in group)
                             {
@@ -396,6 +420,9 @@ namespace TimeMemoria
                                 }
 
                                 ImGui.TableNextColumn();
+                                ImGui.TextDisabled(quest.Level.ToString());
+
+                                ImGui.TableNextColumn();
 
                                 if (configuration.DisableLazyLoad &&
                                     !string.IsNullOrWhiteSpace(searchText))
@@ -404,48 +431,68 @@ namespace TimeMemoria
                                     ImGui.TextDisabled(quest.Title);
                                 else
                                     ImGui.Text(quest.Title);
+
+                                if (configuration.ShowQuestArea)
+                                {
+                                    ImGui.TableNextColumn();
+                                    ImGui.TextDisabled(quest.Area ?? string.Empty);
+                                }
                             }
                         }
 
                         ImGui.EndTable();
                     }
                 }
-                else if (ImGui.BeginTable("##ql_table", 2,
-                    ImGuiTableFlags.ScrollY | ImGuiTableFlags.BordersInnerV,
-                    ImGui.GetContentRegionAvail()))
+                else
                 {
-                    ImGui.TableSetupScrollFreeze(0, 1);
-                    ImGui.TableSetupColumn("##chk",
-                        ImGuiTableColumnFlags.WidthFixed, 22f);
-                    ImGui.TableSetupColumn("Title",
-                        ImGuiTableColumnFlags.WidthStretch);
-                    ImGui.TableHeadersRow();
-
-                    foreach (var quest in displayQuests)
+                    int regColCount = configuration.ShowQuestArea ? 4 : 3;
+                    if (ImGui.BeginTable("##ql_table", regColCount,
+                        ImGuiTableFlags.ScrollY | ImGuiTableFlags.BordersInnerV,
+                        ImGui.GetContentRegionAvail()))
                     {
-                        ImGui.TableNextRow();
-                        ImGui.TableNextColumn();
+                        ImGui.TableSetupScrollFreeze(0, 1);
+                        ImGui.TableSetupColumn("##chk",  ImGuiTableColumnFlags.WidthFixed,   22f);
+                        ImGui.TableSetupColumn("##lvl",  ImGuiTableColumnFlags.WidthFixed,   36f);
+                        ImGui.TableSetupColumn("Title",  ImGuiTableColumnFlags.WidthStretch);
+                        if (configuration.ShowQuestArea)
+                            ImGui.TableSetupColumn("Area", ImGuiTableColumnFlags.WidthFixed, 140f);
+                        ImGui.TableHeadersRow();
 
-                        bool done = QuestDataManager.IsQuestComplete(quest);
-                        if (done)
+                        foreach (var quest in displayQuests)
                         {
-                            ImGui.PushFont(UiBuilder.IconFont);
-                            ImGui.TextUnformatted(FontAwesomeIcon.Check.ToIconString());
-                            ImGui.PopFont();
+                            ImGui.TableNextRow();
+                            ImGui.TableNextColumn();
+
+                            bool done = QuestDataManager.IsQuestComplete(quest);
+                            if (done)
+                            {
+                                ImGui.PushFont(UiBuilder.IconFont);
+                                ImGui.TextUnformatted(FontAwesomeIcon.Check.ToIconString());
+                                ImGui.PopFont();
+                            }
+
+                            ImGui.TableNextColumn();
+                            ImGui.TextDisabled(quest.Level.ToString());
+
+                            ImGui.TableNextColumn();
+
+                            if (configuration.DisableLazyLoad &&
+                                !string.IsNullOrWhiteSpace(searchText))
+                                RenderHighlightedText(quest.Title, searchText, done);
+                            else if (done)
+                                ImGui.TextDisabled(quest.Title);
+                            else
+                                ImGui.Text(quest.Title);
+
+                            if (configuration.ShowQuestArea)
+                            {
+                                ImGui.TableNextColumn();
+                                ImGui.TextDisabled(quest.Area ?? string.Empty);
+                            }
                         }
 
-                        ImGui.TableNextColumn();
-
-                        if (configuration.DisableLazyLoad &&
-                            !string.IsNullOrWhiteSpace(searchText))
-                            RenderHighlightedText(quest.Title, searchText, done);
-                        else if (done)
-                            ImGui.TextDisabled(quest.Title);
-                        else
-                            ImGui.Text(quest.Title);
+                        ImGui.EndTable();
                     }
-
-                    ImGui.EndTable();
                 }
             }
 
@@ -530,6 +577,15 @@ namespace TimeMemoria
             ImGui.Spacing();
             ImGui.TextDisabled("Loads all quest data at startup.");
             ImGui.TextDisabled("Required for the search bar in the Quests tab.");
+
+            ImGui.Spacing();
+
+            var showQuestArea = configuration.ShowQuestArea;
+            if (ImGui.Checkbox("Show area column in quest list", ref showQuestArea))
+            {
+                configuration.ShowQuestArea = showQuestArea;
+                configuration.Save();
+            }
 
             ImGui.Spacing();
             ImGui.Separator();
@@ -780,6 +836,81 @@ namespace TimeMemoria
                 65990 => "Arcanist",
                 _     => "Unknown"
             };
+        }
+
+
+        private void RenderLevequestTree(QuestData node, string parentPath, float fixedPctX)
+        {
+            foreach (var child in node.Categories)
+            {
+                string childPath = string.IsNullOrEmpty(parentPath)
+                    ? child.Title
+                    : $"{parentPath}/{child.Title}";
+
+                // Load bucket if it has a BucketPath
+                if (!string.IsNullOrEmpty(child.BucketPath) && child.Categories.Count == 0 && child.Quests.Count == 0)
+                {
+                    questDataManager.LoadBucketIfNeeded(child);
+                }
+
+                bool hasSubcategories = child.Categories.Count > 0;
+                bool hasQuests = child.Quests.Count > 0;
+                bool hasChildren = hasSubcategories || hasQuests;
+
+                string pctText = child.Total > 0
+                    ? $"{(int)(child.NumComplete / (float)child.Total * 100)}%"
+                    : "—";
+
+                // Check if this node is selected
+                bool isSelected = _selectedKey == childPath && hasQuests && !hasSubcategories;
+
+                ImGuiTreeNodeFlags flags = ImGuiTreeNodeFlags.SpanAvailWidth;
+                if (!hasChildren)
+                    flags |= ImGuiTreeNodeFlags.Leaf;
+                if (isSelected)
+                    flags |= ImGuiTreeNodeFlags.Selected;
+
+                bool isOpen = ImGui.TreeNodeEx(
+                    $"{child.Title}##leve_{childPath}",
+                    flags);
+
+                ImGui.SameLine(fixedPctX);
+                ImGui.TextDisabled(pctText);
+
+                // Handle click/selection for NPC nodes (those with quests but no subcategories)
+                if (hasQuests && !hasSubcategories && ImGui.IsItemClicked())
+                {
+                    _lockMessage = null;
+                    _selectedKey = childPath;
+                    _selectedLabel = child.Title;
+                    _selectedQuests = child.Quests;
+                }
+
+                if (isOpen)
+                {
+                    if (hasSubcategories)
+                    {
+                        RenderLevequestTree(child, childPath, fixedPctX);
+                    }
+
+                    if (hasQuests)
+                    {
+                        // Render quests for this NPC
+                        foreach (var quest in child.Quests)
+                        {
+                            bool done = QuestDataManager.IsQuestComplete(quest);
+                            string questLabel = done ? $"[OK] {quest.Title}" : quest.Title;
+
+                            if (done)
+                                ImGui.TextDisabled(questLabel);
+                            else
+                                ImGui.Text(questLabel);
+                        }
+                    }
+
+                    ImGui.TreePop();
+                }
+            }
         }
     }
 }
