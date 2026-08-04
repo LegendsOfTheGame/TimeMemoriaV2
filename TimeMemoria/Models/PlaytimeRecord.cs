@@ -31,6 +31,14 @@ namespace TimeMemoria.Models
         public DateTime LastUpdateUtc { get; set; } = DateTime.UtcNow;
 
         /// <summary>
+        /// UTC timestamp of the last time LifetimePlaytime was refreshed from the
+        /// game's /playtime output. Null when the player has never run it. This is
+        /// the only signal for how stale the lifetime figure is — nothing else
+        /// updates it.
+        /// </summary>
+        public DateTime? LifetimePlaytimeUpdatedUtc { get; set; }
+
+        /// <summary>
         /// Total number of quests completed across all sessions (lifetime).
         /// </summary>
         public int TotalQuestsCompleted { get; set; } = 0;

@@ -25,6 +25,9 @@ namespace TimeMemoria.Services
         /// <summary>Blue Mage and friends — capped below the normal level ceiling.</summary>
         public bool IsLimitedJob { get; init; }
 
+        /// <summary>"combat", "craft", or "gather" — matching the ledger's groupings.</summary>
+        public string Category { get; init; } = "combat";
+
         public bool IsUnlocked  => Level > 0;
         public bool IsMaxLevel  => IsUnlocked && ExperienceToNext == 0;
 
@@ -111,7 +114,8 @@ namespace TimeMemoria.Services
                         Level            = level,
                         Experience       = atCeiling ? 0 : exp,
                         ExperienceToNext = toNext,
-                        IsLimitedJob     = isLimited
+                        IsLimitedJob     = isLimited,
+                        Category         = GetCategory(job)
                     });
                 }
 
@@ -152,6 +156,27 @@ namespace TimeMemoria.Services
 
             return JsonSerializer.Serialize(
                 payload, new JsonSerializerOptions { WriteIndented = true });
+        }
+
+
+        /// <summary>
+        /// Splits a class or job into the ledger's three groupings. Combat jobs carry
+        /// a non-zero Role. Hand and land both sit at Role 0, and DohDolJobIndex
+        /// cannot separate them — it numbers within each group, so the crafters run
+        /// 0-7 and the gatherers 0-2. Row IDs do separate them and are stable across
+        /// languages: 8-15 are Carpenter through Culinarian, 16-18 the gatherers.
+        /// </summary>
+        private static string GetCategory(ClassJob job)
+        {
+            if (job.Role != 0)
+                return "combat";
+
+            return job.RowId switch
+            {
+                >= 16 and <= 18 => "gather",
+                >= 8  and <= 15 => "craft",
+                _               => "combat"
+            };
         }
 
 

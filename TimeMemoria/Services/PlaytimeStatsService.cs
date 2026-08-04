@@ -207,6 +207,7 @@ namespace TimeMemoria.Services
                 var minutes = match.Groups[3].Success ? int.Parse(match.Groups[3].Value) : 0;
 
                 CurrentRecord.LifetimePlaytime = TimeSpan.FromDays(days) + TimeSpan.FromHours(hours) + TimeSpan.FromMinutes(minutes);
+                CurrentRecord.LifetimePlaytimeUpdatedUtc = DateTime.UtcNow;
                 SaveCurrentRecord();
             }
         }

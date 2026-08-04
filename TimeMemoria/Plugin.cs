@@ -26,6 +26,7 @@ namespace TimeMemoria
         private readonly NewsService newsService;
         private readonly TocService tocService;
         private readonly ClassJobProgressService classJobProgressService;
+        private readonly LedgerExportService ledgerExportService;
 
 
         public Plugin(
@@ -60,6 +61,10 @@ namespace TimeMemoria
                                        PluginInterface, PluginLog, this,
                                        configuration, playtimeStatsService, DataManager);
 
+            ledgerExportService = new LedgerExportService(
+                                       playerState, classJobProgressService,
+                                       playtimeStatsService, questDataManager, PluginLog);
+
             var pluginDir = PluginInterface.AssemblyLocation.DirectoryName!;
             var tocPath   = System.IO.Path.Combine(pluginDir, "Quests", "toc.json");
             tocService    = new TocService(PluginLog, tocPath);
@@ -68,7 +73,7 @@ namespace TimeMemoria
             mainWindow   = new MainWindow(
                                this, questDataManager, configuration,
                                playtimeStatsService, newsService, tocService,
-                               classJobProgressService);
+                               classJobProgressService, ledgerExportService);
             windowSystem.AddWindow(mainWindow);
 
             CommandManager.AddHandler("/timememoria", new CommandInfo(OnCommand)

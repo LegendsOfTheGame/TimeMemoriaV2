@@ -11,14 +11,16 @@ namespace TimeMemoria.UI
     /// Class and job levelling progress, with a local clipboard export.
     /// Observational only — levels and experience, no performance data.
     /// </summary>
-    public static class ProgressionPanel
+    internal static class ProgressionPanel
     {
         private static readonly Vector4 HeaderColour = new(0.5f, 0.8f, 1.0f, 1.0f);
 
         private static string copyFeedback  = string.Empty;
         private static DateTime copyShownAt = DateTime.MinValue;
 
-        public static void Draw(ClassJobProgressService progressService)
+        public static void Draw(
+            ClassJobProgressService progressService,
+            LedgerExportService     ledgerExport)
         {
             ImGui.BeginChild("##progression_tab", ImGuiHelpers.ScaledVector2(0), true);
 
@@ -38,7 +40,7 @@ namespace TimeMemoria.UI
             ImGui.Separator();
             ImGui.Spacing();
 
-            DrawExportRow(progressService);
+            DrawExportRow(progressService, ledgerExport);
 
             ImGui.Spacing();
 
@@ -82,22 +84,17 @@ namespace TimeMemoria.UI
         }
 
 
-        private static void DrawExportRow(ClassJobProgressService progressService)
+        private static void DrawExportRow(
+            ClassJobProgressService progressService,
+            LedgerExportService     ledgerExport)
         {
             if (ImGui.Button("Copy progression to clipboard"))
-            {
-                try
-                {
-                    ImGui.SetClipboardText(progressService.ExportJson());
-                    copyFeedback = "Copied as JSON.";
-                }
-                catch (Exception ex)
-                {
-                    copyFeedback = $"Copy failed: {ex.Message}";
-                }
+                CopyToClipboard(progressService.ExportJson, "Copied as JSON.");
 
-                copyShownAt = DateTime.UtcNow;
-            }
+            ImGui.SameLine();
+
+            if (ImGui.Button("Copy for Adventurer's Ledger"))
+                CopyToClipboard(ledgerExport.BuildJson, "Copied in ledger format.");
 
             // Fade the confirmation out rather than leaving it on screen forever.
             if (copyFeedback.Length > 0 && DateTime.UtcNow - copyShownAt < TimeSpan.FromSeconds(4))
@@ -107,6 +104,22 @@ namespace TimeMemoria.UI
             }
 
             ImGui.TextDisabled("Nothing is sent anywhere — the export stays on your clipboard.");
+        }
+
+
+        private static void CopyToClipboard(Func<string> build, string successMessage)
+        {
+            try
+            {
+                ImGui.SetClipboardText(build());
+                copyFeedback = successMessage;
+            }
+            catch (Exception ex)
+            {
+                copyFeedback = $"Copy failed: {ex.Message}";
+            }
+
+            copyShownAt = DateTime.UtcNow;
         }
     }
 }

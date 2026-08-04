@@ -26,6 +26,7 @@ namespace TimeMemoria
         private readonly NewsService newsService;
         private readonly TocService tocService;
         private readonly ClassJobProgressService classJobProgress;
+        private readonly LedgerExportService ledgerExport;
 
         private string searchText = "";
 
@@ -47,7 +48,8 @@ namespace TimeMemoria
             PlaytimeStatsService playtimeStats,
             NewsService newsService,
             TocService tocService,
-            ClassJobProgressService classJobProgress)
+            ClassJobProgressService classJobProgress,
+            LedgerExportService ledgerExport)
             : base("Time Memoria##main_window",
                    ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoScrollWithMouse)
         {
@@ -58,6 +60,7 @@ namespace TimeMemoria
             this.newsService      = newsService;
             this.tocService       = tocService;
             this.classJobProgress = classJobProgress;
+            this.ledgerExport     = ledgerExport;
 
             this.Size          = new Vector2(832, 470);
             this.SizeCondition = ImGuiCond.Appearing;
@@ -126,7 +129,7 @@ namespace TimeMemoria
 
                 if (ImGui.BeginTabItem("Progression##progression_tab"))
                 {
-                    ProgressionPanel.Draw(classJobProgress);
+                    ProgressionPanel.Draw(classJobProgress, ledgerExport);
                     ImGui.EndTabItem();
                 }
 
