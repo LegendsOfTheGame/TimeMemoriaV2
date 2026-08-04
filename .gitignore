@@ -401,3 +401,19 @@ FodyWeavers.xsd
 *.sln.iml
 project_dump.txt
 *.md
+
+# ── Time Memoria local artifacts ──────────────────────────────────────
+# Editor/agent temp files
+*.tmp.*
+# Local Claude Code settings
+.claude/
+# Large local dumps and intermediate migration data (regenerable)
+project_dump.txt
+QuestDataManager_full.txt
+TimeMemoria/data.json.backup
+TimeMemoria/Untitled-2.txt
+quest_patches.txt
+quest_patches_sorted.txt
+quest_patches_sorted.csv
+quest_patches_categorized.csv
+quests_by_expansion/
