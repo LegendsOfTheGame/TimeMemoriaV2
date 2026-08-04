@@ -14,6 +14,7 @@ namespace TimeMemoria
         public bool ShowPercentage { get; set; }
         public bool ExcludeOtherQuests { get; set; }
         public int DisplayOption { get; set; }
+        public int ClassJobOrderMode { get; set; } = 0;
         public string StartArea { get; set; } = string.Empty;
         public string GrandCompany { get; set; } = string.Empty;
         public uint StartClass { get; set; }

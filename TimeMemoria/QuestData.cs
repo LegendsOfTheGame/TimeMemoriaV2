@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace TimeMemoria;
 
@@ -29,6 +30,16 @@ public class QuestData
 
     // Cached completion count (persists when bucket is unloaded)
     public int CachedNumComplete { get; set; } = -1;
+}
+
+[Serializable]
+public class QuestCategoryIndexEntry
+{
+    [JsonProperty("Path")]
+    public string Path { get; set; } = string.Empty;
+
+    [JsonProperty("Order")]
+    public int Order { get; set; }
 }
 
 [Serializable]

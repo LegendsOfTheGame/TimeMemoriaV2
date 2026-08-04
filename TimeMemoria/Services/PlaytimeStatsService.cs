@@ -1,8 +1,8 @@
 using System;
 using System.Linq;
 using Dalamud.Plugin.Services;
+using Dalamud.Game.Chat;
 using Dalamud.Game.Text;
-using Dalamud.Game.Text.SeStringHandling;
 using TimeMemoria.Models;
 
 namespace TimeMemoria.Services
@@ -188,17 +188,12 @@ namespace TimeMemoria.Services
             currentCharacterId = null;
         }
 
-        private void OnChatMessage(
-            XivChatType type,
-            int timestamp,
-            ref SeString sender,
-            ref SeString message,
-            ref bool isHandled)
+        private void OnChatMessage(IHandleableChatMessage message)
         {
-            if (type != XivChatType.SystemMessage || CurrentRecord == null)
+            if (message.LogKind != XivChatType.SystemMessage || CurrentRecord == null)
                 return;
 
-            var messageText = message.TextValue;
+            var messageText = message.Message.ToString();
 
             var match = System.Text.RegularExpressions.Regex.Match(
                 messageText,

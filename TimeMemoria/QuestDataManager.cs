@@ -25,6 +25,7 @@ namespace TimeMemoria
         private readonly IDataManager dataManager;
         private readonly LeveQuestDataService leveQuestDataService;
         private readonly Dictionary<string, uint> townMapping;
+        private readonly Dictionary<uint, QuestCategoryIndexEntry> questCategoryIndex = new();
 
         private readonly Dictionary<string, List<Quest>> _loadedBuckets = new();
         private string? _activeBucketPath = null;
@@ -53,6 +54,7 @@ namespace TimeMemoria
             this.townMapping = leveQuestDataService.GetTownMapping();
 
             LoadLegacyQuestData();
+            LoadQuestCategoryIndex();
             AddLevequestStubs();
             PreloadSeasonalContent();
             PreloadAllLevequests();
@@ -70,6 +72,40 @@ namespace TimeMemoria
             catch (Exception ex)
             {
                 pluginLog.Error(ex, "Failed to correct levequest IDs");
+            }
+        }
+
+        private void LoadQuestCategoryIndex()
+        {
+            try
+            {
+                var pluginDir = pluginInterface.AssemblyLocation.DirectoryName!;
+                var indexPath = Path.Combine(pluginDir, "quest_category_index.json");
+
+                if (!File.Exists(indexPath))
+                {
+                    pluginLog.Debug($"Quest category index not found: {indexPath}");
+                    return;
+                }
+
+                var json = File.ReadAllText(indexPath);
+                var entries = JsonConvert.DeserializeObject<Dictionary<string, QuestCategoryIndexEntry>>(json);
+                if (entries == null)
+                    return;
+
+                foreach (var (key, entry) in entries)
+                {
+                    if (!uint.TryParse(key, out var id))
+                        continue;
+
+                    questCategoryIndex[id] = entry;
+                }
+
+                pluginLog.Info($"Loaded quest category index with {questCategoryIndex.Count} entries");
+            }
+            catch (Exception ex)
+            {
+                pluginLog.Error(ex, "Failed to load quest category index");
             }
         }
 
@@ -404,10 +440,37 @@ namespace TimeMemoria
                 filtered.Add(quest);
             }
 
-            _directBucketCache[bucketPath] = filtered;
+            bool isClassBucket = bucketPath.EndsWith("/Class", StringComparison.OrdinalIgnoreCase);
+            bool useMergedOrder = !isClassBucket || configuration.ClassJobOrderMode == 0;
+
+            _directBucketCache[bucketPath] = useMergedOrder
+                ? filtered.OrderBy(GetQuestSortOrder).ToList()
+                : filtered.ToList();
             pluginLog.Debug(
                 $"[LoadBucketDirect] Loaded {filtered.Count}/{raw.Count} quests for: {bucketPath}");
-            return filtered;
+            return _directBucketCache[bucketPath];
+        }
+
+        public string GetQuestCategoryPath(Quest quest)
+        {
+            return TryGetQuestCategoryIndex(quest, out var entry) ? entry!.Path : string.Empty;
+        }
+
+        public int GetQuestSortOrder(Quest quest)
+        {
+            return TryGetQuestCategoryIndex(quest, out var entry) ? entry!.Order : int.MaxValue;
+        }
+
+        private bool TryGetQuestCategoryIndex(Quest quest, out QuestCategoryIndexEntry? entry)
+        {
+            foreach (var id in quest.Id)
+            {
+                if (questCategoryIndex.TryGetValue(id, out entry))
+                    return true;
+            }
+
+            entry = null;
+            return false;
         }
 
 
@@ -732,6 +795,11 @@ namespace TimeMemoria
                 if (QuestManager.IsQuestComplete(id)) return true;
             }
             return false;
+        }
+
+        public static bool IsLevequestComplete(Quest quest)
+        {
+            return IsQuestComplete(quest);
         }
 
         // Load levequests from game client (pure game data, no JSON IDs)

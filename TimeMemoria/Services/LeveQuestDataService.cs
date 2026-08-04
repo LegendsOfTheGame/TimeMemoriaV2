@@ -8,10 +8,6 @@ using TimeMemoria;
 
 namespace TimeMemoria.Services
 {
-    /// <summary>
-    /// Loads levequest data directly from game client (Lumina Excel).
-    /// Provides accurate quest IDs and completion status from authoritative game source.
-    /// </summary>
     public class LeveQuestDataService
     {
         private readonly IDataManager dataManager;
@@ -31,20 +27,33 @@ namespace TimeMemoria.Services
                 if (leveSheet == null)
                     return null;
 
-                // Get city name from bucket path
                 var cityName = ExtractCityName(bucketPath);
                 var sw = System.Diagnostics.Stopwatch.StartNew();
 
-                // Filter levequests by town and availability
-                var townLeves = leveSheet
-                    .Where(leve => leve.LeveClient.RowId != 0 &&
-                                   (townId == 0 || leve.Town.RowId == townId))
-                    .ToList();
+                // Load levequests: filter by town ID for ARR, by level range for expansions
+                List<Leve> townLeves;
+
+                if (bucketPath.StartsWith("Levequests/ARR/"))
+                {
+                    // ARR: filter by town ID
+                    townLeves = leveSheet
+                        .Where(leve => leve.Town.RowId == townId)
+                        .OrderBy(leve => leve.ClassJobLevel)
+                        .ToList();
+                }
+                else
+                {
+                    // Expansions: filter by level range
+                    var (minLevel, maxLevel) = GetLevelRangeForExpansion(bucketPath);
+                    townLeves = leveSheet
+                        .Where(leve => leve.ClassJobLevel >= minLevel && leve.ClassJobLevel <= maxLevel)
+                        .OrderBy(leve => leve.ClassJobLevel)
+                        .ToList();
+                }
 
                 if (townLeves.Count == 0)
                     return null;
 
-                // Group by NPC/Issuer - use quest name's NPC context from game data
                 var root = new QuestData
                 {
                     Title = cityName,
@@ -52,8 +61,7 @@ namespace TimeMemoria.Services
                     BucketPath = bucketPath
                 };
 
-                // For now, create a flat structure grouped by level ranges
-                // This avoids the NPC matching problem and still organizes quests
+                // Group by level range
                 var levesByLevel = townLeves
                     .GroupBy(leve => (leve.ClassJobLevel / 10) * 10)
                     .OrderBy(g => g.Key)
@@ -86,9 +94,8 @@ namespace TimeMemoria.Services
                         totalQuests++;
                     }
 
-                    // Calculate completion for this level group
                     levelCategory.Total = levelCategory.Quests.Count;
-                    levelCategory.NumComplete = levelCategory.Quests.Count(q => IsLevequestComplete(q));
+                    levelCategory.NumComplete = levelCategory.Quests.Count(q => IsLevequestComplete(q.Id[0]));
                     root.Categories.Add(levelCategory);
                 }
 
@@ -106,21 +113,29 @@ namespace TimeMemoria.Services
             }
         }
 
-        private unsafe bool IsLevequestComplete(Quest quest)
+        private unsafe bool IsLevequestComplete(uint leveId)
         {
             try
             {
-                foreach (var id in quest.Id)
-                {
-                    if (QuestManager.Instance()->IsLevequestComplete((ushort)id))
-                        return true;
-                }
-                return false;
+                return QuestManager.Instance()->IsLevequestComplete((ushort)leveId);
             }
             catch
             {
                 return false;
             }
+        }
+
+        private (uint minLevel, uint maxLevel) GetLevelRangeForExpansion(string bucketPath)
+        {
+            return bucketPath switch
+            {
+                "Levequests/hw-levequests" => (50, 59),
+                "Levequests/sb-levequests" => (60, 69),
+                "Levequests/shb-levequests" => (70, 79),
+                "Levequests/ew-levequests" => (80, 89),
+                "Levequests/dt-levequests" => (90, 99),
+                _ => (0, 255)
+            };
         }
 
         private string ExtractCityName(string bucketPath)
@@ -145,9 +160,9 @@ namespace TimeMemoria.Services
         {
             return new()
             {
-                { "Levequests/ARR/arr-limsa-lominsa", 2 },
-                { "Levequests/ARR/arr-gridania", 3 },
-                { "Levequests/ARR/arr-uldah", 1 },
+                { "Levequests/ARR/arr-limsa-lominsa", 1 },
+                { "Levequests/ARR/arr-gridania", 2 },
+                { "Levequests/ARR/arr-uldah", 3 },
                 { "Levequests/ARR/arr-coerthas", 4 },
                 { "Levequests/ARR/arr-mordhona", 5 },
                 { "Levequests/hw-levequests", 0 },
