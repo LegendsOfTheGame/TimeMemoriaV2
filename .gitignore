@@ -417,3 +417,6 @@ quest_patches_sorted.txt
 quest_patches_sorted.csv
 quest_patches_categorized.csv
 quests_by_expansion/
+
+# macOS finder metadata
+.DS_Store
