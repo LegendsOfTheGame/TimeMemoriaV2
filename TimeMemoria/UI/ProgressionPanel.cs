@@ -34,7 +34,7 @@ namespace TimeMemoria.UI
 
             ImGui.TextColored(HeaderColour, "Class & Job Progression");
             ImGui.SameLine();
-            ImGui.TextDisabled($"({unlocked.Count} unlocked)");
+            ImGui.TextDisabled($"({unlocked.Count} of {progress.Count} unlocked)");
             ImGui.Separator();
             ImGui.Spacing();
 

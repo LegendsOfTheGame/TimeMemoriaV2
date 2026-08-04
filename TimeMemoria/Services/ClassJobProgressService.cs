@@ -22,6 +22,9 @@ namespace TimeMemoria.Services
         /// <summary>Total experience the current level requires. Zero at max level.</summary>
         public int ExperienceToNext { get; init; }
 
+        /// <summary>Blue Mage and friends — capped below the normal level ceiling.</summary>
+        public bool IsLimitedJob { get; init; }
+
         public bool IsUnlocked  => Level > 0;
         public bool IsMaxLevel  => IsUnlocked && ExperienceToNext == 0;
 
@@ -65,7 +68,7 @@ namespace TimeMemoria.Services
         /// Returns every trackable class and job with its current level and experience.
         /// Returns an empty list when no character is loaded.
         /// </summary>
-        public List<ClassJobProgress> GetProgress()
+        public unsafe List<ClassJobProgress> GetProgress()
         {
             if (!playerState.IsLoaded)
                 return new List<ClassJobProgress>();
@@ -76,15 +79,25 @@ namespace TimeMemoria.Services
                 var paramGrow = dataManager.GetExcelSheet<ParamGrow>();
                 var result    = new List<ClassJobProgress>(jobs.Count);
 
+                // The level ceiling for this character, which accounts for which
+                // expansions the account actually owns.
+                var state    = FFXIVClientStructs.FFXIV.Client.Game.UI.PlayerState.Instance();
+                int maxLevel = state != null ? state->MaxLevel : 0;
+
                 foreach (var job in jobs)
                 {
                     var level = playerState.GetClassJobLevel(job);
                     var exp   = playerState.GetClassJobExperience(job);
 
                     // ParamGrow is indexed by level and holds the experience that
-                    // level requires. At max level the game reports zero.
-                    var toNext = 0;
-                    if (level > 0)
+                    // level requires. It keeps returning a value at the ceiling —
+                    // the game simply stops awarding experience — so cap detection
+                    // has to come from MaxLevel rather than from a zero here.
+                    var toNext   = 0;
+                    var isLimited = job.IsLimitedJob;
+                    var atCeiling = !isLimited && maxLevel > 0 && level >= maxLevel;
+
+                    if (level > 0 && !atCeiling)
                     {
                         var row = paramGrow.GetRowOrDefault((uint)level);
                         if (row.HasValue)
@@ -93,11 +106,12 @@ namespace TimeMemoria.Services
 
                     result.Add(new ClassJobProgress
                     {
-                        Name             = job.Name.ToString(),
+                        Name             = ToDisplayName(job.Name.ToString()),
                         Abbreviation     = job.Abbreviation.ToString(),
                         Level            = level,
-                        Experience       = exp,
-                        ExperienceToNext = toNext
+                        Experience       = atCeiling ? 0 : exp,
+                        ExperienceToNext = toNext,
+                        IsLimitedJob     = isLimited
                     });
                 }
 
@@ -138,6 +152,21 @@ namespace TimeMemoria.Services
 
             return JsonSerializer.Serialize(
                 payload, new JsonSerializerOptions { WriteIndented = true });
+        }
+
+
+        /// <summary>
+        /// The ClassJob sheet stores names lowercase ("white mage"), while the game
+        /// UI presents them capitalised. Only re-cases strings that arrive entirely
+        /// lowercase, so localisations with their own casing rules are left alone.
+        /// </summary>
+        private static string ToDisplayName(string name)
+        {
+            if (name.Length == 0 || name.Any(char.IsUpper))
+                return name;
+
+            return System.Globalization.CultureInfo.CurrentCulture
+                         .TextInfo.ToTitleCase(name);
         }
 
 
