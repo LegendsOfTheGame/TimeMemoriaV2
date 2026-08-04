@@ -190,7 +190,11 @@ namespace TimeMemoria.Services
                 .Select(group => group.OrderByDescending(job => job.JobIndex)
                                       .ThenBy(job => job.RowId)
                                       .First())
-                .OrderBy(job => job.ExpArrayIndex)
+                // UIPriority is the sheet's own display-order field — the same one
+                // the in-game Character panel sorts by — so this matches what the
+                // player already sees rather than inventing an order.
+                .OrderBy(job => job.UIPriority)
+                .ThenBy(job => job.ExpArrayIndex)
                 .ToList();
 
             pluginLog.Debug($"[ClassJobProgress] Tracking {trackedJobs.Count} class/job slots");
