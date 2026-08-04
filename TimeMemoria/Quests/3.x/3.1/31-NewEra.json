@@ -1,4 +1,4 @@
 [
-    { "Title": "Sky Pirates", "Id": [67740], "Area": "Ishgard", "Level": 60, "Chain": "The Shadow of Mhach" },
-    { "Title": "To Rule the Skies", "Id": [67741], "Area": "The Sea of Clouds", "Level": 60, "Chain": "The Shadow of Mhach" }
+  {"Title":"Sky Pirates","Id":[67740],"Area":"Ishgard","Level":60,"Chain":"The Shadow of Mhach"},
+  {"Title":"To Rule the Skies","Id":[67741],"Area":"The Sea of Clouds","Level":60,"Chain":"The Shadow of Mhach"}
 ]

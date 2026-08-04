@@ -1,9 +1,9 @@
 [
-    {  "Title": "Gosetsu and Tsuyu", "Id": [ 68606 ], "Area": "Ruby Bazaar Offices", "Level": 70  },
-    {  "Title": "Gone Like the Morning Dew", "Id": [ 68607 ], "Area": "The Doman Enclave", "Level": 70  },
-    {  "Title": "Fruits of Her Labor", "Id": [ 68608 ], "Area": "Yanxia", "Level": 70  },
-    {  "Title": "Conscripts and Contingencies", "Id": [ 68609 ], "Area": "Kienkan", "Level": 70  },
-    {  "Title": "The Primary Agreement", "Id": [ 68610 ], "Area": "Kienkan", "Level": 70  },
-    {  "Title": "Under the Moonlight", "Id": [ 68611 ], "Area": "Kienkan", "Level": 70  },
-    {  "Title": "Emissary of the Dawn", "Id": [ 68612 ], "Area": "The Rising Stones", "Level": 70  }
+  {"Title":"Gosetsu and Tsuyu","Id":[68606],"Area":"Ruby Bazaar Offices","Level":70},
+  {"Title":"Gone Like the Morning Dew","Id":[68607],"Area":"The Doman Enclave","Level":70},
+  {"Title":"Fruits of Her Labor","Id":[68608],"Area":"Yanxia","Level":70},
+  {"Title":"Conscripts and Contingencies","Id":[68609],"Area":"Kienkan","Level":70},
+  {"Title":"The Primary Agreement","Id":[68610],"Area":"Kienkan","Level":70},
+  {"Title":"Under the Moonlight","Id":[68611],"Area":"Kienkan","Level":70},
+  {"Title":"Emissary of the Dawn","Id":[68612],"Area":"The Rising Stones","Level":70}
 ]

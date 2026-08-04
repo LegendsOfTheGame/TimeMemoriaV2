@@ -1,4 +1,4 @@
 [
-    { "Title": "Judgment Bolts and Lightning", "Id": [67066], "Area": "Gridania", "Level": 50, "Chain": "Primals" },
-    { "Title": "Syrcus Tower", "Id": [67010], "Area": "Mor Dhona", "Level": 50, "Chain": "The Crystal Tower" }
+  {"Title":"Judgment Bolts and Lightning","Id":[67066],"Area":"Gridania","Level":50,"Chain":"Primals"},
+  {"Title":"Syrcus Tower","Id":[67010],"Area":"Mor Dhona","Level":50,"Chain":"The Crystal Tower"}
 ]

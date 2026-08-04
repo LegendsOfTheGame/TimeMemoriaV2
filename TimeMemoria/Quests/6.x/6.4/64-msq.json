@@ -1,11 +1,11 @@
 [
-    {  "Title": "Currying Flavor", "Id": [ 70271 ], "Area": "Radz-at-Han", "Level": 90  },
-    {  "Title": "Going Haam", "Id": [ 70272 ], "Area": "Estinien's Chambers", "Level": 90  },
-    {  "Title": "Like Fear to Flame", "Id": [ 70273 ], "Area": "Old Sharlayan", "Level": 90  },
-    {  "Title": "The Fallen Empire", "Id": [ 70274 ], "Area": "Garlemald", "Level": 90  },
-    {  "Title": "Bonds of Trust", "Id": [ 70275 ], "Area": "Garlemald", "Level": 90  },
-    {  "Title": "Lunar Rendezvous", "Id": [ 70276 ], "Area": "Garlemald", "Level": 90  },
-    {  "Title": "The Red Side of the Moon", "Id": [ 70277 ], "Area": "Mare Lamentorum", "Level": 90  },
-    {  "Title": "Abyssal Dark", "Id": [ 70278 ], "Area": "The Red Moon", "Level": 90  },
-    {  "Title": "The Dark Throne", "Id": [ 70279 ], "Area": "Mare Lamentorum", "Level": 90  }
+  {"Title":"Currying Flavor","Id":[70271],"Area":"Radz-at-Han","Level":90},
+  {"Title":"Going Haam","Id":[70272],"Area":"Estinien's Chambers","Level":90},
+  {"Title":"Like Fear to Flame","Id":[70273],"Area":"Old Sharlayan","Level":90},
+  {"Title":"The Fallen Empire","Id":[70274],"Area":"Garlemald","Level":90},
+  {"Title":"Bonds of Trust","Id":[70275],"Area":"Garlemald","Level":90},
+  {"Title":"Lunar Rendezvous","Id":[70276],"Area":"Garlemald","Level":90},
+  {"Title":"The Red Side of the Moon","Id":[70277],"Area":"Mare Lamentorum","Level":90},
+  {"Title":"Abyssal Dark","Id":[70278],"Area":"The Red Moon","Level":90},
+  {"Title":"The Dark Throne","Id":[70279],"Area":"Mare Lamentorum","Level":90}
 ]

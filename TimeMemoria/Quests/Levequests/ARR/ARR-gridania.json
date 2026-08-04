@@ -5,678 +5,90 @@
       "Title": "Gontrant",
       "Categories": [],
       "Quests": [
-        {
-          "Title": "A Clogful of Camaraderie",
-          "Id": [
-            23
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Touch and Heal",
-          "Id": [
-            22
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "In with the New",
-          "Id": [
-            21
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Bows for the Boys",
-          "Id": [
-            27
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Shields for the Serpents",
-          "Id": [
-            28
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Spears and Sorcery",
-          "Id": [
-            29
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Citizens' Canes",
-          "Id": [
-            33
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "On the Move",
-          "Id": [
-            34
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Raise the Roof",
-          "Id": [
-            35
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Driving Up the Wall",
-          "Id": [
-            41
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Re-crating the Scene",
-          "Id": [
-            39
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Nightmare on My Street",
-          "Id": [
-            40
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Behind the Mask",
-          "Id": [
-            46
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "As the Worm Turns",
-          "Id": [
-            45
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Militia on My Mind",
-          "Id": [
-            47
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Tools for the Tools",
-          "Id": [
-            52
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Daddy's Little Girl",
-          "Id": [
-            51
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Armoires of the Rich and Famous",
-          "Id": [
-            53
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Knock on Wood",
-          "Id": [
-            57
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "An Expected Tourney",
-          "Id": [
-            58
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Ceremonial Spears",
-          "Id": [
-            59
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "A Tree Grew in Gridania",
-          "Id": [
-            64
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Flintstone Fight",
-          "Id": [
-            65
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Stay on Target",
-          "Id": [
-            63
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Greenstone for Greenhorns",
-          "Id": [
-            70
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Spin It Like You Mean It",
-          "Id": [
-            71
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "The Arsenal of Theocracy",
-          "Id": [
-            69
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Clogs of War",
-          "Id": [
-            76
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Trident and Error",
-          "Id": [
-            75
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "You Do the Heavy Lifting",
-          "Id": [
-            77
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Underneath It All",
-          "Id": [
-            82
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Sole Traders",
-          "Id": [
-            83
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Red in the Head",
-          "Id": [
-            81
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "From the Sands to the Stage",
-          "Id": [
-            88
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Mind over Muzzle",
-          "Id": [
-            87
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "In Their Shoes",
-          "Id": [
-            89
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "The Bards' Guards",
-          "Id": [
-            94
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Saddle Sore",
-          "Id": [
-            95
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Quelling Bloody Rumors",
-          "Id": [
-            93
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Choke Hold",
-          "Id": [
-            99
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Heads Up",
-          "Id": [
-            100
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Skin off Their Backs",
-          "Id": [
-            101
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Fire and Hide",
-          "Id": [
-            106
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "My Sole to Take",
-          "Id": [
-            107
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Playing the Part",
-          "Id": [
-            105
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Just Rewards",
-          "Id": [
-            112
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Men Who Scare Up Goats",
-          "Id": [
-            111
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Breeches Served Cold",
-          "Id": [
-            113
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Best Served Toad",
-          "Id": [
-            119
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Quality over Quantity",
-          "Id": [
-            118
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Emergency Patches",
-          "Id": [
-            117
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Soft Shoe Shuffle",
-          "Id": [
-            124
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Supply Side Logic",
-          "Id": [
-            125
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "The Righteous Tools for the Job",
-          "Id": [
-            123
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Skirt Chaser",
-          "Id": [
-            130
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "The Birdmen of Ishgard",
-          "Id": [
-            129
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "The Tao of Rabbits",
-          "Id": [
-            131
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Hold On Tight",
-          "Id": [
-            135
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Handle with Care",
-          "Id": [
-            137
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Too Hot to Handle",
-          "Id": [
-            136
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Lovely Latex",
-          "Id": [
-            677
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "We Couldn't Start the Fire",
-          "Id": [
-            676
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Waking Wood",
-          "Id": [
-            674
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "East Bank Story",
-          "Id": [
-            675
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Evil Seeds",
-          "Id": [
-            680
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "If a Tree Falls",
-          "Id": [
-            679
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "No Bark, All Bite",
-          "Id": [
-            681
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Let the Sun Shine In",
-          "Id": [
-            678
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "A Chest of Nuts",
-          "Id": [
-            682
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "The Heart of the Hedge",
-          "Id": [
-            685
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "West Bank Story",
-          "Id": [
-            683
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Digging Deep",
-          "Id": [
-            684
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Maple Stories",
-          "Id": [
-            687
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Never Strikes Twice",
-          "Id": [
-            688
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "The Quick and the Dead",
-          "Id": [
-            686
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Briar in the Hole",
-          "Id": [
-            689
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Just the Artifacts, Madam",
-          "Id": [
-            692
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Nowhere to Slide",
-          "Id": [
-            690
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Shaken, Not Stirred",
-          "Id": [
-            691
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Fueling the Flames",
-          "Id": [
-            693
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Appleanche",
-          "Id": [
-            696
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Mushroom Gobblin'",
-          "Id": [
-            697
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Over the Underbrush",
-          "Id": [
-            694
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Moon in Rouge",
-          "Id": [
-            695
-          ],
-          "Area": null,
-          "Level": 1
-        }
+        {"Title":"A Clogful of Camaraderie","Id":[23],"Area":null,"Level":1},
+        {"Title":"Touch and Heal","Id":[22],"Area":null,"Level":1},
+        {"Title":"In with the New","Id":[21],"Area":null,"Level":1},
+        {"Title":"Bows for the Boys","Id":[27],"Area":null,"Level":1},
+        {"Title":"Shields for the Serpents","Id":[28],"Area":null,"Level":1},
+        {"Title":"Spears and Sorcery","Id":[29],"Area":null,"Level":1},
+        {"Title":"Citizens' Canes","Id":[33],"Area":null,"Level":1},
+        {"Title":"On the Move","Id":[34],"Area":null,"Level":1},
+        {"Title":"Raise the Roof","Id":[35],"Area":null,"Level":1},
+        {"Title":"Driving Up the Wall","Id":[41],"Area":null,"Level":1},
+        {"Title":"Re-crating the Scene","Id":[39],"Area":null,"Level":1},
+        {"Title":"Nightmare on My Street","Id":[40],"Area":null,"Level":1},
+        {"Title":"Behind the Mask","Id":[46],"Area":null,"Level":1},
+        {"Title":"As the Worm Turns","Id":[45],"Area":null,"Level":1},
+        {"Title":"Militia on My Mind","Id":[47],"Area":null,"Level":1},
+        {"Title":"Tools for the Tools","Id":[52],"Area":null,"Level":1},
+        {"Title":"Daddy's Little Girl","Id":[51],"Area":null,"Level":1},
+        {"Title":"Armoires of the Rich and Famous","Id":[53],"Area":null,"Level":1},
+        {"Title":"Knock on Wood","Id":[57],"Area":null,"Level":1},
+        {"Title":"An Expected Tourney","Id":[58],"Area":null,"Level":1},
+        {"Title":"Ceremonial Spears","Id":[59],"Area":null,"Level":1},
+        {"Title":"A Tree Grew in Gridania","Id":[64],"Area":null,"Level":1},
+        {"Title":"Flintstone Fight","Id":[65],"Area":null,"Level":1},
+        {"Title":"Stay on Target","Id":[63],"Area":null,"Level":1},
+        {"Title":"Greenstone for Greenhorns","Id":[70],"Area":null,"Level":1},
+        {"Title":"Spin It Like You Mean It","Id":[71],"Area":null,"Level":1},
+        {"Title":"The Arsenal of Theocracy","Id":[69],"Area":null,"Level":1},
+        {"Title":"Clogs of War","Id":[76],"Area":null,"Level":1},
+        {"Title":"Trident and Error","Id":[75],"Area":null,"Level":1},
+        {"Title":"You Do the Heavy Lifting","Id":[77],"Area":null,"Level":1},
+        {"Title":"Underneath It All","Id":[82],"Area":null,"Level":1},
+        {"Title":"Sole Traders","Id":[83],"Area":null,"Level":1},
+        {"Title":"Red in the Head","Id":[81],"Area":null,"Level":1},
+        {"Title":"From the Sands to the Stage","Id":[88],"Area":null,"Level":1},
+        {"Title":"Mind over Muzzle","Id":[87],"Area":null,"Level":1},
+        {"Title":"In Their Shoes","Id":[89],"Area":null,"Level":1},
+        {"Title":"The Bards' Guards","Id":[94],"Area":null,"Level":1},
+        {"Title":"Saddle Sore","Id":[95],"Area":null,"Level":1},
+        {"Title":"Quelling Bloody Rumors","Id":[93],"Area":null,"Level":1},
+        {"Title":"Choke Hold","Id":[99],"Area":null,"Level":1},
+        {"Title":"Heads Up","Id":[100],"Area":null,"Level":1},
+        {"Title":"Skin off Their Backs","Id":[101],"Area":null,"Level":1},
+        {"Title":"Fire and Hide","Id":[106],"Area":null,"Level":1},
+        {"Title":"My Sole to Take","Id":[107],"Area":null,"Level":1},
+        {"Title":"Playing the Part","Id":[105],"Area":null,"Level":1},
+        {"Title":"Just Rewards","Id":[112],"Area":null,"Level":1},
+        {"Title":"Men Who Scare Up Goats","Id":[111],"Area":null,"Level":1},
+        {"Title":"Breeches Served Cold","Id":[113],"Area":null,"Level":1},
+        {"Title":"Best Served Toad","Id":[119],"Area":null,"Level":1},
+        {"Title":"Quality over Quantity","Id":[118],"Area":null,"Level":1},
+        {"Title":"Emergency Patches","Id":[117],"Area":null,"Level":1},
+        {"Title":"Soft Shoe Shuffle","Id":[124],"Area":null,"Level":1},
+        {"Title":"Supply Side Logic","Id":[125],"Area":null,"Level":1},
+        {"Title":"The Righteous Tools for the Job","Id":[123],"Area":null,"Level":1},
+        {"Title":"Skirt Chaser","Id":[130],"Area":null,"Level":1},
+        {"Title":"The Birdmen of Ishgard","Id":[129],"Area":null,"Level":1},
+        {"Title":"The Tao of Rabbits","Id":[131],"Area":null,"Level":1},
+        {"Title":"Hold On Tight","Id":[135],"Area":null,"Level":1},
+        {"Title":"Handle with Care","Id":[137],"Area":null,"Level":1},
+        {"Title":"Too Hot to Handle","Id":[136],"Area":null,"Level":1},
+        {"Title":"Lovely Latex","Id":[677],"Area":null,"Level":1},
+        {"Title":"We Couldn't Start the Fire","Id":[676],"Area":null,"Level":1},
+        {"Title":"Waking Wood","Id":[674],"Area":null,"Level":1},
+        {"Title":"East Bank Story","Id":[675],"Area":null,"Level":1},
+        {"Title":"Evil Seeds","Id":[680],"Area":null,"Level":1},
+        {"Title":"If a Tree Falls","Id":[679],"Area":null,"Level":1},
+        {"Title":"No Bark, All Bite","Id":[681],"Area":null,"Level":1},
+        {"Title":"Let the Sun Shine In","Id":[678],"Area":null,"Level":1},
+        {"Title":"A Chest of Nuts","Id":[682],"Area":null,"Level":1},
+        {"Title":"The Heart of the Hedge","Id":[685],"Area":null,"Level":1},
+        {"Title":"West Bank Story","Id":[683],"Area":null,"Level":1},
+        {"Title":"Digging Deep","Id":[684],"Area":null,"Level":1},
+        {"Title":"Maple Stories","Id":[687],"Area":null,"Level":1},
+        {"Title":"Never Strikes Twice","Id":[688],"Area":null,"Level":1},
+        {"Title":"The Quick and the Dead","Id":[686],"Area":null,"Level":1},
+        {"Title":"Briar in the Hole","Id":[689],"Area":null,"Level":1},
+        {"Title":"Just the Artifacts, Madam","Id":[692],"Area":null,"Level":1},
+        {"Title":"Nowhere to Slide","Id":[690],"Area":null,"Level":1},
+        {"Title":"Shaken, Not Stirred","Id":[691],"Area":null,"Level":1},
+        {"Title":"Fueling the Flames","Id":[693],"Area":null,"Level":1},
+        {"Title":"Appleanche","Id":[696],"Area":null,"Level":1},
+        {"Title":"Mushroom Gobblin'","Id":[697],"Area":null,"Level":1},
+        {"Title":"Over the Underbrush","Id":[694],"Area":null,"Level":1},
+        {"Title":"Moon in Rouge","Id":[695],"Area":null,"Level":1}
       ],
       "NpcId": 1000101,
       "Zone": "New Gridania"
@@ -685,262 +97,38 @@
       "Title": "Muriaule",
       "Categories": [],
       "Quests": [
-        {
-          "Title": "No Bane, No Gain",
-          "Id": [
-            502
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Nutbreaker Suite",
-          "Id": [
-            505
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Picking Up the Piercers",
-          "Id": [
-            506
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Scourge of the Saplings",
-          "Id": [
-            503
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Stay for a Vile",
-          "Id": [
-            504
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Water, Water Everywhere",
-          "Id": [
-            501
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "A Full Stomach",
-          "Id": [
-            522
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "A Vine Finer than Twine",
-          "Id": [
-            520
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Compost with the Most",
-          "Id": [
-            524
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "River Raid",
-          "Id": [
-            521
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "We Didn't Start the Fire",
-          "Id": [
-            519
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Wrangling Raptors",
-          "Id": [
-            523
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Bowing Out",
-          "Id": [
-            24
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Got Your Back",
-          "Id": [
-            25
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Gridania's Got Talent",
-          "Id": [
-            26
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "A Sword in Hand",
-          "Id": [
-            31
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Compulsory Conjury",
-          "Id": [
-            32
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Leaving without Leave",
-          "Id": [
-            30
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Sticking Their Necks Out",
-          "Id": [
-            85
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Tan Before the Ban",
-          "Id": [
-            86
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "These Boots Are Made for Wailing",
-          "Id": [
-            84
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "A Place to Call Helm",
-          "Id": [
-            91
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "A Thorn in One's Hide",
-          "Id": [
-            90
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Throwing Down the Gauntlet",
-          "Id": [
-            92
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "East Bank Story",
-          "Id": [
-            675
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Lovely Latex",
-          "Id": [
-            677
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Waking Wood",
-          "Id": [
-            674
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "We Couldn't Start the Fire",
-          "Id": [
-            676
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Evil Seeds",
-          "Id": [
-            680
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "If a Tree Falls",
-          "Id": [
-            679
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "Let the Sun Shine In",
-          "Id": [
-            678
-          ],
-          "Area": null,
-          "Level": 1
-        },
-        {
-          "Title": "No Bark, All Bite",
-          "Id": [
-            681
-          ],
-          "Area": null,
-          "Level": 1
-        }
+        {"Title":"No Bane, No Gain","Id":[502],"Area":null,"Level":1},
+        {"Title":"Nutbreaker Suite","Id":[505],"Area":null,"Level":1},
+        {"Title":"Picking Up the Piercers","Id":[506],"Area":null,"Level":1},
+        {"Title":"Scourge of the Saplings","Id":[503],"Area":null,"Level":1},
+        {"Title":"Stay for a Vile","Id":[504],"Area":null,"Level":1},
+        {"Title":"Water, Water Everywhere","Id":[501],"Area":null,"Level":1},
+        {"Title":"A Full Stomach","Id":[522],"Area":null,"Level":1},
+        {"Title":"A Vine Finer than Twine","Id":[520],"Area":null,"Level":1},
+        {"Title":"Compost with the Most","Id":[524],"Area":null,"Level":1},
+        {"Title":"River Raid","Id":[521],"Area":null,"Level":1},
+        {"Title":"We Didn't Start the Fire","Id":[519],"Area":null,"Level":1},
+        {"Title":"Wrangling Raptors","Id":[523],"Area":null,"Level":1},
+        {"Title":"Bowing Out","Id":[24],"Area":null,"Level":1},
+        {"Title":"Got Your Back","Id":[25],"Area":null,"Level":1},
+        {"Title":"Gridania's Got Talent","Id":[26],"Area":null,"Level":1},
+        {"Title":"A Sword in Hand","Id":[31],"Area":null,"Level":1},
+        {"Title":"Compulsory Conjury","Id":[32],"Area":null,"Level":1},
+        {"Title":"Leaving without Leave","Id":[30],"Area":null,"Level":1},
+        {"Title":"Sticking Their Necks Out","Id":[85],"Area":null,"Level":1},
+        {"Title":"Tan Before the Ban","Id":[86],"Area":null,"Level":1},
+        {"Title":"These Boots Are Made for Wailing","Id":[84],"Area":null,"Level":1},
+        {"Title":"A Place to Call Helm","Id":[91],"Area":null,"Level":1},
+        {"Title":"A Thorn in One's Hide","Id":[90],"Area":null,"Level":1},
+        {"Title":"Throwing Down the Gauntlet","Id":[92],"Area":null,"Level":1},
+        {"Title":"East Bank Story","Id":[675],"Area":null,"Level":1},
+        {"Title":"Lovely Latex","Id":[677],"Area":null,"Level":1},
+        {"Title":"Waking Wood","Id":[674],"Area":null,"Level":1},
+        {"Title":"We Couldn't Start the Fire","Id":[676],"Area":null,"Level":1},
+        {"Title":"Evil Seeds","Id":[680],"Area":null,"Level":1},
+        {"Title":"If a Tree Falls","Id":[679],"Area":null,"Level":1},
+        {"Title":"Let the Sun Shine In","Id":[678],"Area":null,"Level":1},
+        {"Title":"No Bark, All Bite","Id":[681],"Area":null,"Level":1}
       ],
       "NpcId": 1001866,
       "Zone": "Central Shroud"
@@ -949,166 +137,26 @@
       "Title": "Tierney",
       "Categories": [],
       "Quests": [
-        {
-          "Title": "A Shroom with a View",
-          "Id": [
-            545
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Bump in the Night",
-          "Id": [
-            540
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Going Green",
-          "Id": [
-            537
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Hog Wild",
-          "Id": [
-            542
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Infestation Cessation",
-          "Id": [
-            538
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Mite and Madness",
-          "Id": [
-            544
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Scent of a Roselet",
-          "Id": [
-            543
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Too Close to Home",
-          "Id": [
-            546
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Turning Out the Blight",
-          "Id": [
-            539
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Wail of a Tale",
-          "Id": [
-            541
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Life's a Stitch",
-          "Id": [
-            37
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Say It with Spears",
-          "Id": [
-            36
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Shielding Sales",
-          "Id": [
-            38
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Only the Best",
-          "Id": [
-            96
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Simply the Best",
-          "Id": [
-            97
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Targe Up",
-          "Id": [
-            98
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "A Chest of Nuts",
-          "Id": [
-            682
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "Digging Deep",
-          "Id": [
-            684
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "The Heart of the Hedge",
-          "Id": [
-            685
-          ],
-          "Area": null,
-          "Level": 10
-        },
-        {
-          "Title": "West Bank Story",
-          "Id": [
-            683
-          ],
-          "Area": null,
-          "Level": 10
-        }
+        {"Title":"A Shroom with a View","Id":[545],"Area":null,"Level":10},
+        {"Title":"Bump in the Night","Id":[540],"Area":null,"Level":10},
+        {"Title":"Going Green","Id":[537],"Area":null,"Level":10},
+        {"Title":"Hog Wild","Id":[542],"Area":null,"Level":10},
+        {"Title":"Infestation Cessation","Id":[538],"Area":null,"Level":10},
+        {"Title":"Mite and Madness","Id":[544],"Area":null,"Level":10},
+        {"Title":"Scent of a Roselet","Id":[543],"Area":null,"Level":10},
+        {"Title":"Too Close to Home","Id":[546],"Area":null,"Level":10},
+        {"Title":"Turning Out the Blight","Id":[539],"Area":null,"Level":10},
+        {"Title":"Wail of a Tale","Id":[541],"Area":null,"Level":10},
+        {"Title":"Life's a Stitch","Id":[37],"Area":null,"Level":10},
+        {"Title":"Say It with Spears","Id":[36],"Area":null,"Level":10},
+        {"Title":"Shielding Sales","Id":[38],"Area":null,"Level":10},
+        {"Title":"Only the Best","Id":[96],"Area":null,"Level":10},
+        {"Title":"Simply the Best","Id":[97],"Area":null,"Level":10},
+        {"Title":"Targe Up","Id":[98],"Area":null,"Level":10},
+        {"Title":"A Chest of Nuts","Id":[682],"Area":null,"Level":10},
+        {"Title":"Digging Deep","Id":[684],"Area":null,"Level":10},
+        {"Title":"The Heart of the Hedge","Id":[685],"Area":null,"Level":10},
+        {"Title":"West Bank Story","Id":[683],"Area":null,"Level":10}
       ],
       "NpcId": 1000105,
       "Zone": "Central Shroud"
@@ -1117,142 +165,23 @@
       "Title": "Qina Lyehga",
       "Categories": [],
       "Quests": [
-        {
-          "Title": "A Guest for Supper",
-          "Id": [
-            572
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "Can't Say No to Gnat",
-          "Id": [
-            569
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "Monkey Business",
-          "Id": [
-            567
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "Ochus Bite, Leaves Bleed",
-          "Id": [
-            570
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "Something in the Mead",
-          "Id": [
-            568
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "Stew for Two",
-          "Id": [
-            571
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "The Transporter",
-          "Id": [
-            573
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "Bowing to Necessity",
-          "Id": [
-            44
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "Nothing to Hide",
-          "Id": [
-            42
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "What You Need",
-          "Id": [
-            43
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "A Rush on Ringbands",
-          "Id": [
-            104
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "Back in the Band",
-          "Id": [
-            102
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "On Their Feet Again",
-          "Id": [
-            103
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "Briar in the Hole",
-          "Id": [
-            689
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "Maple Stories",
-          "Id": [
-            687
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "Never Strikes Twice",
-          "Id": [
-            688
-          ],
-          "Area": null,
-          "Level": 15
-        },
-        {
-          "Title": "The Quick and the Dead",
-          "Id": [
-            686
-          ],
-          "Area": null,
-          "Level": 15
-        }
+        {"Title":"A Guest for Supper","Id":[572],"Area":null,"Level":15},
+        {"Title":"Can't Say No to Gnat","Id":[569],"Area":null,"Level":15},
+        {"Title":"Monkey Business","Id":[567],"Area":null,"Level":15},
+        {"Title":"Ochus Bite, Leaves Bleed","Id":[570],"Area":null,"Level":15},
+        {"Title":"Something in the Mead","Id":[568],"Area":null,"Level":15},
+        {"Title":"Stew for Two","Id":[571],"Area":null,"Level":15},
+        {"Title":"The Transporter","Id":[573],"Area":null,"Level":15},
+        {"Title":"Bowing to Necessity","Id":[44],"Area":null,"Level":15},
+        {"Title":"Nothing to Hide","Id":[42],"Area":null,"Level":15},
+        {"Title":"What You Need","Id":[43],"Area":null,"Level":15},
+        {"Title":"A Rush on Ringbands","Id":[104],"Area":null,"Level":15},
+        {"Title":"Back in the Band","Id":[102],"Area":null,"Level":15},
+        {"Title":"On Their Feet Again","Id":[103],"Area":null,"Level":15},
+        {"Title":"Briar in the Hole","Id":[689],"Area":null,"Level":15},
+        {"Title":"Maple Stories","Id":[687],"Area":null,"Level":15},
+        {"Title":"Never Strikes Twice","Id":[688],"Area":null,"Level":15},
+        {"Title":"The Quick and the Dead","Id":[686],"Area":null,"Level":15}
       ],
       "NpcId": 1000821,
       "Zone": "East Shroud"
@@ -1261,702 +190,93 @@
       "Title": "Nyell",
       "Categories": [],
       "Quests": [
-        {
-          "Title": "Belly Up",
-          "Id": [
-            589
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "It's Hard Being Moogle",
-          "Id": [
-            595
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "It's a Trap",
-          "Id": [
-            594
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Killing Beasts Softly",
-          "Id": [
-            593
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "No Leaves Left Behind",
-          "Id": [
-            590
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "The Root of the Problem",
-          "Id": [
-            592
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Treevenge",
-          "Id": [
-            596
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "What's Yours Is Mine",
-          "Id": [
-            591
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "More than Meets the Eye",
-          "Id": [
-            605
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Necrologos: Olidious Separation",
-          "Id": [
-            606
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Necrologos: The Beholders",
-          "Id": [
-            610
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Refugee Raw",
-          "Id": [
-            604
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Revisiting Raimdelle",
-          "Id": [
-            607
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Rope a 'Lope",
-          "Id": [
-            609
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Up the Creek",
-          "Id": [
-            608
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Blind Man's Bluff",
-          "Id": [
-            349
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Dripping with Venom",
-          "Id": [
-            348
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Hush Little Wailer",
-          "Id": [
-            350
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Conspicuous Conjuration",
-          "Id": [
-            354
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "The Wailers' First Law of Potion",
-          "Id": [
-            356
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "You Put Your Left Hand In",
-          "Id": [
-            355
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "I Was a Teenage Wailer",
-          "Id": [
-            230
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "No Hand-me-downs",
-          "Id": [
-            228
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Not Enough Headroom",
-          "Id": [
-            229
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Get Shirty",
-          "Id": [
-            236
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Hot for Teacher",
-          "Id": [
-            235
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Need for Mead",
-          "Id": [
-            234
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Powderpost Derby",
-          "Id": [
-            168
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "The Devil's Workshop",
-          "Id": [
-            169
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "When Rhalgr Met Nophica",
-          "Id": [
-            170
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "I Saw What You Did There",
-          "Id": [
-            175
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Lancers' Creed",
-          "Id": [
-            174
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "That's Some Fine Grinding",
-          "Id": [
-            176
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Grinding It Out",
-          "Id": [
-            48
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Polearms Aplenty",
-          "Id": [
-            49
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Wall Not Found",
-          "Id": [
-            50
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Heal Away",
-          "Id": [
-            56
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Storm of Swords",
-          "Id": [
-            54
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Toys of Summer",
-          "Id": [
-            55
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Food Fight",
-          "Id": [
-            290
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "For Crumbs' Sake",
-          "Id": [
-            288
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Picnic Panic",
-          "Id": [
-            289
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "I Love Lamprey",
-          "Id": [
-            296
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Love's Crumpets Lost",
-          "Id": [
-            295
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Whirled Peas",
-          "Id": [
-            294
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Dog Tags Are for Dogs",
-          "Id": [
-            469
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Music to Their Ears",
-          "Id": [
-            468
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "One and Only",
-          "Id": [
-            470
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Dancing with the Stars",
-          "Id": [
-            476
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Keep the Change",
-          "Id": [
-            475
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Necklet of Champions",
-          "Id": [
-            474
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Hands On",
-          "Id": [
-            108
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Open to Attack",
-          "Id": [
-            110
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Packing a Punch",
-          "Id": [
-            109
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Campaign in the Membrane",
-          "Id": [
-            115
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "No Risk, No Reward",
-          "Id": [
-            114
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Quicker than Sand",
-          "Id": [
-            116
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Getting Handsy",
-          "Id": [
-            408
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "The Telltale Tress",
-          "Id": [
-            409
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Whatchoo Talking About",
-          "Id": [
-            410
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Bet You Anything",
-          "Id": [
-            416
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Pantser Corps",
-          "Id": [
-            414
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Put a Lid on It",
-          "Id": [
-            415
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Fueling the Flames",
-          "Id": [
-            693
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Just the Artifacts, Madam",
-          "Id": [
-            692
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Nowhere to Slide",
-          "Id": [
-            690
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Shaken, Not Stirred",
-          "Id": [
-            691
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Appleanche",
-          "Id": [
-            696
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Moon in Rouge",
-          "Id": [
-            695
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Mushroom Gobblin'",
-          "Id": [
-            697
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Over the Underbrush",
-          "Id": [
-            694
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Blind Ambition",
-          "Id": [
-            773
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Food Chain Reaction",
-          "Id": [
-            772
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Sounds Fishy to Me",
-          "Id": [
-            770
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "The Long and the Shortcrust",
-          "Id": [
-            771
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "A Shocking Soir�e",
-          "Id": [
-            774
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "A Watery Web of Lies",
-          "Id": [
-            775
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Fishing 101",
-          "Id": [
-            776
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "The Truth Will Set You Free",
-          "Id": [
-            777
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Elemental Housekeeping",
-          "Id": [
-            731
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Location, Location, Location",
-          "Id": [
-            732
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Look How They Shine for You",
-          "Id": [
-            730
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Rock My Wall",
-          "Id": [
-            733
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Baby, Light My Way",
-          "Id": [
-            737
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Can't Start a Fire",
-          "Id": [
-            735
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Fool Me Twice",
-          "Id": [
-            734
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Tag, You're It",
-          "Id": [
-            736
-          ],
-          "Area": null,
-          "Level": 20
-        }
+        {"Title":"Belly Up","Id":[589],"Area":null,"Level":20},
+        {"Title":"It's Hard Being Moogle","Id":[595],"Area":null,"Level":20},
+        {"Title":"It's a Trap","Id":[594],"Area":null,"Level":20},
+        {"Title":"Killing Beasts Softly","Id":[593],"Area":null,"Level":20},
+        {"Title":"No Leaves Left Behind","Id":[590],"Area":null,"Level":20},
+        {"Title":"The Root of the Problem","Id":[592],"Area":null,"Level":20},
+        {"Title":"Treevenge","Id":[596],"Area":null,"Level":20},
+        {"Title":"What's Yours Is Mine","Id":[591],"Area":null,"Level":20},
+        {"Title":"More than Meets the Eye","Id":[605],"Area":null,"Level":20},
+        {"Title":"Necrologos: Olidious Separation","Id":[606],"Area":null,"Level":20},
+        {"Title":"Necrologos: The Beholders","Id":[610],"Area":null,"Level":20},
+        {"Title":"Refugee Raw","Id":[604],"Area":null,"Level":20},
+        {"Title":"Revisiting Raimdelle","Id":[607],"Area":null,"Level":20},
+        {"Title":"Rope a 'Lope","Id":[609],"Area":null,"Level":20},
+        {"Title":"Up the Creek","Id":[608],"Area":null,"Level":20},
+        {"Title":"Blind Man's Bluff","Id":[349],"Area":null,"Level":20},
+        {"Title":"Dripping with Venom","Id":[348],"Area":null,"Level":20},
+        {"Title":"Hush Little Wailer","Id":[350],"Area":null,"Level":20},
+        {"Title":"Conspicuous Conjuration","Id":[354],"Area":null,"Level":20},
+        {"Title":"The Wailers' First Law of Potion","Id":[356],"Area":null,"Level":20},
+        {"Title":"You Put Your Left Hand In","Id":[355],"Area":null,"Level":20},
+        {"Title":"I Was a Teenage Wailer","Id":[230],"Area":null,"Level":20},
+        {"Title":"No Hand-me-downs","Id":[228],"Area":null,"Level":20},
+        {"Title":"Not Enough Headroom","Id":[229],"Area":null,"Level":20},
+        {"Title":"Get Shirty","Id":[236],"Area":null,"Level":20},
+        {"Title":"Hot for Teacher","Id":[235],"Area":null,"Level":20},
+        {"Title":"Need for Mead","Id":[234],"Area":null,"Level":20},
+        {"Title":"Powderpost Derby","Id":[168],"Area":null,"Level":20},
+        {"Title":"The Devil's Workshop","Id":[169],"Area":null,"Level":20},
+        {"Title":"When Rhalgr Met Nophica","Id":[170],"Area":null,"Level":20},
+        {"Title":"I Saw What You Did There","Id":[175],"Area":null,"Level":20},
+        {"Title":"Lancers' Creed","Id":[174],"Area":null,"Level":20},
+        {"Title":"That's Some Fine Grinding","Id":[176],"Area":null,"Level":20},
+        {"Title":"Grinding It Out","Id":[48],"Area":null,"Level":20},
+        {"Title":"Polearms Aplenty","Id":[49],"Area":null,"Level":20},
+        {"Title":"Wall Not Found","Id":[50],"Area":null,"Level":20},
+        {"Title":"Heal Away","Id":[56],"Area":null,"Level":20},
+        {"Title":"Storm of Swords","Id":[54],"Area":null,"Level":20},
+        {"Title":"Toys of Summer","Id":[55],"Area":null,"Level":20},
+        {"Title":"Food Fight","Id":[290],"Area":null,"Level":20},
+        {"Title":"For Crumbs' Sake","Id":[288],"Area":null,"Level":20},
+        {"Title":"Picnic Panic","Id":[289],"Area":null,"Level":20},
+        {"Title":"I Love Lamprey","Id":[296],"Area":null,"Level":20},
+        {"Title":"Love's Crumpets Lost","Id":[295],"Area":null,"Level":20},
+        {"Title":"Whirled Peas","Id":[294],"Area":null,"Level":20},
+        {"Title":"Dog Tags Are for Dogs","Id":[469],"Area":null,"Level":20},
+        {"Title":"Music to Their Ears","Id":[468],"Area":null,"Level":20},
+        {"Title":"One and Only","Id":[470],"Area":null,"Level":20},
+        {"Title":"Dancing with the Stars","Id":[476],"Area":null,"Level":20},
+        {"Title":"Keep the Change","Id":[475],"Area":null,"Level":20},
+        {"Title":"Necklet of Champions","Id":[474],"Area":null,"Level":20},
+        {"Title":"Hands On","Id":[108],"Area":null,"Level":20},
+        {"Title":"Open to Attack","Id":[110],"Area":null,"Level":20},
+        {"Title":"Packing a Punch","Id":[109],"Area":null,"Level":20},
+        {"Title":"Campaign in the Membrane","Id":[115],"Area":null,"Level":20},
+        {"Title":"No Risk, No Reward","Id":[114],"Area":null,"Level":20},
+        {"Title":"Quicker than Sand","Id":[116],"Area":null,"Level":20},
+        {"Title":"Getting Handsy","Id":[408],"Area":null,"Level":20},
+        {"Title":"The Telltale Tress","Id":[409],"Area":null,"Level":20},
+        {"Title":"Whatchoo Talking About","Id":[410],"Area":null,"Level":20},
+        {"Title":"Bet You Anything","Id":[416],"Area":null,"Level":20},
+        {"Title":"Pantser Corps","Id":[414],"Area":null,"Level":20},
+        {"Title":"Put a Lid on It","Id":[415],"Area":null,"Level":20},
+        {"Title":"Fueling the Flames","Id":[693],"Area":null,"Level":20},
+        {"Title":"Just the Artifacts, Madam","Id":[692],"Area":null,"Level":20},
+        {"Title":"Nowhere to Slide","Id":[690],"Area":null,"Level":20},
+        {"Title":"Shaken, Not Stirred","Id":[691],"Area":null,"Level":20},
+        {"Title":"Appleanche","Id":[696],"Area":null,"Level":20},
+        {"Title":"Moon in Rouge","Id":[695],"Area":null,"Level":20},
+        {"Title":"Mushroom Gobblin'","Id":[697],"Area":null,"Level":20},
+        {"Title":"Over the Underbrush","Id":[694],"Area":null,"Level":20},
+        {"Title":"Blind Ambition","Id":[773],"Area":null,"Level":20},
+        {"Title":"Food Chain Reaction","Id":[772],"Area":null,"Level":20},
+        {"Title":"Sounds Fishy to Me","Id":[770],"Area":null,"Level":20},
+        {"Title":"The Long and the Shortcrust","Id":[771],"Area":null,"Level":20},
+        {"Title":"A Shocking Soir�e","Id":[774],"Area":null,"Level":20},
+        {"Title":"A Watery Web of Lies","Id":[775],"Area":null,"Level":20},
+        {"Title":"Fishing 101","Id":[776],"Area":null,"Level":20},
+        {"Title":"The Truth Will Set You Free","Id":[777],"Area":null,"Level":20},
+        {"Title":"Elemental Housekeeping","Id":[731],"Area":null,"Level":20},
+        {"Title":"Location, Location, Location","Id":[732],"Area":null,"Level":20},
+        {"Title":"Look How They Shine for You","Id":[730],"Area":null,"Level":20},
+        {"Title":"Rock My Wall","Id":[733],"Area":null,"Level":20},
+        {"Title":"Baby, Light My Way","Id":[737],"Area":null,"Level":20},
+        {"Title":"Can't Start a Fire","Id":[735],"Area":null,"Level":20},
+        {"Title":"Fool Me Twice","Id":[734],"Area":null,"Level":20},
+        {"Title":"Tag, You're It","Id":[736],"Area":null,"Level":20}
       ],
       "NpcId": 1000823,
       "Zone": "South Shroud"
@@ -1965,70 +285,14 @@
       "Title": "Cedrepierre",
       "Categories": [],
       "Quests": [
-        {
-          "Title": "A Little Constructive Exorcism",
-          "Id": [
-            799
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Burn It Down",
-          "Id": [
-            798
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Mortal Munchies",
-          "Id": [
-            800
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "She's So Mean",
-          "Id": [
-            801
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "A Real Wingnut",
-          "Id": [
-            813
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Blinded by the Wight",
-          "Id": [
-            812
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Go with the Flow",
-          "Id": [
-            810
-          ],
-          "Area": null,
-          "Level": 20
-        },
-        {
-          "Title": "Sylph Strands",
-          "Id": [
-            811
-          ],
-          "Area": null,
-          "Level": 20
-        }
+        {"Title":"A Little Constructive Exorcism","Id":[799],"Area":null,"Level":20},
+        {"Title":"Burn It Down","Id":[798],"Area":null,"Level":20},
+        {"Title":"Mortal Munchies","Id":[800],"Area":null,"Level":20},
+        {"Title":"She's So Mean","Id":[801],"Area":null,"Level":20},
+        {"Title":"A Real Wingnut","Id":[813],"Area":null,"Level":20},
+        {"Title":"Blinded by the Wight","Id":[812],"Area":null,"Level":20},
+        {"Title":"Go with the Flow","Id":[810],"Area":null,"Level":20},
+        {"Title":"Sylph Strands","Id":[811],"Area":null,"Level":20}
       ],
       "NpcId": 1004737,
       "Zone": "East Shroud"
@@ -2037,54 +301,12 @@
       "Title": "Merthelin",
       "Categories": [],
       "Quests": [
-        {
-          "Title": "A Feast in the Forest",
-          "Id": [
-            617
-          ],
-          "Area": null,
-          "Level": 30
-        },
-        {
-          "Title": "Adamantoise Tears",
-          "Id": [
-            620
-          ],
-          "Area": null,
-          "Level": 30
-        },
-        {
-          "Title": "Black Market Down",
-          "Id": [
-            618
-          ],
-          "Area": null,
-          "Level": 30
-        },
-        {
-          "Title": "Necrologos: Brand of the Impure",
-          "Id": [
-            619
-          ],
-          "Area": null,
-          "Level": 30
-        },
-        {
-          "Title": "Where the Fur's At",
-          "Id": [
-            622
-          ],
-          "Area": null,
-          "Level": 30
-        },
-        {
-          "Title": "Woodcross Busydeal",
-          "Id": [
-            621
-          ],
-          "Area": null,
-          "Level": 30
-        }
+        {"Title":"A Feast in the Forest","Id":[617],"Area":null,"Level":30},
+        {"Title":"Adamantoise Tears","Id":[620],"Area":null,"Level":30},
+        {"Title":"Black Market Down","Id":[618],"Area":null,"Level":30},
+        {"Title":"Necrologos: Brand of the Impure","Id":[619],"Area":null,"Level":30},
+        {"Title":"Where the Fur's At","Id":[622],"Area":null,"Level":30},
+        {"Title":"Woodcross Busydeal","Id":[621],"Area":null,"Level":30}
       ],
       "NpcId": 1002397,
       "Zone": "South Shroud"
@@ -2093,38 +315,10 @@
       "Title": "H'amneko",
       "Categories": [],
       "Quests": [
-        {
-          "Title": "Creature Feature",
-          "Id": [
-            824
-          ],
-          "Area": null,
-          "Level": 30
-        },
-        {
-          "Title": "Dead Man Walking",
-          "Id": [
-            826
-          ],
-          "Area": null,
-          "Level": 30
-        },
-        {
-          "Title": "It Goes with the Territory",
-          "Id": [
-            825
-          ],
-          "Area": null,
-          "Level": 30
-        },
-        {
-          "Title": "This Is Going to Sting, A Lot",
-          "Id": [
-            823
-          ],
-          "Area": null,
-          "Level": 30
-        }
+        {"Title":"Creature Feature","Id":[824],"Area":null,"Level":30},
+        {"Title":"Dead Man Walking","Id":[826],"Area":null,"Level":30},
+        {"Title":"It Goes with the Territory","Id":[825],"Area":null,"Level":30},
+        {"Title":"This Is Going to Sting, A Lot","Id":[823],"Area":null,"Level":30}
       ],
       "NpcId": 1004738,
       "Zone": "South Shroud"

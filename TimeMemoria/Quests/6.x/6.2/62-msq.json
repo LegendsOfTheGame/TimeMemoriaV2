@@ -1,11 +1,11 @@
 [
-    {  "Title": "In Search of Azdaja", "Id": [ 70128 ], "Area": "Radz-at-Han", "Level": 90  },
-    {  "Title": "Shadowed Remnants", "Id": [ 70129 ], "Area": "Hydromantic Terraces", "Level": 90  },
-    {  "Title": "Where Everything Begins", "Id": [ 70130 ], "Area": "Carcere IV", "Level": 90  },
-    {  "Title": "Groping in the Dark", "Id": [ 70131 ], "Area": "Troia Keep", "Level": 90  },
-    {  "Title": "Nowhere to Run", "Id": [ 70132 ], "Area": "Zero's Domain", "Level": 90  },
-    {  "Title": "The Wind Rises", "Id": [ 70133 ], "Area": "Zero's Domain", "Level": 90  },
-    {  "Title": "Return from the Void", "Id": [ 70134 ], "Area": "Zero's Domain", "Level": 90  },
-    {  "Title": "A World with Light and Life", "Id": [ 70135 ], "Area": "Radz-at-Han", "Level": 90  },
-    {  "Title": "Buried Memory", "Id": [ 70136 ], "Area": "Radz-at-Han", "Level": 90  }
+  {"Title":"In Search of Azdaja","Id":[70128],"Area":"Radz-at-Han","Level":90},
+  {"Title":"Shadowed Remnants","Id":[70129],"Area":"Hydromantic Terraces","Level":90},
+  {"Title":"Where Everything Begins","Id":[70130],"Area":"Carcere IV","Level":90},
+  {"Title":"Groping in the Dark","Id":[70131],"Area":"Troia Keep","Level":90},
+  {"Title":"Nowhere to Run","Id":[70132],"Area":"Zero's Domain","Level":90},
+  {"Title":"The Wind Rises","Id":[70133],"Area":"Zero's Domain","Level":90},
+  {"Title":"Return from the Void","Id":[70134],"Area":"Zero's Domain","Level":90},
+  {"Title":"A World with Light and Life","Id":[70135],"Area":"Radz-at-Han","Level":90},
+  {"Title":"Buried Memory","Id":[70136],"Area":"Radz-at-Han","Level":90}
 ]

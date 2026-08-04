@@ -1,6 +1,6 @@
 [
-    { "Title": "The King Lives", "Id": [66948], "Area": "The Waking Sands", "Level": 50, "Chain": "Primals" },
-    { "Title": "Whorl of a Time", "Id": [66949], "Area": "The Waking Sands", "Level": 50, "Chain": "Primals" },
-    { "Title": "Another Turn in the Coil", "Id": [66849], "Area": "The Waking Sands", "Level": 50, "Chain": "Bahamut" },
-    { "Title": "Alisaie's Resolve", "Id": [66850], "Area": "Northern Thanalan", "Level": 50, "Chain": "Bahamut" }
+  {"Title":"The King Lives","Id":[66948],"Area":"The Waking Sands","Level":50,"Chain":"Primals"},
+  {"Title":"Whorl of a Time","Id":[66949],"Area":"The Waking Sands","Level":50,"Chain":"Primals"},
+  {"Title":"Another Turn in the Coil","Id":[66849],"Area":"The Waking Sands","Level":50,"Chain":"Bahamut"},
+  {"Title":"Alisaie's Resolve","Id":[66850],"Area":"Northern Thanalan","Level":50,"Chain":"Bahamut"}
 ]

@@ -1,12 +1,12 @@
 [
-    {  "Title": "Shaken Resolve", "Id": [ 69209 ], "Area": "The Rising Stones", "Level": 80  },
-    {  "Title": "A Grand Adventure", "Id": [ 69210 ], "Area": "The Ocular", "Level": 80  },
-    {  "Title": "A Welcome Guest", "Id": [ 69211 ], "Area": "Lakeland", "Level": 80  },
-    {  "Title": "Good for the Soul", "Id": [ 69212 ], "Area": "Amh Araeng", "Level": 80  },
-    {  "Title": "Nowhere to Turn", "Id": [ 69213 ], "Area": "Amh Araeng", "Level": 80  },
-    {  "Title": "A Notable Absence", "Id": [ 69214 ], "Area": "Eulmore", "Level": 80  },
-    {  "Title": "For the People", "Id": [ 69215 ], "Area": "Eulmore", "Level": 80  },
-    {  "Title": "Finding Good Help", "Id": [ 69216 ], "Area": "Kholusia", "Level": 80  },
-    {  "Title": "Moving Forward", "Id": [ 69217 ], "Area": "Kholusia", "Level": 80  },
-    {  "Title": "Vows of Virtue, Deeds of Cruelty", "Id": [ 69218 ], "Area": "Eulmore", "Level": 80  }
+  {"Title":"Shaken Resolve","Id":[69209],"Area":"The Rising Stones","Level":80},
+  {"Title":"A Grand Adventure","Id":[69210],"Area":"The Ocular","Level":80},
+  {"Title":"A Welcome Guest","Id":[69211],"Area":"Lakeland","Level":80},
+  {"Title":"Good for the Soul","Id":[69212],"Area":"Amh Araeng","Level":80},
+  {"Title":"Nowhere to Turn","Id":[69213],"Area":"Amh Araeng","Level":80},
+  {"Title":"A Notable Absence","Id":[69214],"Area":"Eulmore","Level":80},
+  {"Title":"For the People","Id":[69215],"Area":"Eulmore","Level":80},
+  {"Title":"Finding Good Help","Id":[69216],"Area":"Kholusia","Level":80},
+  {"Title":"Moving Forward","Id":[69217],"Area":"Kholusia","Level":80},
+  {"Title":"Vows of Virtue, Deeds of Cruelty","Id":[69218],"Area":"Eulmore","Level":80}
 ]

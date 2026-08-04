@@ -1,10 +1,10 @@
 [
-    { "Title": "Disarmed", "Id": [67626], "Area": "Idyllshire", "Level": 60, "Chain": "Alexander" },
-    { "Title": "Steel and Steam", "Id": [67627], "Area": "The Dravanian Hinterlands", "Level": 60, "Chain": "Alexander" },
-    { "Title": "Tinker, Seeker, Soldier, Spy", "Id": [67628], "Area": "The Dravanian Hinterlands", "Level": 60, "Chain": "Alexander" },
-    { "Title": "The Pulsing Heart", "Id": [67629], "Area": "The Dravanian Hinterlands", "Level": 60, "Chain": "Alexander" },
-    { "Title": "Enigma", "Id": [67630], "Area": "The Dravanian Hinterlands", "Level": 60, "Chain": "Alexander" },
-    { "Title": "Gods of Eld", "Id": [67650], "Area": "Ishgard", "Level": 60, "Chain": "The Warring Triad" },
-    { "Title": "The Diabolical Bismarck", "Id": [67651], "Area": "The Rising Stones", "Level": 60, "Chain": "The Warring Triad" },
-    { "Title": "Thok Around the Clock", "Id": [67652], "Area": "The Rising Stones", "Level": 60, "Chain": "The Warring Triad" }
+  {"Title":"Disarmed","Id":[67626],"Area":"Idyllshire","Level":60,"Chain":"Alexander"},
+  {"Title":"Steel and Steam","Id":[67627],"Area":"The Dravanian Hinterlands","Level":60,"Chain":"Alexander"},
+  {"Title":"Tinker, Seeker, Soldier, Spy","Id":[67628],"Area":"The Dravanian Hinterlands","Level":60,"Chain":"Alexander"},
+  {"Title":"The Pulsing Heart","Id":[67629],"Area":"The Dravanian Hinterlands","Level":60,"Chain":"Alexander"},
+  {"Title":"Enigma","Id":[67630],"Area":"The Dravanian Hinterlands","Level":60,"Chain":"Alexander"},
+  {"Title":"Gods of Eld","Id":[67650],"Area":"Ishgard","Level":60,"Chain":"The Warring Triad"},
+  {"Title":"The Diabolical Bismarck","Id":[67651],"Area":"The Rising Stones","Level":60,"Chain":"The Warring Triad"},
+  {"Title":"Thok Around the Clock","Id":[67652],"Area":"The Rising Stones","Level":60,"Chain":"The Warring Triad"}
 ]

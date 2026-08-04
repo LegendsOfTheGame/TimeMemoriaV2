@@ -8,1326 +8,171 @@
           "Title": "Eirikur",
           "Categories": [],
           "Quests": [
-            {
-              "Title": "Another Man's Ink",
-              "Id": [
-                1478
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Time for Peace",
-              "Id": [
-                1480
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Keeping Magic Alive",
-              "Id": [
-                1479
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "An Eye for Healing",
-              "Id": [
-                1482
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Make It Bigger",
-              "Id": [
-                1481
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Making Ends Meet",
-              "Id": [
-                1483
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "5-bell Energy",
-              "Id": [
-                1486
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Amaro Kart",
-              "Id": [
-                1484
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Conserving Combat",
-              "Id": [
-                1485
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Greater Grimoire",
-              "Id": [
-                1488
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Crafty Concoctions",
-              "Id": [
-                1489
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Growing Up",
-              "Id": [
-                1487
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Labor of Love",
-              "Id": [
-                1490
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Mindful Medicine",
-              "Id": [
-                1492
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Supreme Official Strategy Guide",
-              "Id": [
-                1491
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Head of Demand",
-              "Id": [
-                1450
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Shielding the Realm",
-              "Id": [
-                1448
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Time to Fry",
-              "Id": [
-                1449
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Hedging Bets",
-              "Id": [
-                1452
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Scheduled Maintenance",
-              "Id": [
-                1451
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Wrapped Knuckles",
-              "Id": [
-                1453
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A New Regular",
-              "Id": [
-                1455
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Catching an Earful",
-              "Id": [
-                1454
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "The Proper Precautions",
-              "Id": [
-                1456
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Budding Business",
-              "Id": [
-                1459
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "No Scope",
-              "Id": [
-                1457
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Signed, Shield, Delivered",
-              "Id": [
-                1458
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "One Foot Forward",
-              "Id": [
-                1461
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Shield to Shield",
-              "Id": [
-                1462
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Trial and Error",
-              "Id": [
-                1460
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Fire Sale",
-              "Id": [
-                1434
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Here Comes the Hammer",
-              "Id": [
-                1435
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "The Gold Experience",
-              "Id": [
-                1433
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Enlistment Highs",
-              "Id": [
-                1438
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Heavy Hitter",
-              "Id": [
-                1437
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Selective Logging",
-              "Id": [
-                1436
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Halfhearted Effort",
-              "Id": [
-                1440
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Instruments of Distraction",
-              "Id": [
-                1439
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Nip It in the Bud",
-              "Id": [
-                1441
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Cooking for the Future",
-              "Id": [
-                1444
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Dodge Once, Cut Twice",
-              "Id": [
-                1442
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Idol Hands",
-              "Id": [
-                1443
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Bae Blade",
-              "Id": [
-                1445
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Keeping Loyalty",
-              "Id": [
-                1447
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Under the Fool Moon",
-              "Id": [
-                1446
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Built to Last",
-              "Id": [
-                1403
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Just Starting Out",
-              "Id": [
-                1404
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Playing the Market",
-              "Id": [
-                1405
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Stronger Offense",
-              "Id": [
-                1406
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Taking Aim",
-              "Id": [
-                1407
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Understaffed",
-              "Id": [
-                1408
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Ground to a Halt",
-              "Id": [
-                1410
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Horde of the Rings",
-              "Id": [
-                1411
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Patient Patients",
-              "Id": [
-                1409
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Miss and a Hit",
-              "Id": [
-                1414
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Sleep on It",
-              "Id": [
-                1413
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "The Right Tool for the Job",
-              "Id": [
-                1412
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Kindling the Flame",
-              "Id": [
-                1416
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Off to a Good Staff",
-              "Id": [
-                1415
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Safety First",
-              "Id": [
-                1417
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Meet for Meat",
-              "Id": [
-                1464
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Cure for What Ails",
-              "Id": [
-                1465
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Slippery Service",
-              "Id": [
-                1463
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "His Dark Utensils",
-              "Id": [
-                1466
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Soup for the Soldier",
-              "Id": [
-                1467
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Sweet Tooth",
-              "Id": [
-                1468
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Can't Eat Just One",
-              "Id": [
-                1469
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Mixology",
-              "Id": [
-                1471
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "One Last Meal",
-              "Id": [
-                1470
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Good Omen",
-              "Id": [
-                1473
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "On a Full Stomach",
-              "Id": [
-                1472
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Teetotally",
-              "Id": [
-                1474
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Cookie for Your Troubles",
-              "Id": [
-                1477
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Happy End",
-              "Id": [
-                1476
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Super Dark Times",
-              "Id": [
-                1475
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Whetstones for the Workers",
-              "Id": [
-                1508
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Satisfactory Sewing",
-              "Id": [
-                1509
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "You're My Wonderhall",
-              "Id": [
-                1510
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Gentleman Donor",
-              "Id": [
-                1513
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Neck on the Line",
-              "Id": [
-                1512
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Slimming Down",
-              "Id": [
-                1511
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Copious Crystal Cannons",
-              "Id": [
-                1514
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Hot Rod",
-              "Id": [
-                1515
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Unsung Generosity",
-              "Id": [
-                1516
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Magnanimous Refrain",
-              "Id": [
-                1519
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Birth Ring",
-              "Id": [
-                1518
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Prophet of Profit",
-              "Id": [
-                1517
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Beneficent Elegy",
-              "Id": [
-                1521
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Bulking Up",
-              "Id": [
-                1520
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Wrap Those Wrists",
-              "Id": [
-                1522
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Band Substances",
-              "Id": [
-                1420
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Girding for Glory",
-              "Id": [
-                1419
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Ware and Chair",
-              "Id": [
-                1418
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Slippery Slope",
-              "Id": [
-                1423
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Breeches of Trust",
-              "Id": [
-                1421
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Glove Me Tender",
-              "Id": [
-                1422
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Heady Endeavor",
-              "Id": [
-                1425
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "At Your Neck and Call",
-              "Id": [
-                1426
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Peace in Rest",
-              "Id": [
-                1424
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "If I Could Walk a Thousand Malms",
-              "Id": [
-                1428
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Protecting the Nuts",
-              "Id": [
-                1427
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Strike True",
-              "Id": [
-                1429
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Shoe In",
-              "Id": [
-                1432
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Fit for a Friend",
-              "Id": [
-                1430
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Into the Storm",
-              "Id": [
-                1431
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Lovely Leggings",
-              "Id": [
-                1494
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Flax Wax",
-              "Id": [
-                1493
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Turban in Training",
-              "Id": [
-                1495
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Hair Do No Harm",
-              "Id": [
-                1498
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Legs for Days",
-              "Id": [
-                1497
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Suits You",
-              "Id": [
-                1496
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Tender Table",
-              "Id": [
-                1499
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Gloves Come in Handy",
-              "Id": [
-                1501
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Hunting Season",
-              "Id": [
-                1500
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "All-purpose Overgarments",
-              "Id": [
-                1502
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Something in My Eye",
-              "Id": [
-                1504
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "The Hunt Continues",
-              "Id": [
-                1503
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Job Well Done",
-              "Id": [
-                1505
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Turban for the Ages",
-              "Id": [
-                1506
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Healing Headwear",
-              "Id": [
-                1507
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Home Is Where the Heart Is",
-              "Id": [
-                1525
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Medicinal Herbs",
-              "Id": [
-                1524
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Sought-after Spices",
-              "Id": [
-                1523
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Home Is Where the Heart Isn't",
-              "Id": [
-                1527
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Packs a Punch",
-              "Id": [
-                1526
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Seeds for the Sick",
-              "Id": [
-                1528
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Dream a Little Dream",
-              "Id": [
-                1531
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Fresh off the Boat",
-              "Id": [
-                1530
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Pest Problems",
-              "Id": [
-                1529
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Culinary Concepts",
-              "Id": [
-                1533
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Spiritual Ventures",
-              "Id": [
-                1532
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "The Only Cure",
-              "Id": [
-                1534
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Big Business",
-              "Id": [
-                1537
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Good Business",
-              "Id": [
-                1535
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "The Sweetest Syrup",
-              "Id": [
-                1536
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Eco-Warrior of Light",
-              "Id": [
-                1553
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Needs More Egg",
-              "Id": [
-                1554
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "The Source of the Problem",
-              "Id": [
-                1555
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Aetherquake",
-              "Id": [
-                1558
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Full of Fish",
-              "Id": [
-                1557
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Jelly Salad",
-              "Id": [
-                1556
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Cherry-red Herring",
-              "Id": [
-                1561
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Faerie Fish",
-              "Id": [
-                1559
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "The Bride Aquatic",
-              "Id": [
-                1560
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Crab Corps",
-              "Id": [
-                1562
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Fish for Days",
-              "Id": [
-                1564
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Magic Mushrooms",
-              "Id": [
-                1563
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "A Feast for the Senses",
-              "Id": [
-                1567
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Deep-sea Diving",
-              "Id": [
-                1566
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Short-term Gains",
-              "Id": [
-                1565
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Barmy for Ballistas",
-              "Id": [
-                1540
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Jewelry for All",
-              "Id": [
-                1538
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "The Search for Slag",
-              "Id": [
-                1539
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Crystallized Revenge",
-              "Id": [
-                1543
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "New Necklaces",
-              "Id": [
-                1542
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Secret Stones",
-              "Id": [
-                1541
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Jewels for Jewelry",
-              "Id": [
-                1545
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Knowledge Is Power",
-              "Id": [
-                1546
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Rocks from Rak'tika",
-              "Id": [
-                1544
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Jewelry Is Forever",
-              "Id": [
-                1548
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Road to Recovery",
-              "Id": [
-                1547
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "The Magic of Mining",
-              "Id": [
-                1549
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Back Stronger",
-              "Id": [
-                1551
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Crystal Meds",
-              "Id": [
-                1552
-              ],
-              "Area": null,
-              "Level": 70
-            },
-            {
-              "Title": "Lakeland's Legacy",
-              "Id": [
-                1550
-              ],
-              "Area": null,
-              "Level": 70
-            }
+            {"Title":"Another Man's Ink","Id":[1478],"Area":null,"Level":70},
+            {"Title":"A Time for Peace","Id":[1480],"Area":null,"Level":70},
+            {"Title":"Keeping Magic Alive","Id":[1479],"Area":null,"Level":70},
+            {"Title":"An Eye for Healing","Id":[1482],"Area":null,"Level":70},
+            {"Title":"Make It Bigger","Id":[1481],"Area":null,"Level":70},
+            {"Title":"Making Ends Meet","Id":[1483],"Area":null,"Level":70},
+            {"Title":"5-bell Energy","Id":[1486],"Area":null,"Level":70},
+            {"Title":"Amaro Kart","Id":[1484],"Area":null,"Level":70},
+            {"Title":"Conserving Combat","Id":[1485],"Area":null,"Level":70},
+            {"Title":"A Greater Grimoire","Id":[1488],"Area":null,"Level":70},
+            {"Title":"Crafty Concoctions","Id":[1489],"Area":null,"Level":70},
+            {"Title":"Growing Up","Id":[1487],"Area":null,"Level":70},
+            {"Title":"A Labor of Love","Id":[1490],"Area":null,"Level":70},
+            {"Title":"Mindful Medicine","Id":[1492],"Area":null,"Level":70},
+            {"Title":"Supreme Official Strategy Guide","Id":[1491],"Area":null,"Level":70},
+            {"Title":"A Head of Demand","Id":[1450],"Area":null,"Level":70},
+            {"Title":"Shielding the Realm","Id":[1448],"Area":null,"Level":70},
+            {"Title":"Time to Fry","Id":[1449],"Area":null,"Level":70},
+            {"Title":"Hedging Bets","Id":[1452],"Area":null,"Level":70},
+            {"Title":"Scheduled Maintenance","Id":[1451],"Area":null,"Level":70},
+            {"Title":"Wrapped Knuckles","Id":[1453],"Area":null,"Level":70},
+            {"Title":"A New Regular","Id":[1455],"Area":null,"Level":70},
+            {"Title":"Catching an Earful","Id":[1454],"Area":null,"Level":70},
+            {"Title":"The Proper Precautions","Id":[1456],"Area":null,"Level":70},
+            {"Title":"A Budding Business","Id":[1459],"Area":null,"Level":70},
+            {"Title":"No Scope","Id":[1457],"Area":null,"Level":70},
+            {"Title":"Signed, Shield, Delivered","Id":[1458],"Area":null,"Level":70},
+            {"Title":"One Foot Forward","Id":[1461],"Area":null,"Level":70},
+            {"Title":"Shield to Shield","Id":[1462],"Area":null,"Level":70},
+            {"Title":"Trial and Error","Id":[1460],"Area":null,"Level":70},
+            {"Title":"Fire Sale","Id":[1434],"Area":null,"Level":70},
+            {"Title":"Here Comes the Hammer","Id":[1435],"Area":null,"Level":70},
+            {"Title":"The Gold Experience","Id":[1433],"Area":null,"Level":70},
+            {"Title":"Enlistment Highs","Id":[1438],"Area":null,"Level":70},
+            {"Title":"Heavy Hitter","Id":[1437],"Area":null,"Level":70},
+            {"Title":"Selective Logging","Id":[1436],"Area":null,"Level":70},
+            {"Title":"Halfhearted Effort","Id":[1440],"Area":null,"Level":70},
+            {"Title":"Instruments of Distraction","Id":[1439],"Area":null,"Level":70},
+            {"Title":"Nip It in the Bud","Id":[1441],"Area":null,"Level":70},
+            {"Title":"Cooking for the Future","Id":[1444],"Area":null,"Level":70},
+            {"Title":"Dodge Once, Cut Twice","Id":[1442],"Area":null,"Level":70},
+            {"Title":"Idol Hands","Id":[1443],"Area":null,"Level":70},
+            {"Title":"Bae Blade","Id":[1445],"Area":null,"Level":70},
+            {"Title":"Keeping Loyalty","Id":[1447],"Area":null,"Level":70},
+            {"Title":"Under the Fool Moon","Id":[1446],"Area":null,"Level":70},
+            {"Title":"Built to Last","Id":[1403],"Area":null,"Level":70},
+            {"Title":"Just Starting Out","Id":[1404],"Area":null,"Level":70},
+            {"Title":"Playing the Market","Id":[1405],"Area":null,"Level":70},
+            {"Title":"A Stronger Offense","Id":[1406],"Area":null,"Level":70},
+            {"Title":"Taking Aim","Id":[1407],"Area":null,"Level":70},
+            {"Title":"Understaffed","Id":[1408],"Area":null,"Level":70},
+            {"Title":"Ground to a Halt","Id":[1410],"Area":null,"Level":70},
+            {"Title":"Horde of the Rings","Id":[1411],"Area":null,"Level":70},
+            {"Title":"Patient Patients","Id":[1409],"Area":null,"Level":70},
+            {"Title":"A Miss and a Hit","Id":[1414],"Area":null,"Level":70},
+            {"Title":"Sleep on It","Id":[1413],"Area":null,"Level":70},
+            {"Title":"The Right Tool for the Job","Id":[1412],"Area":null,"Level":70},
+            {"Title":"Kindling the Flame","Id":[1416],"Area":null,"Level":70},
+            {"Title":"Off to a Good Staff","Id":[1415],"Area":null,"Level":70},
+            {"Title":"Safety First","Id":[1417],"Area":null,"Level":70},
+            {"Title":"Meet for Meat","Id":[1464],"Area":null,"Level":70},
+            {"Title":"Cure for What Ails","Id":[1465],"Area":null,"Level":70},
+            {"Title":"Slippery Service","Id":[1463],"Area":null,"Level":70},
+            {"Title":"His Dark Utensils","Id":[1466],"Area":null,"Level":70},
+            {"Title":"Soup for the Soldier","Id":[1467],"Area":null,"Level":70},
+            {"Title":"Sweet Tooth","Id":[1468],"Area":null,"Level":70},
+            {"Title":"Can't Eat Just One","Id":[1469],"Area":null,"Level":70},
+            {"Title":"Mixology","Id":[1471],"Area":null,"Level":70},
+            {"Title":"One Last Meal","Id":[1470],"Area":null,"Level":70},
+            {"Title":"A Good Omen","Id":[1473],"Area":null,"Level":70},
+            {"Title":"On a Full Stomach","Id":[1472],"Area":null,"Level":70},
+            {"Title":"Teetotally","Id":[1474],"Area":null,"Level":70},
+            {"Title":"A Cookie for Your Troubles","Id":[1477],"Area":null,"Level":70},
+            {"Title":"A Happy End","Id":[1476],"Area":null,"Level":70},
+            {"Title":"Super Dark Times","Id":[1475],"Area":null,"Level":70},
+            {"Title":"Whetstones for the Workers","Id":[1508],"Area":null,"Level":70},
+            {"Title":"Satisfactory Sewing","Id":[1509],"Area":null,"Level":70},
+            {"Title":"You're My Wonderhall","Id":[1510],"Area":null,"Level":70},
+            {"Title":"Gentleman Donor","Id":[1513],"Area":null,"Level":70},
+            {"Title":"Neck on the Line","Id":[1512],"Area":null,"Level":70},
+            {"Title":"Slimming Down","Id":[1511],"Area":null,"Level":70},
+            {"Title":"Copious Crystal Cannons","Id":[1514],"Area":null,"Level":70},
+            {"Title":"Hot Rod","Id":[1515],"Area":null,"Level":70},
+            {"Title":"Unsung Generosity","Id":[1516],"Area":null,"Level":70},
+            {"Title":"A Magnanimous Refrain","Id":[1519],"Area":null,"Level":70},
+            {"Title":"Birth Ring","Id":[1518],"Area":null,"Level":70},
+            {"Title":"Prophet of Profit","Id":[1517],"Area":null,"Level":70},
+            {"Title":"A Beneficent Elegy","Id":[1521],"Area":null,"Level":70},
+            {"Title":"Bulking Up","Id":[1520],"Area":null,"Level":70},
+            {"Title":"Wrap Those Wrists","Id":[1522],"Area":null,"Level":70},
+            {"Title":"Band Substances","Id":[1420],"Area":null,"Level":70},
+            {"Title":"Girding for Glory","Id":[1419],"Area":null,"Level":70},
+            {"Title":"Ware and Chair","Id":[1418],"Area":null,"Level":70},
+            {"Title":"A Slippery Slope","Id":[1423],"Area":null,"Level":70},
+            {"Title":"Breeches of Trust","Id":[1421],"Area":null,"Level":70},
+            {"Title":"Glove Me Tender","Id":[1422],"Area":null,"Level":70},
+            {"Title":"A Heady Endeavor","Id":[1425],"Area":null,"Level":70},
+            {"Title":"At Your Neck and Call","Id":[1426],"Area":null,"Level":70},
+            {"Title":"Peace in Rest","Id":[1424],"Area":null,"Level":70},
+            {"Title":"If I Could Walk a Thousand Malms","Id":[1428],"Area":null,"Level":70},
+            {"Title":"Protecting the Nuts","Id":[1427],"Area":null,"Level":70},
+            {"Title":"Strike True","Id":[1429],"Area":null,"Level":70},
+            {"Title":"A Shoe In","Id":[1432],"Area":null,"Level":70},
+            {"Title":"Fit for a Friend","Id":[1430],"Area":null,"Level":70},
+            {"Title":"Into the Storm","Id":[1431],"Area":null,"Level":70},
+            {"Title":"Lovely Leggings","Id":[1494],"Area":null,"Level":70},
+            {"Title":"Flax Wax","Id":[1493],"Area":null,"Level":70},
+            {"Title":"Turban in Training","Id":[1495],"Area":null,"Level":70},
+            {"Title":"Hair Do No Harm","Id":[1498],"Area":null,"Level":70},
+            {"Title":"Legs for Days","Id":[1497],"Area":null,"Level":70},
+            {"Title":"Suits You","Id":[1496],"Area":null,"Level":70},
+            {"Title":"A Tender Table","Id":[1499],"Area":null,"Level":70},
+            {"Title":"Gloves Come in Handy","Id":[1501],"Area":null,"Level":70},
+            {"Title":"Hunting Season","Id":[1500],"Area":null,"Level":70},
+            {"Title":"All-purpose Overgarments","Id":[1502],"Area":null,"Level":70},
+            {"Title":"Something in My Eye","Id":[1504],"Area":null,"Level":70},
+            {"Title":"The Hunt Continues","Id":[1503],"Area":null,"Level":70},
+            {"Title":"A Job Well Done","Id":[1505],"Area":null,"Level":70},
+            {"Title":"A Turban for the Ages","Id":[1506],"Area":null,"Level":70},
+            {"Title":"Healing Headwear","Id":[1507],"Area":null,"Level":70},
+            {"Title":"Home Is Where the Heart Is","Id":[1525],"Area":null,"Level":70},
+            {"Title":"Medicinal Herbs","Id":[1524],"Area":null,"Level":70},
+            {"Title":"Sought-after Spices","Id":[1523],"Area":null,"Level":70},
+            {"Title":"Home Is Where the Heart Isn't","Id":[1527],"Area":null,"Level":70},
+            {"Title":"Packs a Punch","Id":[1526],"Area":null,"Level":70},
+            {"Title":"Seeds for the Sick","Id":[1528],"Area":null,"Level":70},
+            {"Title":"Dream a Little Dream","Id":[1531],"Area":null,"Level":70},
+            {"Title":"Fresh off the Boat","Id":[1530],"Area":null,"Level":70},
+            {"Title":"Pest Problems","Id":[1529],"Area":null,"Level":70},
+            {"Title":"Culinary Concepts","Id":[1533],"Area":null,"Level":70},
+            {"Title":"Spiritual Ventures","Id":[1532],"Area":null,"Level":70},
+            {"Title":"The Only Cure","Id":[1534],"Area":null,"Level":70},
+            {"Title":"Big Business","Id":[1537],"Area":null,"Level":70},
+            {"Title":"Good Business","Id":[1535],"Area":null,"Level":70},
+            {"Title":"The Sweetest Syrup","Id":[1536],"Area":null,"Level":70},
+            {"Title":"Eco-Warrior of Light","Id":[1553],"Area":null,"Level":70},
+            {"Title":"Needs More Egg","Id":[1554],"Area":null,"Level":70},
+            {"Title":"The Source of the Problem","Id":[1555],"Area":null,"Level":70},
+            {"Title":"Aetherquake","Id":[1558],"Area":null,"Level":70},
+            {"Title":"Full of Fish","Id":[1557],"Area":null,"Level":70},
+            {"Title":"Jelly Salad","Id":[1556],"Area":null,"Level":70},
+            {"Title":"A Cherry-red Herring","Id":[1561],"Area":null,"Level":70},
+            {"Title":"Faerie Fish","Id":[1559],"Area":null,"Level":70},
+            {"Title":"The Bride Aquatic","Id":[1560],"Area":null,"Level":70},
+            {"Title":"Crab Corps","Id":[1562],"Area":null,"Level":70},
+            {"Title":"Fish for Days","Id":[1564],"Area":null,"Level":70},
+            {"Title":"Magic Mushrooms","Id":[1563],"Area":null,"Level":70},
+            {"Title":"A Feast for the Senses","Id":[1567],"Area":null,"Level":70},
+            {"Title":"Deep-sea Diving","Id":[1566],"Area":null,"Level":70},
+            {"Title":"Short-term Gains","Id":[1565],"Area":null,"Level":70},
+            {"Title":"Barmy for Ballistas","Id":[1540],"Area":null,"Level":70},
+            {"Title":"Jewelry for All","Id":[1538],"Area":null,"Level":70},
+            {"Title":"The Search for Slag","Id":[1539],"Area":null,"Level":70},
+            {"Title":"Crystallized Revenge","Id":[1543],"Area":null,"Level":70},
+            {"Title":"New Necklaces","Id":[1542],"Area":null,"Level":70},
+            {"Title":"Secret Stones","Id":[1541],"Area":null,"Level":70},
+            {"Title":"Jewels for Jewelry","Id":[1545],"Area":null,"Level":70},
+            {"Title":"Knowledge Is Power","Id":[1546],"Area":null,"Level":70},
+            {"Title":"Rocks from Rak'tika","Id":[1544],"Area":null,"Level":70},
+            {"Title":"Jewelry Is Forever","Id":[1548],"Area":null,"Level":70},
+            {"Title":"Road to Recovery","Id":[1547],"Area":null,"Level":70},
+            {"Title":"The Magic of Mining","Id":[1549],"Area":null,"Level":70},
+            {"Title":"Back Stronger","Id":[1551],"Area":null,"Level":70},
+            {"Title":"Crystal Meds","Id":[1552],"Area":null,"Level":70},
+            {"Title":"Lakeland's Legacy","Id":[1550],"Area":null,"Level":70}
           ],
           "NpcId": 1027847,
           "Zone": "The Crystarium"

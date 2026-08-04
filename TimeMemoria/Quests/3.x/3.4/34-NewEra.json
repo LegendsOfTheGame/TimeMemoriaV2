@@ -1,9 +1,9 @@
 [
-    { "Title": "The Coeurl and the Colossus", "Id": [67871], "Area": "The Dravanian Hinterlands", "Level": 60, "Chain": "Alexander" },
-    { "Title": "Biggs and Wedge's Excellent Adventure", "Id": [67872], "Area": "The Dravanian Hinterlands", "Level": 60, "Chain": "Alexander" },
-    { "Title": "Thus Spake Quickthinx", "Id": [67873], "Area": "The Dravanian Hinterlands", "Level": 60, "Chain": "Alexander" },
-    { "Title": "Judgment Day", "Id": [67874], "Area": "The Dravanian Hinterlands", "Level": 60, "Chain": "Alexander" },
-    { "Title": "Of Endings and Beginnings", "Id": [67875], "Area": "The Dravanian Hinterlands", "Level": 60, "Chain": "Alexander" },
-    { "Title": "Balance unto All", "Id": [67868], "Area": "The Rising Stones", "Level": 60, "Chain": "The Warring Triad" },
-    { "Title": "A Deific Simulacrum", "Id": [67869], "Area": "The Rising Stones", "Level": 60, "Chain": "The Warring Triad" }
+  {"Title":"The Coeurl and the Colossus","Id":[67871],"Area":"The Dravanian Hinterlands","Level":60,"Chain":"Alexander"},
+  {"Title":"Biggs and Wedge's Excellent Adventure","Id":[67872],"Area":"The Dravanian Hinterlands","Level":60,"Chain":"Alexander"},
+  {"Title":"Thus Spake Quickthinx","Id":[67873],"Area":"The Dravanian Hinterlands","Level":60,"Chain":"Alexander"},
+  {"Title":"Judgment Day","Id":[67874],"Area":"The Dravanian Hinterlands","Level":60,"Chain":"Alexander"},
+  {"Title":"Of Endings and Beginnings","Id":[67875],"Area":"The Dravanian Hinterlands","Level":60,"Chain":"Alexander"},
+  {"Title":"Balance unto All","Id":[67868],"Area":"The Rising Stones","Level":60,"Chain":"The Warring Triad"},
+  {"Title":"A Deific Simulacrum","Id":[67869],"Area":"The Rising Stones","Level":60,"Chain":"The Warring Triad"}
 ]

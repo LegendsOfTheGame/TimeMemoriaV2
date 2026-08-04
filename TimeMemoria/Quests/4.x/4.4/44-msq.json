@@ -1,9 +1,9 @@
 [
-    {  "Title": "Sisterly Act", "Id": [ 68679 ], "Area": "The Rising Stones", "Level": 70  },
-    {  "Title": "Feel the Burn", "Id": [ 68680 ], "Area": "Kienkan", "Level": 70  },
-    {  "Title": "Shadows in the Empire", "Id": [ 68681 ], "Area": "The Doman Enclave", "Level": 70  },
-    {  "Title": "A Power in Slumber", "Id": [ 68682 ], "Area": "Kienkan", "Level": 70  },
-    {  "Title": "The Will of the Moon", "Id": [ 68683 ], "Area": "The Azim Steppe", "Level": 70  },
-    {  "Title": "The Call", "Id": [ 68684 ], "Area": "The Azim Steppe", "Level": 70  },
-    {  "Title": "Prelude in Violet", "Id": [ 68685 ], "Area": "The Lochs", "Level": 70  }
+  {"Title":"Sisterly Act","Id":[68679],"Area":"The Rising Stones","Level":70},
+  {"Title":"Feel the Burn","Id":[68680],"Area":"Kienkan","Level":70},
+  {"Title":"Shadows in the Empire","Id":[68681],"Area":"The Doman Enclave","Level":70},
+  {"Title":"A Power in Slumber","Id":[68682],"Area":"Kienkan","Level":70},
+  {"Title":"The Will of the Moon","Id":[68683],"Area":"The Azim Steppe","Level":70},
+  {"Title":"The Call","Id":[68684],"Area":"The Azim Steppe","Level":70},
+  {"Title":"Prelude in Violet","Id":[68685],"Area":"The Lochs","Level":70}
 ]

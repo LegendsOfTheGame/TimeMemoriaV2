@@ -1,4 +1,4 @@
 [
-    { "Title": "Dramatis Personae", "Id": [68539], "Area": "Kugane", "Level": 70, "Chain": "Return to Ivalice" },
-    { "Title": "A City Fallen", "Id": [68540], "Area": "Kugane", "Level": 70, "Chain": "Return to Ivalice" }
+  {"Title":"Dramatis Personae","Id":[68539],"Area":"Kugane","Level":70,"Chain":"Return to Ivalice"},
+  {"Title":"A City Fallen","Id":[68540],"Area":"Kugane","Level":70,"Chain":"Return to Ivalice"}
 ]

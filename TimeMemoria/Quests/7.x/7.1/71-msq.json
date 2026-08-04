@@ -1,9 +1,9 @@
 [
-    {  "Title": "A Royal Invitation", "Id": [ 70780 ], "Area": "Tuliyollal", "Level": 100  },
-    {  "Title": "Alexandria Mourns", "Id": [ 70781 ], "Area": "The Backroom", "Level": 100  },
-    {  "Title": "In Search of the Past", "Id": [ 70782 ], "Area": "Solution Nine", "Level": 100  },
-    {  "Title": "Among the Abandoned", "Id": [ 70783 ], "Area": "Shrouded Laboratory", "Level": 100  },
-    {  "Title": "Guidance of the Hhetso", "Id": [ 70784 ], "Area": "The Backroom", "Level": 100  },
-    {  "Title": "The Warmth of Family", "Id": [ 70785 ], "Area": "Shaaloani", "Level": 100  },
-    {  "Title": "Crossroads", "Id": [ 70786 ], "Area": "Shaaloani", "Level": 100  }
+  {"Title":"A Royal Invitation","Id":[70780],"Area":"Tuliyollal","Level":100},
+  {"Title":"Alexandria Mourns","Id":[70781],"Area":"The Backroom","Level":100},
+  {"Title":"In Search of the Past","Id":[70782],"Area":"Solution Nine","Level":100},
+  {"Title":"Among the Abandoned","Id":[70783],"Area":"Shrouded Laboratory","Level":100},
+  {"Title":"Guidance of the Hhetso","Id":[70784],"Area":"The Backroom","Level":100},
+  {"Title":"The Warmth of Family","Id":[70785],"Area":"Shaaloani","Level":100},
+  {"Title":"Crossroads","Id":[70786],"Area":"Shaaloani","Level":100}
 ]

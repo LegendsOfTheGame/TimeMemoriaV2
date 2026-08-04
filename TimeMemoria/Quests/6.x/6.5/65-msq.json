@@ -1,12 +1,12 @@
 [
-    {  "Title": "Seeking the Light", "Id": [ 70280 ], "Area": "Radz-at-Han", "Level": 90  },
-    {  "Title": "Appealing to the Masses", "Id": [ 70281 ], "Area": "The Crystarium", "Level": 90  },
-    {  "Title": "In Defiance of Fate", "Id": [ 70282 ], "Area": "Eulmore", "Level": 90  },
-    {  "Title": "Back to Action", "Id": [ 70283 ], "Area": "The Crystarium", "Level": 90  },
-    {  "Title": "Down in the Dark", "Id": [ 70284 ], "Area": "The Red Moon", "Level": 90  },
-    {  "Title": "Reunited at Last", "Id": [ 70285 ], "Area": "The Red Moon", "Level": 90  },
-    {  "Title": "Growing Light", "Id": [ 70286 ], "Area": "Old Sharlayan", "Level": 90  },
-    {  "Title": "When One Door Closes...", "Id": [ 70287 ], "Area": "Radz-at-Han", "Level": 90  },
-    {  "Title": "The Game Is Afoot", "Id": [ 70288 ], "Area": "Old Sharlayan", "Level": 90  },
-    {  "Title": "The Coming Dawn", "Id": [ 70289 ], "Area": "Old Sharlayan", "Level": 90  }
+  {"Title":"Seeking the Light","Id":[70280],"Area":"Radz-at-Han","Level":90},
+  {"Title":"Appealing to the Masses","Id":[70281],"Area":"The Crystarium","Level":90},
+  {"Title":"In Defiance of Fate","Id":[70282],"Area":"Eulmore","Level":90},
+  {"Title":"Back to Action","Id":[70283],"Area":"The Crystarium","Level":90},
+  {"Title":"Down in the Dark","Id":[70284],"Area":"The Red Moon","Level":90},
+  {"Title":"Reunited at Last","Id":[70285],"Area":"The Red Moon","Level":90},
+  {"Title":"Growing Light","Id":[70286],"Area":"Old Sharlayan","Level":90},
+  {"Title":"When One Door Closes...","Id":[70287],"Area":"Radz-at-Han","Level":90},
+  {"Title":"The Game Is Afoot","Id":[70288],"Area":"Old Sharlayan","Level":90},
+  {"Title":"The Coming Dawn","Id":[70289],"Area":"Old Sharlayan","Level":90}
 ]

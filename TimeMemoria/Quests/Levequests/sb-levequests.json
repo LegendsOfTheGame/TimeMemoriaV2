@@ -8,1326 +8,171 @@
           "Title": "Keltraeng",
           "Categories": [],
           "Quests": [
-            {
-              "Title": "Magic Beans",
-              "Id": [
-                1315
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Spellbound",
-              "Id": [
-                1314
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Whinier than the Sword",
-              "Id": [
-                1313
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Materia Worth",
-              "Id": [
-                1318
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Official Strategy Guide",
-              "Id": [
-                1316
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Scroll Down",
-              "Id": [
-                1317
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Asking for a Friend",
-              "Id": [
-                1321
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Rumor Has It",
-              "Id": [
-                1320
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "The Dotted Line",
-              "Id": [
-                1319
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Edge of the Arcane",
-              "Id": [
-                1322
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Let Loose the Juice",
-              "Id": [
-                1324
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Spell-rebound",
-              "Id": [
-                1323
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Making Your Mark",
-              "Id": [
-                1327
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Pep-stepper",
-              "Id": [
-                1325
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Ultimate Official Strategy Guide",
-              "Id": [
-                1326
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Mail It In",
-              "Id": [
-                1283
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Alembic Medals",
-              "Id": [
-                1284
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Setting the Stage",
-              "Id": [
-                1285
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Ore for Me",
-              "Id": [
-                1288
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Shielded Life",
-              "Id": [
-                1286
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "The Gauntlet Is Cast",
-              "Id": [
-                1287
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "En Garde and on Guard",
-              "Id": [
-                1291
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Greaving",
-              "Id": [
-                1289
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Home Cooking",
-              "Id": [
-                1290
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Art Imitates Life",
-              "Id": [
-                1292
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Smells of Rich Tama-hagane",
-              "Id": [
-                1293
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Sweeping the Legs",
-              "Id": [
-                1294
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Heads Will Roll",
-              "Id": [
-                1297
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "See Shields by the Sea Shore",
-              "Id": [
-                1295
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Spoony Is the Bard",
-              "Id": [
-                1296
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "A Knack for Nicking",
-              "Id": [
-                1269
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Have Blade, Will Travel",
-              "Id": [
-                1268
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "High Steal",
-              "Id": [
-                1270
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Crisscrossing",
-              "Id": [
-                1271
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "File under Dull",
-              "Id": [
-                1273
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Hammer Time",
-              "Id": [
-                1272
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "And My Axe",
-              "Id": [
-                1276
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Killer Cutlery",
-              "Id": [
-                1274
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Meddle in Metal",
-              "Id": [
-                1275
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Renting Mortality",
-              "Id": [
-                1278
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Sea-saw",
-              "Id": [
-                1277
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "The Bigger the Blade",
-              "Id": [
-                1279
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Fire for Hire",
-              "Id": [
-                1282
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Hammer and Sails",
-              "Id": [
-                1280
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Ingot to Wing It",
-              "Id": [
-                1281
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Reeling for Rods",
-              "Id": [
-                1239
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Beech, Please",
-              "Id": [
-                1240
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Walk the Walk",
-              "Id": [
-                1238
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Composition",
-              "Id": [
-                1242
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Standing on Ceremony",
-              "Id": [
-                1241
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Wood That You Could",
-              "Id": [
-                1243
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "O Pine",
-              "Id": [
-                1245
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Pinewheel",
-              "Id": [
-                1244
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Run Before They Walk",
-              "Id": [
-                1246
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Everybody's Heard about the 'Berd",
-              "Id": [
-                1247
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Spare a Rod and Spoil the Fishers",
-              "Id": [
-                1249
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "The Ear Is the Way to the Heart",
-              "Id": [
-                1248
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Putting Your Line on the Neck",
-              "Id": [
-                1250
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "With a Bow on Top",
-              "Id": [
-                1252
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Zelkova, My Love",
-              "Id": [
-                1251
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Loquacious",
-              "Id": [
-                1299
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "All You Can Stomach",
-              "Id": [
-                1300
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Oh No Udon",
-              "Id": [
-                1298
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Hunger Is No Game",
-              "Id": [
-                1302
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Soup for the Soul",
-              "Id": [
-                1301
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "The Frier Never Lies",
-              "Id": [
-                1303
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "A Shorlonging for the Familiar",
-              "Id": [
-                1305
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Souper",
-              "Id": [
-                1306
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Sweet Kiss of Death",
-              "Id": [
-                1304
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "No Othard Choice",
-              "Id": [
-                1307
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Persimmony Snicket",
-              "Id": [
-                1308
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "West Meats East",
-              "Id": [
-                1309
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Fish Box",
-              "Id": [
-                1311
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Fits to a Tea",
-              "Id": [
-                1310
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Herky Jerky",
-              "Id": [
-                1312
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "One Ring Circus",
-              "Id": [
-                1344
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Play It by Ear",
-              "Id": [
-                1343
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Wants and Needles",
-              "Id": [
-                1345
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Bracelet for Impact",
-              "Id": [
-                1347
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Chain of Command",
-              "Id": [
-                1346
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "If I'd a Koppranickel for Every Time...",
-              "Id": [
-                1348
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Cutting Deals",
-              "Id": [
-                1349
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Hair-raising Action",
-              "Id": [
-                1351
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Needle in a Hingan Stack",
-              "Id": [
-                1350
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Best-laid Planispheres",
-              "Id": [
-                1352
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Put the Metal to the Peddle",
-              "Id": [
-                1353
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Ring in the New",
-              "Id": [
-                1354
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Choker in the Clutch",
-              "Id": [
-                1357
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Speak Softly and Carry a Metal Rod",
-              "Id": [
-                1355
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Untucked",
-              "Id": [
-                1356
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Fitting In",
-              "Id": [
-                1255
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Hide to Go Seek",
-              "Id": [
-                1254
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Vested Interest",
-              "Id": [
-                1253
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Looking for Glove",
-              "Id": [
-                1258
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Off the Cuff",
-              "Id": [
-                1257
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Weathering Heights",
-              "Id": [
-                1256
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Shoe on the Other Foot",
-              "Id": [
-                1260
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Tiger in the Sack",
-              "Id": [
-                1261
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Try Tricorne Again",
-              "Id": [
-                1259
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "A Stitch in Time",
-              "Id": [
-                1262
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Security Breeches",
-              "Id": [
-                1264
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Shrug It On",
-              "Id": [
-                1263
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Brace Yourselves",
-              "Id": [
-                1265
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "If the Shoe Fits",
-              "Id": [
-                1267
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Thick and Thin",
-              "Id": [
-                1266
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Modest Beginnings",
-              "Id": [
-                1328
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Proper Props",
-              "Id": [
-                1330
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "What Guides Want",
-              "Id": [
-                1329
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Duress Rehearsal",
-              "Id": [
-                1331
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Getting a Leg Up",
-              "Id": [
-                1333
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Skills on Display",
-              "Id": [
-                1332
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Apparent Apparel",
-              "Id": [
-                1334
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Of Great Import",
-              "Id": [
-                1336
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Say Yes to Formal Dress",
-              "Id": [
-                1335
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Don't Sweat the Role",
-              "Id": [
-                1338
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "To the Tops",
-              "Id": [
-                1339
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Who War It Better",
-              "Id": [
-                1337
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Brimming with Confidence",
-              "Id": [
-                1340
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Cap It Off",
-              "Id": [
-                1342
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "One Winged Angle",
-              "Id": [
-                1341
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Rhalgr Wood Too",
-              "Id": [
-                1358
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Barking Up the Right Tree",
-              "Id": [
-                1360
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Thank Heavenspillar",
-              "Id": [
-                1359
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Coral-lation",
-              "Id": [
-                1362
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Penned-up Frustration",
-              "Id": [
-                1363
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Pining",
-              "Id": [
-                1361
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Bamboozled",
-              "Id": [
-                1364
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Flowers for Algae Run",
-              "Id": [
-                1366
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Timbr",
-              "Id": [
-                1365
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Craic of Dawn",
-              "Id": [
-                1367
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Hypocritic Oath",
-              "Id": [
-                1368
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Leaves Much to Be Desired",
-              "Id": [
-                1369
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Garden Variety",
-              "Id": [
-                1372
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Last of the Mhigans",
-              "Id": [
-                1371
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Nunh the Wiser",
-              "Id": [
-                1370
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "If a Leaf Falls in the Water",
-              "Id": [
-                1389
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Slow Wash, Rapids Jumper",
-              "Id": [
-                1388
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "There Can Be Only One",
-              "Id": [
-                1390
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "In a Pickle",
-              "Id": [
-                1392
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Lighter Wallets",
-              "Id": [
-                1391
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Perhaps Not-So-Common",
-              "Id": [
-                1393
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Catfish Scheme",
-              "Id": [
-                1394
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Curtains for Pleco",
-              "Id": [
-                1395
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Marooned Minnow",
-              "Id": [
-                1396
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Peculiar De-light",
-              "Id": [
-                1397
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Step by Steppe",
-              "Id": [
-                1398
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Unbeliebubble",
-              "Id": [
-                1399
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Pre-octopied",
-              "Id": [
-                1402
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "To the Teeth",
-              "Id": [
-                1401
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Axe to Grind",
-              "Id": [
-                1375
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Cermet Breaker",
-              "Id": [
-                1373
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Set in Stone",
-              "Id": [
-                1374
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Coral-lary",
-              "Id": [
-                1378
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Hit Rock Bottom",
-              "Id": [
-                1377
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Ready Ore Not",
-              "Id": [
-                1376
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "No Stone Unturned",
-              "Id": [
-                1381
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Scraptacular",
-              "Id": [
-                1380
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Simply Marble Us",
-              "Id": [
-                1379
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Bead 'Em Up",
-              "Id": [
-                1382
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Dunes of Our Lives",
-              "Id": [
-                1384
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "O Say Can You Rock",
-              "Id": [
-                1383
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Adios, Ala Mhigo",
-              "Id": [
-                1386
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Mine All Mine",
-              "Id": [
-                1385
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "The Ores Have It",
-              "Id": [
-                1387
-              ],
-              "Area": null,
-              "Level": 60
-            },
-            {
-              "Title": "Blood in the Water",
-              "Id": [
-                1400
-              ],
-              "Area": null,
-              "Level": 60
-            }
+            {"Title":"Magic Beans","Id":[1315],"Area":null,"Level":60},
+            {"Title":"Spellbound","Id":[1314],"Area":null,"Level":60},
+            {"Title":"Whinier than the Sword","Id":[1313],"Area":null,"Level":60},
+            {"Title":"Materia Worth","Id":[1318],"Area":null,"Level":60},
+            {"Title":"Official Strategy Guide","Id":[1316],"Area":null,"Level":60},
+            {"Title":"Scroll Down","Id":[1317],"Area":null,"Level":60},
+            {"Title":"Asking for a Friend","Id":[1321],"Area":null,"Level":60},
+            {"Title":"Rumor Has It","Id":[1320],"Area":null,"Level":60},
+            {"Title":"The Dotted Line","Id":[1319],"Area":null,"Level":60},
+            {"Title":"Edge of the Arcane","Id":[1322],"Area":null,"Level":60},
+            {"Title":"Let Loose the Juice","Id":[1324],"Area":null,"Level":60},
+            {"Title":"Spell-rebound","Id":[1323],"Area":null,"Level":60},
+            {"Title":"Making Your Mark","Id":[1327],"Area":null,"Level":60},
+            {"Title":"Pep-stepper","Id":[1325],"Area":null,"Level":60},
+            {"Title":"Ultimate Official Strategy Guide","Id":[1326],"Area":null,"Level":60},
+            {"Title":"Mail It In","Id":[1283],"Area":null,"Level":60},
+            {"Title":"Alembic Medals","Id":[1284],"Area":null,"Level":60},
+            {"Title":"Setting the Stage","Id":[1285],"Area":null,"Level":60},
+            {"Title":"Ore for Me","Id":[1288],"Area":null,"Level":60},
+            {"Title":"Shielded Life","Id":[1286],"Area":null,"Level":60},
+            {"Title":"The Gauntlet Is Cast","Id":[1287],"Area":null,"Level":60},
+            {"Title":"En Garde and on Guard","Id":[1291],"Area":null,"Level":60},
+            {"Title":"Greaving","Id":[1289],"Area":null,"Level":60},
+            {"Title":"Home Cooking","Id":[1290],"Area":null,"Level":60},
+            {"Title":"Art Imitates Life","Id":[1292],"Area":null,"Level":60},
+            {"Title":"Smells of Rich Tama-hagane","Id":[1293],"Area":null,"Level":60},
+            {"Title":"Sweeping the Legs","Id":[1294],"Area":null,"Level":60},
+            {"Title":"Heads Will Roll","Id":[1297],"Area":null,"Level":60},
+            {"Title":"See Shields by the Sea Shore","Id":[1295],"Area":null,"Level":60},
+            {"Title":"Spoony Is the Bard","Id":[1296],"Area":null,"Level":60},
+            {"Title":"A Knack for Nicking","Id":[1269],"Area":null,"Level":60},
+            {"Title":"Have Blade, Will Travel","Id":[1268],"Area":null,"Level":60},
+            {"Title":"High Steal","Id":[1270],"Area":null,"Level":60},
+            {"Title":"Crisscrossing","Id":[1271],"Area":null,"Level":60},
+            {"Title":"File under Dull","Id":[1273],"Area":null,"Level":60},
+            {"Title":"Hammer Time","Id":[1272],"Area":null,"Level":60},
+            {"Title":"And My Axe","Id":[1276],"Area":null,"Level":60},
+            {"Title":"Killer Cutlery","Id":[1274],"Area":null,"Level":60},
+            {"Title":"Meddle in Metal","Id":[1275],"Area":null,"Level":60},
+            {"Title":"Renting Mortality","Id":[1278],"Area":null,"Level":60},
+            {"Title":"Sea-saw","Id":[1277],"Area":null,"Level":60},
+            {"Title":"The Bigger the Blade","Id":[1279],"Area":null,"Level":60},
+            {"Title":"Fire for Hire","Id":[1282],"Area":null,"Level":60},
+            {"Title":"Hammer and Sails","Id":[1280],"Area":null,"Level":60},
+            {"Title":"Ingot to Wing It","Id":[1281],"Area":null,"Level":60},
+            {"Title":"Reeling for Rods","Id":[1239],"Area":null,"Level":60},
+            {"Title":"Beech, Please","Id":[1240],"Area":null,"Level":60},
+            {"Title":"Walk the Walk","Id":[1238],"Area":null,"Level":60},
+            {"Title":"Composition","Id":[1242],"Area":null,"Level":60},
+            {"Title":"Standing on Ceremony","Id":[1241],"Area":null,"Level":60},
+            {"Title":"Wood That You Could","Id":[1243],"Area":null,"Level":60},
+            {"Title":"O Pine","Id":[1245],"Area":null,"Level":60},
+            {"Title":"Pinewheel","Id":[1244],"Area":null,"Level":60},
+            {"Title":"Run Before They Walk","Id":[1246],"Area":null,"Level":60},
+            {"Title":"Everybody's Heard about the 'Berd","Id":[1247],"Area":null,"Level":60},
+            {"Title":"Spare a Rod and Spoil the Fishers","Id":[1249],"Area":null,"Level":60},
+            {"Title":"The Ear Is the Way to the Heart","Id":[1248],"Area":null,"Level":60},
+            {"Title":"Putting Your Line on the Neck","Id":[1250],"Area":null,"Level":60},
+            {"Title":"With a Bow on Top","Id":[1252],"Area":null,"Level":60},
+            {"Title":"Zelkova, My Love","Id":[1251],"Area":null,"Level":60},
+            {"Title":"Loquacious","Id":[1299],"Area":null,"Level":60},
+            {"Title":"All You Can Stomach","Id":[1300],"Area":null,"Level":60},
+            {"Title":"Oh No Udon","Id":[1298],"Area":null,"Level":60},
+            {"Title":"Hunger Is No Game","Id":[1302],"Area":null,"Level":60},
+            {"Title":"Soup for the Soul","Id":[1301],"Area":null,"Level":60},
+            {"Title":"The Frier Never Lies","Id":[1303],"Area":null,"Level":60},
+            {"Title":"A Shorlonging for the Familiar","Id":[1305],"Area":null,"Level":60},
+            {"Title":"Souper","Id":[1306],"Area":null,"Level":60},
+            {"Title":"Sweet Kiss of Death","Id":[1304],"Area":null,"Level":60},
+            {"Title":"No Othard Choice","Id":[1307],"Area":null,"Level":60},
+            {"Title":"Persimmony Snicket","Id":[1308],"Area":null,"Level":60},
+            {"Title":"West Meats East","Id":[1309],"Area":null,"Level":60},
+            {"Title":"Fish Box","Id":[1311],"Area":null,"Level":60},
+            {"Title":"Fits to a Tea","Id":[1310],"Area":null,"Level":60},
+            {"Title":"Herky Jerky","Id":[1312],"Area":null,"Level":60},
+            {"Title":"One Ring Circus","Id":[1344],"Area":null,"Level":60},
+            {"Title":"Play It by Ear","Id":[1343],"Area":null,"Level":60},
+            {"Title":"Wants and Needles","Id":[1345],"Area":null,"Level":60},
+            {"Title":"Bracelet for Impact","Id":[1347],"Area":null,"Level":60},
+            {"Title":"Chain of Command","Id":[1346],"Area":null,"Level":60},
+            {"Title":"If I'd a Koppranickel for Every Time...","Id":[1348],"Area":null,"Level":60},
+            {"Title":"Cutting Deals","Id":[1349],"Area":null,"Level":60},
+            {"Title":"Hair-raising Action","Id":[1351],"Area":null,"Level":60},
+            {"Title":"Needle in a Hingan Stack","Id":[1350],"Area":null,"Level":60},
+            {"Title":"Best-laid Planispheres","Id":[1352],"Area":null,"Level":60},
+            {"Title":"Put the Metal to the Peddle","Id":[1353],"Area":null,"Level":60},
+            {"Title":"Ring in the New","Id":[1354],"Area":null,"Level":60},
+            {"Title":"Choker in the Clutch","Id":[1357],"Area":null,"Level":60},
+            {"Title":"Speak Softly and Carry a Metal Rod","Id":[1355],"Area":null,"Level":60},
+            {"Title":"Untucked","Id":[1356],"Area":null,"Level":60},
+            {"Title":"Fitting In","Id":[1255],"Area":null,"Level":60},
+            {"Title":"Hide to Go Seek","Id":[1254],"Area":null,"Level":60},
+            {"Title":"Vested Interest","Id":[1253],"Area":null,"Level":60},
+            {"Title":"Looking for Glove","Id":[1258],"Area":null,"Level":60},
+            {"Title":"Off the Cuff","Id":[1257],"Area":null,"Level":60},
+            {"Title":"Weathering Heights","Id":[1256],"Area":null,"Level":60},
+            {"Title":"Shoe on the Other Foot","Id":[1260],"Area":null,"Level":60},
+            {"Title":"Tiger in the Sack","Id":[1261],"Area":null,"Level":60},
+            {"Title":"Try Tricorne Again","Id":[1259],"Area":null,"Level":60},
+            {"Title":"A Stitch in Time","Id":[1262],"Area":null,"Level":60},
+            {"Title":"Security Breeches","Id":[1264],"Area":null,"Level":60},
+            {"Title":"Shrug It On","Id":[1263],"Area":null,"Level":60},
+            {"Title":"Brace Yourselves","Id":[1265],"Area":null,"Level":60},
+            {"Title":"If the Shoe Fits","Id":[1267],"Area":null,"Level":60},
+            {"Title":"Thick and Thin","Id":[1266],"Area":null,"Level":60},
+            {"Title":"Modest Beginnings","Id":[1328],"Area":null,"Level":60},
+            {"Title":"Proper Props","Id":[1330],"Area":null,"Level":60},
+            {"Title":"What Guides Want","Id":[1329],"Area":null,"Level":60},
+            {"Title":"Duress Rehearsal","Id":[1331],"Area":null,"Level":60},
+            {"Title":"Getting a Leg Up","Id":[1333],"Area":null,"Level":60},
+            {"Title":"Skills on Display","Id":[1332],"Area":null,"Level":60},
+            {"Title":"Apparent Apparel","Id":[1334],"Area":null,"Level":60},
+            {"Title":"Of Great Import","Id":[1336],"Area":null,"Level":60},
+            {"Title":"Say Yes to Formal Dress","Id":[1335],"Area":null,"Level":60},
+            {"Title":"Don't Sweat the Role","Id":[1338],"Area":null,"Level":60},
+            {"Title":"To the Tops","Id":[1339],"Area":null,"Level":60},
+            {"Title":"Who War It Better","Id":[1337],"Area":null,"Level":60},
+            {"Title":"Brimming with Confidence","Id":[1340],"Area":null,"Level":60},
+            {"Title":"Cap It Off","Id":[1342],"Area":null,"Level":60},
+            {"Title":"One Winged Angle","Id":[1341],"Area":null,"Level":60},
+            {"Title":"Rhalgr Wood Too","Id":[1358],"Area":null,"Level":60},
+            {"Title":"Barking Up the Right Tree","Id":[1360],"Area":null,"Level":60},
+            {"Title":"Thank Heavenspillar","Id":[1359],"Area":null,"Level":60},
+            {"Title":"Coral-lation","Id":[1362],"Area":null,"Level":60},
+            {"Title":"Penned-up Frustration","Id":[1363],"Area":null,"Level":60},
+            {"Title":"Pining","Id":[1361],"Area":null,"Level":60},
+            {"Title":"Bamboozled","Id":[1364],"Area":null,"Level":60},
+            {"Title":"Flowers for Algae Run","Id":[1366],"Area":null,"Level":60},
+            {"Title":"Timbr","Id":[1365],"Area":null,"Level":60},
+            {"Title":"Craic of Dawn","Id":[1367],"Area":null,"Level":60},
+            {"Title":"Hypocritic Oath","Id":[1368],"Area":null,"Level":60},
+            {"Title":"Leaves Much to Be Desired","Id":[1369],"Area":null,"Level":60},
+            {"Title":"Garden Variety","Id":[1372],"Area":null,"Level":60},
+            {"Title":"Last of the Mhigans","Id":[1371],"Area":null,"Level":60},
+            {"Title":"Nunh the Wiser","Id":[1370],"Area":null,"Level":60},
+            {"Title":"If a Leaf Falls in the Water","Id":[1389],"Area":null,"Level":60},
+            {"Title":"Slow Wash, Rapids Jumper","Id":[1388],"Area":null,"Level":60},
+            {"Title":"There Can Be Only One","Id":[1390],"Area":null,"Level":60},
+            {"Title":"In a Pickle","Id":[1392],"Area":null,"Level":60},
+            {"Title":"Lighter Wallets","Id":[1391],"Area":null,"Level":60},
+            {"Title":"Perhaps Not-So-Common","Id":[1393],"Area":null,"Level":60},
+            {"Title":"Catfish Scheme","Id":[1394],"Area":null,"Level":60},
+            {"Title":"Curtains for Pleco","Id":[1395],"Area":null,"Level":60},
+            {"Title":"Marooned Minnow","Id":[1396],"Area":null,"Level":60},
+            {"Title":"Peculiar De-light","Id":[1397],"Area":null,"Level":60},
+            {"Title":"Step by Steppe","Id":[1398],"Area":null,"Level":60},
+            {"Title":"Unbeliebubble","Id":[1399],"Area":null,"Level":60},
+            {"Title":"Pre-octopied","Id":[1402],"Area":null,"Level":60},
+            {"Title":"To the Teeth","Id":[1401],"Area":null,"Level":60},
+            {"Title":"Axe to Grind","Id":[1375],"Area":null,"Level":60},
+            {"Title":"Cermet Breaker","Id":[1373],"Area":null,"Level":60},
+            {"Title":"Set in Stone","Id":[1374],"Area":null,"Level":60},
+            {"Title":"Coral-lary","Id":[1378],"Area":null,"Level":60},
+            {"Title":"Hit Rock Bottom","Id":[1377],"Area":null,"Level":60},
+            {"Title":"Ready Ore Not","Id":[1376],"Area":null,"Level":60},
+            {"Title":"No Stone Unturned","Id":[1381],"Area":null,"Level":60},
+            {"Title":"Scraptacular","Id":[1380],"Area":null,"Level":60},
+            {"Title":"Simply Marble Us","Id":[1379],"Area":null,"Level":60},
+            {"Title":"Bead 'Em Up","Id":[1382],"Area":null,"Level":60},
+            {"Title":"Dunes of Our Lives","Id":[1384],"Area":null,"Level":60},
+            {"Title":"O Say Can You Rock","Id":[1383],"Area":null,"Level":60},
+            {"Title":"Adios, Ala Mhigo","Id":[1386],"Area":null,"Level":60},
+            {"Title":"Mine All Mine","Id":[1385],"Area":null,"Level":60},
+            {"Title":"The Ores Have It","Id":[1387],"Area":null,"Level":60},
+            {"Title":"Blood in the Water","Id":[1400],"Area":null,"Level":60}
           ],
           "NpcId": 1018997,
           "Zone": "Kugane"

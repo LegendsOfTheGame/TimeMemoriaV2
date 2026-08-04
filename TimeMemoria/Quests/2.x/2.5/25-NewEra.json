@@ -1,5 +1,5 @@
 [
-    { "Title": "Fear and Odin in the Shroud", "Id": [65969], "Area": "Gridania", "Level": 50, "Chain": "Primals" },
-    { "Title": "The World of Darkness", "Id": [66030], "Area": "Mor Dhona", "Level": 50, "Chain": "The Crystal Tower" },
-    { "Title": "The Light of Hope", "Id": [66031], "Area": "Mor Dhona", "Level": 50, "Chain": "The Crystal Tower" }
+  {"Title":"Fear and Odin in the Shroud","Id":[65969],"Area":"Gridania","Level":50,"Chain":"Primals"},
+  {"Title":"The World of Darkness","Id":[66030],"Area":"Mor Dhona","Level":50,"Chain":"The Crystal Tower"},
+  {"Title":"The Light of Hope","Id":[66031],"Area":"Mor Dhona","Level":50,"Chain":"The Crystal Tower"}
 ]

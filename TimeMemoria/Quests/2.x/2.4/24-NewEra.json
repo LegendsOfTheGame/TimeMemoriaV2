@@ -1,5 +1,5 @@
 [
-    { "Title": "Drop Dead Shiva", "Id": [65626], "Area": "The Waking Sands", "Level": 50, "Chain": "Primals" },
-    { "Title": "Fragments of Truth", "Id": [65579], "Area": "The Waking Sands", "Level": 50, "Chain": "Bahamut" },
-    { "Title": "Alisaie's Path", "Id": [65580], "Area": "Northern Thanalan", "Level": 50, "Chain": "Bahamut" }
+  {"Title":"Drop Dead Shiva","Id":[65626],"Area":"The Waking Sands","Level":50,"Chain":"Primals"},
+  {"Title":"Fragments of Truth","Id":[65579],"Area":"The Waking Sands","Level":50,"Chain":"Bahamut"},
+  {"Title":"Alisaie's Path","Id":[65580],"Area":"Northern Thanalan","Level":50,"Chain":"Bahamut"}
 ]

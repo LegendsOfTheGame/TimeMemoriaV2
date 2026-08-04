@@ -1,11 +1,12 @@
 [
-    { "Title": "Away with the Faerie", "Id": [69323], "Area": "Amh Araeng", "Level": 80, "Chain": "Eden" },
-    { "Title": "Blood and Thunder", "Id": [69324], "Area": "The Empty", "Level": 80, "Chain": "Eden" },
-    { "Title": "Into the Firestorm", "Id": [69325], "Area": "The Empty", "Level": 80, "Chain": "Eden" },
-    { "Title": "Heart of Darkness", "Id": [69326], "Area": "The Empty", "Level": 80, "Chain": "Eden" },
-    { "Title": "On Thin Ice", "Id": [69327], "Area": "The Core", "Level": 80, "Chain": "Eden" },
-    { "Title": "Life Finds a Way", "Id": [69328], "Area": "The Empty", "Level": 80, "Chain": "Eden" },
-    { "Title": "Worlds Apart", "Id": [69329], "Area": "Amh Araeng", "Level": 80, "Chain": "Eden" },
-    { "Title": "Carnivals and Confrontations", "Id": [69320], "Area": "Kholusia", "Level": 80, "Chain": "YoRHa: Dark Apocalypse" },
-    { "Title": "One Way to Do It", "Id": [69321], "Area": "Excavation Tunnels", "Level": 80, "Chain": "YoRHa: Dark Apocalypse" }
+  {"Title":"Away with the Faerie","Id":[69323],"Area":"Amh Araeng","Level":80,"Chain":"Eden"},
+  {"Title":"Blood and Thunder","Id":[69324],"Area":"The Empty","Level":80,"Chain":"Eden"},
+  {"Title":"Into the Firestorm","Id":[69325],"Area":"The Empty","Level":80,"Chain":"Eden"},
+  {"Title":"Heart of Darkness","Id":[69326],"Area":"The Empty","Level":80,"Chain":"Eden"},
+  {"Title":"On Thin Ice","Id":[69327],"Area":"The Core","Level":80,"Chain":"Eden"},
+  {"Title":"Life Finds a Way","Id":[69328],"Area":"The Empty","Level":80,"Chain":"Eden"},
+  {"Title":"Worlds Apart","Id":[69329],"Area":"Amh Araeng","Level":80,"Chain":"Eden"},
+  {"Title":"Carnivals and Confrontations","Id":[69320],"Area":"Kholusia","Level":80,"Chain":"YoRHa: Dark Apocalypse"},
+  {"Title":"One Way to Do It","Id":[69321],"Area":"Excavation Tunnels","Level":80,"Chain":"YoRHa: Dark Apocalypse"},
+  {"Title":"Ruby Doomsday","Id":[69319],"Area":"The Lochs","Level":80,"Chain":"Sorrow of Werlyt"}
 ]

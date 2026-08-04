@@ -1,4 +1,8 @@
 [
-    { "Title": "A Heartless Hypothesis", "Id": [70122], "Area": "Old Sharlayan", "Level": 90, "Chain": "Omega" },
-    { "Title": "Goodbye, ε̆│̆│Δ", "Id": [70123], "Area": "Radz-at-Han", "Level": 90, "Chain": "Omega" }
+  {"Title":"A Heartless Hypothesis","Id":[70122],"Area":"Old Sharlayan","Level":90,"Chain":"Omega"},
+  {"Title":"Goodbye, ε̆│̆│Δ","Id":[70123],"Area":"Radz-at-Han","Level":90,"Chain":"Omega"},
+  {"Title":"A Mission in Mor Dhona","Id":[70072],"Area":"Old Sharlayan","Level":90,"Chain":"Myths of the Realm"},
+  {"Title":"The Realm of the Gods","Id":[70073],"Area":"The Omphalos","Level":90,"Chain":"Myths of the Realm"},
+  {"Title":"A Divine Dilemma","Id":[70074],"Area":"The Omphalos","Level":90,"Chain":"Myths of the Realm"},
+  {"Title":"The Face of an Explorer","Id":[70075],"Area":"Rhalgr's Reach","Level":90,"Chain":"Myths of the Realm"}
 ]

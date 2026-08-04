@@ -1,13 +1,13 @@
 [
-    {  "Title": "Arenvald's Adventure", "Id": [ 68498 ], "Area": "Rhalgr's Reach", "Level": 70  },
-    {  "Title": "The Darkness Below", "Id": [ 68499 ], "Area": "Rhalgr's Reach", "Level": 70  },
-    {  "Title": "The Mad King's Trove", "Id": [ 68500 ], "Area": "The Lochs", "Level": 70  },
-    {  "Title": "The Butcher's Blood", "Id": [ 68501 ], "Area": "The Lochs", "Level": 70  },
-    {  "Title": "Echoes of an Echo", "Id": [ 68502 ], "Area": "The Lochs", "Level": 70  },
-    {  "Title": "A Sultana's Strings", "Id": [ 68503 ], "Area": "The Lochs", "Level": 70  },
-    {  "Title": "A Sultana's Duty", "Id": [ 68504 ], "Area": "Ul'dah", "Level": 70  },
-    {  "Title": "A Sultana's Resolve", "Id": [ 68505 ], "Area": "The Gold Saucer", "Level": 70  },
-    {  "Title": "Securing the Saltery", "Id": [ 68506 ], "Area": "The Waking Sands", "Level": 70  },
-    {  "Title": "A Blissful Arrival", "Id": [ 68507 ], "Area": "The Lochs", "Level": 70  },
-    {  "Title": "Return of the Bull", "Id": [ 68508 ], "Area": "The Lochs", "Level": 70  }
+  {"Title":"Arenvald's Adventure","Id":[68498],"Area":"Rhalgr's Reach","Level":70},
+  {"Title":"The Darkness Below","Id":[68499],"Area":"Rhalgr's Reach","Level":70},
+  {"Title":"The Mad King's Trove","Id":[68500],"Area":"The Lochs","Level":70},
+  {"Title":"The Butcher's Blood","Id":[68501],"Area":"The Lochs","Level":70},
+  {"Title":"Echoes of an Echo","Id":[68502],"Area":"The Lochs","Level":70},
+  {"Title":"A Sultana's Strings","Id":[68503],"Area":"The Lochs","Level":70},
+  {"Title":"A Sultana's Duty","Id":[68504],"Area":"Ul'dah","Level":70},
+  {"Title":"A Sultana's Resolve","Id":[68505],"Area":"The Gold Saucer","Level":70},
+  {"Title":"Securing the Saltery","Id":[68506],"Area":"The Waking Sands","Level":70},
+  {"Title":"A Blissful Arrival","Id":[68507],"Area":"The Lochs","Level":70},
+  {"Title":"Return of the Bull","Id":[68508],"Area":"The Lochs","Level":70}
 ]
