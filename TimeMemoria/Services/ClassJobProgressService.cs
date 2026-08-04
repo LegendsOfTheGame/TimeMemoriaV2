@@ -187,9 +187,20 @@ namespace TimeMemoria.Services
                 .GroupBy(job => job.ExpArrayIndex)
                 // Within a shared slot the job row carries the higher JobIndex;
                 // crafters and gatherers sit alone in their slot and are unaffected.
-                .Select(group => group.OrderByDescending(job => job.JobIndex)
-                                      .ThenBy(job => job.RowId)
-                                      .First())
+                .SelectMany(group =>
+                {
+                    // A slot usually holds one base class and its job (Gladiator and
+                    // Paladin), where only the job is worth showing. Arcanist is the
+                    // exception: Summoner and Scholar both sit on it and the game
+                    // lists both, so emit every job on the slot when there is one.
+                    var jobs = group.Where(job => job.JobIndex > 0)
+                                    .OrderBy(job => job.RowId)
+                                    .ToList();
+
+                    return jobs.Count > 0
+                        ? jobs
+                        : group.OrderBy(job => job.RowId).Take(1);
+                })
                 // UIPriority is the sheet's own display-order field — the same one
                 // the in-game Character panel sorts by — so this matches what the
                 // player already sees rather than inventing an order.
