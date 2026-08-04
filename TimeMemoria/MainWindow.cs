@@ -25,6 +25,7 @@ namespace TimeMemoria
         private readonly PlaytimeStatsService playtimeStats;
         private readonly NewsService newsService;
         private readonly TocService tocService;
+        private readonly ClassJobProgressService classJobProgress;
 
         private string searchText = "";
 
@@ -45,7 +46,8 @@ namespace TimeMemoria
             Configuration configuration,
             PlaytimeStatsService playtimeStats,
             NewsService newsService,
-            TocService tocService)
+            TocService tocService,
+            ClassJobProgressService classJobProgress)
             : base("Time Memoria##main_window",
                    ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoScrollWithMouse)
         {
@@ -55,6 +57,7 @@ namespace TimeMemoria
             this.playtimeStats    = playtimeStats;
             this.newsService      = newsService;
             this.tocService       = tocService;
+            this.classJobProgress = classJobProgress;
 
             this.Size          = new Vector2(832, 470);
             this.SizeCondition = ImGuiCond.Appearing;
@@ -118,6 +121,12 @@ namespace TimeMemoria
                 if (ImGui.BeginTabItem("News##news_tab"))
                 {
                     NewsPanel.Draw(newsService, playtimeStats, configuration);
+                    ImGui.EndTabItem();
+                }
+
+                if (ImGui.BeginTabItem("Progression##progression_tab"))
+                {
+                    ProgressionPanel.Draw(classJobProgress);
                     ImGui.EndTabItem();
                 }
 

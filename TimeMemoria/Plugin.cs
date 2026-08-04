@@ -25,6 +25,7 @@ namespace TimeMemoria
         private readonly PlaytimeStatsService playtimeStatsService;
         private readonly NewsService newsService;
         private readonly TocService tocService;
+        private readonly ClassJobProgressService classJobProgressService;
 
 
         public Plugin(
@@ -53,6 +54,8 @@ namespace TimeMemoria
                                        framework, clientState, playerState,
                                        chatGui, configuration);
             newsService          = new NewsService(PluginLog);
+            classJobProgressService = new ClassJobProgressService(
+                                       playerState, DataManager, PluginLog);
             questDataManager     = new QuestDataManager(
                                        PluginInterface, PluginLog, this,
                                        configuration, playtimeStatsService, DataManager);
@@ -64,7 +67,8 @@ namespace TimeMemoria
             windowSystem = new WindowSystem("TimeMemoriaWindows");
             mainWindow   = new MainWindow(
                                this, questDataManager, configuration,
-                               playtimeStatsService, newsService, tocService);
+                               playtimeStatsService, newsService, tocService,
+                               classJobProgressService);
             windowSystem.AddWindow(mainWindow);
 
             CommandManager.AddHandler("/timememoria", new CommandInfo(OnCommand)
