@@ -812,6 +812,7 @@ namespace TimeMemoria
             foreach (var (suffix, _) in QuestlineRegistry.BucketDisplayNames)
             {
                 if (suffix == "Seasonal") continue;
+                if (suffix == "Other" && configuration.ExcludeOtherQuests) continue;
                 var (c, t) = GetBucketStats(ql, suffix);
                 complete += c;
                 total    += t;

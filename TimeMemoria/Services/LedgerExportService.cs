@@ -78,9 +78,11 @@ namespace TimeMemoria.Services
                 root["craft"]  = BuildLevels(progress, "craft");
                 root["gather"] = BuildLevels(progress, "gather");
 
-                var (breakdown, totals) = BuildMsqBreakdown();
-                root["msqBreakdown"]       = breakdown;
-                root["msqBreakdownTotals"] = totals;
+                // Only completion is sent. Totals are static reference data the
+                // ledger already holds, and ours currently understate Dawntrail
+                // because the 7.4 quests are missing — sending them would downgrade
+                // a correct value.
+                root["msqBreakdown"] = BuildMsqBreakdown();
 
                 return root.ToJsonString(new JsonSerializerOptions { WriteIndented = true });
             }
@@ -178,15 +180,13 @@ namespace TimeMemoria.Services
 
 
         /// <summary>
-        /// Completed and total MSQ per expansion. Counts come through the same
-        /// filtered path the Quests tab uses, so starting-city and Grand Company
-        /// branches are excluded and the totals match what the character can
-        /// actually complete.
+        /// Completed MSQ per expansion. Counts come through the same filtered path
+        /// the Quests tab uses, so starting-city and Grand Company branches are
+        /// excluded and the figures match what the character can actually complete.
         /// </summary>
-        private (JsonObject Breakdown, JsonObject Totals) BuildMsqBreakdown()
+        private JsonObject BuildMsqBreakdown()
         {
             var breakdown = new JsonObject();
-            var totals    = new JsonObject();
 
             foreach (var (expansion, key) in MsqExpansions)
             {
@@ -202,10 +202,9 @@ namespace TimeMemoria.Services
                 }
 
                 breakdown[key] = quests.Count(QuestDataManager.IsQuestComplete);
-                totals[key]    = quests.Count;
             }
 
-            return (breakdown, totals);
+            return breakdown;
         }
     }
 }
